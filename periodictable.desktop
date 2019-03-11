@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.1
+Name=Periodic Table
+Name[de]=Periodensystem
+Name[it]=Tavola periodica
+Name[nl]=Periodiek Systeem
+Comment=Periodic table with molecular weight calculator
+Comment[de]=Periodensystem mit Rechner für Summenformeln
+Comment[it]=Tavola periodica con un calcolatore per peso moleculare
+Comment[nl]=Periodiek Systeem met een calculator van somformules
+Exec=periodictable.sh
+Icon=periodictable-square.png
+Categories=Education;Science;Chemistry;Math
+Type=Application
+Terminal=false
