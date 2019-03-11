@@ -19,8 +19,7 @@ The normal procedure for building the program is using the standard autotools. T
 ./autogen.sh --prefix=/home/username/.local
 make
 make install
-periodictable 
-
+periodictable.sh
 ```
 will build the program for the current user. The Linux way of localization for the dutch/german/italian translation files is adapted.
 
