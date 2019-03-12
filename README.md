@@ -22,7 +22,7 @@ make
 make install
 periodictable.sh
 ```
-will build the program for the current user. The Linux way of localization for the dutch/german/italian translation files is adapted.
+will build and run the program for the current user. The Linux way of localization for the dutch/german/italian translation files is adapted.
 
 Alternatively (but only as english version) you can easily compile and run the program in Terminal with the added shell script:
 ```
