@@ -7,9 +7,9 @@ The program itself consists of three parts: The table of the periodic system of 
 For further explanations look at<br/>
 &nbsp; <https://nl.wikipedia.org/wiki/Periodiek_systeem> in dutch<br/>
 &nbsp; <https://en.wikipedia.org/wiki/Periodic_table> in english<br/>
-&nbsp; <https://fr.wikipedia.org/wiki/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments <br/>
+&nbsp; <https://fr.wikipedia.org/wiki/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments> in french<br/>
 &nbsp; <https://de.wikipedia.org/wiki/Periodensystem> in german<br/>
-&nbsp; <https://it.wikipedia.org/wiki/Tavola_periodica_degli_elementi> in italian <br/>
+&nbsp; <https://it.wikipedia.org/wiki/Tavola_periodica_degli_elementi> in italian<br/>
 
 The third part is accompanying my life since years, I wrote it first in BASIC, followed by versions in Borland Turbo C and Microsoft Visual C# 2005 (both for Windows), switched to Objective C and Swift on Apple Macs and now finally in C++ with use of gtkmm wrapper for Gnome GTK environment of Linux.
 
