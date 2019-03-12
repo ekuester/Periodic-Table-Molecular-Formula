@@ -7,6 +7,7 @@ The program itself consists of three parts: The table of the periodic system of 
 For further explanations look at<br/>
 &nbsp; <https://nl.wikipedia.org/wiki/Periodiek_systeem> in dutch<br/>
 &nbsp; <https://en.wikipedia.org/wiki/Periodic_table> in english<br/>
+&nbsp; <https://fr.wikipedia.org/wiki/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments <br/>
 &nbsp; <https://de.wikipedia.org/wiki/Periodensystem> in german<br/>
 &nbsp; <https://it.wikipedia.org/wiki/Tavola_periodica_degli_elementi> in italian <br/>
 
@@ -33,7 +34,7 @@ Very interesting in GTK 3.0 is the mode of setting colors in widgets: First plac
 &nbsp; <https://developer.gnome.org/gtk3/stable/chap-css-overview.html><br/>
 It is essential to generate the necessary CSS data in the right syntax.<br/>
 
-Usage:
+Usage:<br/>
 You will find the program mostly self explaining. On start you are confronted with the actual table of elements according with IUPAC (International Union of Pure and Applied Chemistry). Divergent from their nomenclature I choose the latinized element names, which clearly explain the origin of the chemical element symbols, mainly from<br/>
 &nbsp; <https://la.wikipedia.org/wiki/Systema_periodicum> in latin as *lingua franca* ...<br/>
 By clicking on an element a window with further information about the element is shown. At the end of the list you will find a link to the relevant article in Wikipedia.
@@ -72,8 +73,8 @@ Annotation:
 For homology I changed the name of the halogens to end with -inum to match more the official names of IUPAC.
 
 Acknowledgements:
-Special thanks go to the people in the developer community at StackOverflow. Without their help and answered questions this work would not be possible.
-<https://stackoverflow.com/>
+Special thanks go to the people in the developer community at StackOverflow. Without their help and answered questions at <https://stackoverflow.com/> this work would not be possible.
+
 
 Disclaimer:
 Use the program for what purpose you like, but hold in mind, that I will not be responsible for any harm it will cause to your hard- or software. It was your decision to use this piece of software.

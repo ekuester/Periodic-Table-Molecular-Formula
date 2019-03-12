@@ -38,6 +38,8 @@ CLEANFILES += periodictable.sh
 EXTRA_DIST += periodictable.sh.in
 
 # application icon 128x128
-appicondir=$(datadir)/icons
+appicondir=$(datadir)/icons/hicolor/128x128/apps
 appicon_DATA=periodictable-square.png
+
+EXTRA_DIST += periodictable-square.png
 
