@@ -25,8 +25,6 @@
 
 #include "periodictablewindow.h"
 #include "about.xpm"
-#include "gdkmm-2.4/gdkmm/pixbuf.h"
-#include "gtkmm-2.4/gtkmm/enums.h"
 
 const char* app_title \
 = N_("Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight");
