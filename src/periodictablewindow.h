@@ -64,6 +64,8 @@ protected:
     void on_calc_close();
     void on_help_about();
 
+    //Containers
+
     //Child widgets:
     Gtk::Box m_VBox;
     Gtk::Box m_HBox;
@@ -82,7 +84,14 @@ protected:
     Gtk::ScrolledWindow m_TableWindow;
     Gtk::Grid m_Grid;
 
-   std::string button_css = "\
+    std::string window_css = "\
+@define-color paleazure rgb(193, 227, 255);\
+#window_azure {\
+   border-radius: 4px;\
+   background-image: image(@paleazure);\
+}";
+
+    std::string button_css = "\
 #element_yellow {\
    border-radius: 4px;\
    background-color: palegoldenrod;\
@@ -96,9 +105,32 @@ protected:
    border-radius: 4px;\
    background-image: image(coral);\
 }\
-#element_brown {\
+#element_sandybrown {\
    border-radius: 4px;\
    background-image: image(sandybrown);\
+}\
+#element_sandybrown_white {\
+   border-radius: 4px;\
+   background: repeating-linear-gradient(\
+     90deg,\
+     sandybrown,\
+     sandybrown 5px,\
+     white 5px,\
+     white 10px);\
+}\
+@define-color middlebrown rgb(219, 147, 86);\
+#element_middlebrown {\
+   border-radius: 4px;\
+   background-image: image(@middlebrown);\
+}\
+#element_middlebrown_white {\
+   border-radius: 4px;\
+   background: repeating-linear-gradient(\
+     90deg,\
+     @middlebrown,\
+     @middlebrown 5px,\
+     white 5px,\
+     white 10px);\
 }\
 #element_green {\
    border-radius: 4px;\
@@ -108,6 +140,15 @@ protected:
    border-radius: 4px;\
    background-image: image(lightblue);\
 }\
+#element_blue_white {\
+   border-radius: 4px;\
+   background: repeating-linear-gradient(\
+     90deg,\
+     lightblue,\
+     lightblue 5px,\
+     white 5px,\
+     white 10px);\
+}\
 #element_cyan {\
    border-radius: 4px;\
    background-image: image(cyan);\
@@ -116,32 +157,51 @@ protected:
    border-radius: 4px;\
    background-image: image(lavender);\
 }\
-@define-color paleazure rgb(178, 220, 255);\
+@define-color paleazure rgb(193, 227, 255);\
 #element_azure {\
    border-radius: 4px;\
    background-image: image(@paleazure);\
 }\
+#element_azure_white {\
+   border-radius: 4px;\
+   background: repeating-linear-gradient(\
+     90deg,\
+     @paleazure,\
+     @paleazure 5px,\
+     white 5px,\
+     white 10px);\
+}\
 #element_yellow:hover,\
 #element_salmon:hover,\
 #element_coral:hover,\
-#element_brown:hover,\
+#element_sandybrown:hover,\
+#element_sandybrown_white:hover,\
+#element_middlebrown:hover,\
+#element_middlebrown_white:hover,\
 #element_green:hover,\
 #element_blue:hover,\
+#element_blue_white:hover,\
 #element_cyan:hover,\
 #element_violet:hover,\
-#element_azure:hover {\
+#element_azure:hover,\
+#element_azure_white:hover {\
    background-image: image(firebrick);\
    color: white;\
 }\
 #element_yellow:active,\
 #element_salmon:active,\
 #element_coral:active,\
-#element_brown:active,\
+#element_sandybrown:active,\
+#element_sandybrown_white:active,\
+#element_middlebrown:active,\
+#element_middlebrown_white:active,\
 #element_green:active,\
 #element_blue:active,\
+#element_blue_white:active,\
 #element_cyan:active,\
 #element_violet:active,\
-#element_azure:active {\
+#element_azure:active,\
+#element_azure_white:active {\
    background-image: image(OrangeRed);\
 }";
     Glib::RefPtr<Gtk::CssProvider> m_LabelCssProvider;
@@ -158,37 +218,39 @@ label {\
     ElementProperty m_PropertyWindow;
 
 private:
-    std::vector< std::string > colors = {
+    std::vector< std::string > button_colors = {
         "element_green",
         "element_coral",
         "element_salmon",
         "element_yellow",
         "element_violet",
         "element_blue",
-        "element_brown",
+        "element_sandybrown",
+        "element_middlebrown",
         "element_azure",
-		"element_cyan"
+        "element_cyan",
+        "element_blue_white",
+        "element_azure_white",
+        "element_sandybrown_white",
+        "element_middlebrown_white",
     };
     std::vector< std::vector< std::pair<int,int> > > table_blueprint = {
-        {{ 1,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},
-         { 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 1,4}},
-        {{ 1,1},{ 1,2},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},
-         { 0,0},{ 0,0},{ 0,0},{ 1,8},{ 1,0},{ 1,0},{ 1,0},{ 1,3},{ 1,4}},
-        {{ 1,1},{ 1,2},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},{ 0,0},
-         { 0,0},{ 0,0},{ 0,0},{ 1,7},{ 1,8},{ 1,0},{ 1,0},{ 1,3},{ 1,4}},
+        {{ 1,0},{-1,0},{ 1,4}},
+        {{ 1,1},{ 1,2},{-2,0},{ 1,9},{ 1,0},{ 1,0},{ 1,0},{ 1,3},{ 1,4}},
+        {{ 1,1},{ 1,2},{-3,0},{ 1,8},{ 1,9},{ 1,0},{ 1,0},{ 1,3},{ 1,4}},
         {{ 1,1},{ 1,2},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},
-         { 1,5},{ 1,5},{ 1,5},{ 1,7},{ 1,8},{ 1,8},{ 1,0},{ 1,3},{ 1,4}},
-        {{ 1,1},{ 1,2},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},
-         { 1,5},{ 1,5},{ 1,5},{ 1,7},{ 1,7},{ 1,8},{ 1,8},{ 1,3},{ 1,4}},
-        {{ 1,1},{ 1,2},{-1,0},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},
-         { 1,5},{ 1,5},{ 1,5},{ 1,7},{ 1,7},{ 1,7},{ 1,8},{ 1,3},{ 1,4}},
-        {{ 1,1},{ 1,2},{-1,0},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},
-         { 1,5},{ 1,5},{ 1,5},{ 1,7},{ 1,7},{ 1,7},{ 1,7},{ 1,3},{ 1,4}},
-        {{-4,0}},
-        {{ 0,0},{-2,0},{ 1,5},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},
-         { 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 0,0}},
-        {{ 0,0},{-3,0},{ 1,5},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},
-         { 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 0,0}}
+         { 1,5},{ 1,5},{ 1,5},{ 1,8},{ 1,9},{ 1,9},{ 1,0},{ 1,3},{ 1,4}},
+        {{ 1,1},{ 1,2},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{1,10},{ 1,5},{ 1,5},
+         { 1,5},{ 1,5},{ 1,5},{ 1,8},{ 1,8},{ 1,9},{ 1,9},{ 1,3},{ 1,4}},
+        {{ 1,1},{ 1,2},{-4,0},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},{ 1,5},
+         { 1,5},{ 1,5},{ 1,5},{ 1,8},{ 1,8},{ 1,8},{ 1,9},{ 1,3},{ 1,4}},
+        {{ 1,1},{ 1,2},{-4,0},{1,10},{1,10},{1,10},{1,10},{1,10},{1,10},
+         {1,10},{1,10},{1,10},{1,11},{1,11},{1,11},{1,11},{1,11},{1,11}},
+        {{-5,0}},
+        {{-6,0},{ 1,5},{ 1,6},{ 1,6},{ 1,6},{1,12},{ 1,6},{ 1,6},
+         { 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6},{ 1,6}},
+        {{-7,0},{ 1,5},{ 1,7},{ 1,7},{ 1,7},{1,13},{1,13},{1,13},
+         {1,13},{1,13},{1,13},{1,13},{1,13},{1,13},{1,13},{1,13}}
     };
 };
 

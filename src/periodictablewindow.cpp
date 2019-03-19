@@ -13,25 +13,28 @@
 //  GNU General Public License for more details.
 //
 //  You should have received a copy of the GNU General Public License
-//  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//  along with this program. If not, see <https://www.gnu.org/licenses/>.
 //
 //  File:   periodictablewindow.cpp
 //
 //  Created by Erich Kuester, Krefeld, Germany
 //    Copyright © 2014 - 2019 Erich Kuester.
 //          All rights reserved.
-//  Last changes on November 16, 2018
+//  Last changes on March 16, 2019
  */
 
 #include "periodictablewindow.h"
 #include "about.xpm"
+#include "gdkmm-2.4/gdkmm/pixbuf.h"
+#include "gtkmm-2.4/gtkmm/enums.h"
 
 const char* app_title \
 = N_("Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight");
 
 PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& app)
 :
-m_VBox(Gtk::ORIENTATION_VERTICAL, 3),
+//m_Overlay(),
+  m_VBox(Gtk::ORIENTATION_VERTICAL, 3),
   m_HBox(Gtk::ORIENTATION_HORIZONTAL),
   m_MenuBar(),
   s_MenuTable(),
@@ -89,7 +92,6 @@ m_VBox(Gtk::ORIENTATION_VERTICAL, 3),
     m_MenuBar.append(m_MenuHelp);
     m_VBox.pack_start(m_MenuBar, Gtk::PACK_SHRINK);
 
-    add(m_VBox);
     Glib::RefPtr<Gtk::CssProvider> m_LabelCssProvider = Gtk::CssProvider::create();
     m_LabelCssProvider->load_from_data(label_css);
     int i = 0;
@@ -126,7 +128,7 @@ m_VBox(Gtk::ORIENTATION_VERTICAL, 3),
                     // set_tooltip_window(), like set_tooltip_text()
                     // will call set_has_tooltip() for us.
                     element_button->set_tooltip_window(*tooltip_window);
-                    std::string button_name = colors[group.second];
+                    std::string button_name = button_colors[group.second];
                     element_button->set_name(button_name);
                     Glib::RefPtr<Gtk::CssProvider> buttonCssProvider = Gtk::CssProvider::create();
                     buttonCssProvider->load_from_data(button_css);
@@ -148,45 +150,53 @@ m_VBox(Gtk::ORIENTATION_VERTICAL, 3),
                     i++;
                     break;
                 }
-                case 0:
+                case -1:
                 {
-                    Gtk::Label* space = Gtk::manage(new Gtk::Label(Glib::ustring()));
-                    space->set_size_request(48, 48);
-                    m_Grid.attach(*space, g, p, 1, 1); // column g, row p
-                    g++;
+                    g += 16;
                     break;
                 }
-                case -1: {
+                case -2: {
+                    // space for legend in room above transition metals
+                    // from block 3 to 12, period 1 to period 3
+                    Gtk::Box *space = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL));
+                    space->set_size_request(480, 144);
+                    space->set_border_width(4);
+                    Gtk::Image *image = Gtk::manage(new Gtk::Image(_("legend-EN-456x144.svg")));
+                    space->pack_start(*image, Gtk::PackOptions::PACK_EXPAND_WIDGET);
+                    m_Grid.attach(*space, g, p-1, 10, 3); // column g, row p
+                    g += 10;
+                    break;
+                }
+                case -3: {
+                    // give room above transition metals
+                    g += 10;
+                    break;
+                }
+                case -4: {
                     // space for lanthanoides and actinoids
-                    Gtk::Label* space = new Gtk::Label(Glib::ustring());
+                    Gtk::Label* space = Gtk::manage(new Gtk::Label(Glib::ustring()));
                     space->set_size_request(48, 48);
                     m_Grid.attach(*space, g, p, 1, 1); // column g, row p
                     g++;
                     i += 15;
                     break;
                 }
-                case -2: {
-                    Gtk::Label* space = new Gtk::Label(Glib::ustring());
-                    space->set_size_request(48, 48);
-                    m_Grid.attach(*space, g, p, 1, 1); // column g, row p
-                    g++;
-                    i -=62;
-                    break;
-                }
-                case -3: {
-                    Gtk::Label* space = new Gtk::Label(Glib::ustring());
-                    space->set_size_request(48, 48);
-                    m_Grid.attach(*space, g, p, 1, 1); // column g, row p
-                    g++;
-                    i += 17;
-                    break;
-                }
-                case -4: {
-                    // empty space before extra lanthanoide resp. actinoide period
-                    Gtk::Label* space = new Gtk::Label(Glib::ustring());
+                case -5: {
+                    // empty space before extra lanthanoids resp. actinoids period
+                    Gtk::Label* space = Gtk::manage(new Gtk::Label(Glib::ustring()));
                     space->set_size_request(48, 12);
                     m_Grid.attach(*space, g, p, 1, 1); // column g, row p
                     g++;
+                    break;
+                }
+                case -6: {
+                    g += 2;
+                    i -= 62;
+                    break;
+                }
+                case -7: {
+                    g += 2;
+                    i += 17;
                     break;
                 }
                 default:
@@ -225,6 +235,7 @@ m_VBox(Gtk::ORIENTATION_VERTICAL, 3),
 
     m_Dialog.signal_response().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_about_dialog_response));
+    add(m_VBox);
 
     show_all_children();
 }

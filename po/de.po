@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GTKPeriodicTable 1.5.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-23 15:21+0100\n"
-"PO-Revision-Date: 2018-11-23 15:22+0100\n"
+"PO-Revision-Date: 2019-03-19 13:32+0100\n"
 "Last-Translator: Erich Küster <erich.kuester@arcor.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -235,9 +235,13 @@ msgstr "Jahr der Entdeckung"
 msgid "cpkHexColor"
 msgstr "cpkHexFarbe"
 
-#: periodictablewindow.cpp:201
+#: periodictablewindow.cpp:228
 msgid "gtkmm Website - C++ Interfaces for GTK+ and GNOME"
 msgstr ""
+
+#: periodictablewindow.cpp:164
+msgid "legend-EN-456x144.svg"
+msgstr "legend-DE-456x144.svg"
 
 #: elementproperty.cpp:88
 msgid "see <a href=\""

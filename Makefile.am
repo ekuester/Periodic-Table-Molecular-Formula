@@ -4,12 +4,11 @@ ACLOCAL_AMFLAGS = -I m4
 
 bin_SCRIPTS = periodictable.sh
 
-UPPERCASE_FILES = COMMENTAREN COMMENTI COMMENTS KOMMENTARE LICENSE README.md
+LATERAL_FILES = COMMENTAREN COMMENTI COMMENTS KOMMENTARE LICENSE README.md legend*
+lateraldir = $(pkgdatadir)
+lateral_DATA = $(LATERAL_FILES)
 
-uppercasedir = $(pkgdatadir)
-uppercase_DATA = $(UPPERCASE_FILES)
-
-EXTRA_DIST = 16x16 autogen.sh GTKPeriodicTable.sh $(UPPERCASE_FILES)
+EXTRA_DIST = 16x16 autogen.sh GTKPeriodicTable.sh $(LATERAL_FILES)
 
 CLEANFILES =
 
