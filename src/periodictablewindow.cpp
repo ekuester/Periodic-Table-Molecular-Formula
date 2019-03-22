@@ -20,7 +20,7 @@
 //  Created by Erich Kuester, Krefeld, Germany
 //    Copyright © 2014 - 2019 Erich Kuester.
 //          All rights reserved.
-//  Last changes on March 16, 2019
+//  Last changes on March 22, 2019
  */
 
 #include "periodictablewindow.h"
@@ -104,14 +104,23 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     std::stringstream text;
                     // use momentan valid locale
                     text.imbue(std::locale(""));
-                    auto element_ordinal = element[0];
+                    int element_ordinal = i + 1;//element[0];
                     double mass;
                     stringstream massStream(element[3]);
                     massStream >> mass; 
-                    text << "<span size=\"x-small\">" << element_ordinal << "</span>"
-                        << std::endl << "<b>" << element[1] << "</b>" << std::endl
-                        << "<span size=\"x-small\">"
-                        << std::setprecision(3) << std::fixed << mass << "</span>";
+                    text << "<span ";
+                    if (elements_radioactive.count(element_ordinal))
+                        text << "foreground=\"green\"";
+                    text << "size=\"small\" weight=\"bold\">" << element_ordinal;
+                    text << " </span>" << "<span rise=\"-14000\" ";
+                    if (elements_gaseous.count(element_ordinal))
+                        text << "foreground=\"red\"";
+                    if (elements_liquid.count(element_ordinal))
+                        text << "foreground=\"blue\"";
+                    text << "size=\"10800\" weight=\"bold\">";
+                    text << element[1] << "</span>";
+                    text << std::endl << "<span size=\"small\">";
+                    text << std::setprecision(3) << std::fixed << mass << "</span>";
                     //Tooltip Window:
                     Gtk::Window* tooltip_window = new Gtk::Window(Gtk::WINDOW_POPUP);
                     tooltip_window->set_default_size(144, 24);
@@ -122,16 +131,16 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     //Button:
                     Gtk::Button* element_button = Gtk::manage(new Gtk::Button());
                     element_button->set_size_request(48, 48);
-                    element_button->add(*element_label);
-                    // set_tooltip_window(), like set_tooltip_text()
-                    // will call set_has_tooltip() for us.
-                    element_button->set_tooltip_window(*tooltip_window);
                     std::string button_name = button_colors[group.second];
                     element_button->set_name(button_name);
                     Glib::RefPtr<Gtk::CssProvider> buttonCssProvider = Gtk::CssProvider::create();
                     buttonCssProvider->load_from_data(button_css);
                     element_button->get_style_context()->add_provider(\
                         buttonCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
+                    element_button->add(*element_label);
+                    // set_tooltip_window(), like set_tooltip_text()
+                    // will call set_has_tooltip() for us.
+                    element_button->set_tooltip_window(*tooltip_window);
                     //Button's custom tooltip window:
                     Gtk::Label* label = Gtk::manage(new Gtk::Label(element[2]));
                     label->get_style_context()->add_provider(\

@@ -31,6 +31,7 @@
 #include <iostream>
 #include <limits>
 #include <locale>
+#include <set>
 #include <sstream>
 #include <string>
 #include <vector>
@@ -112,7 +113,7 @@ protected:
 #element_sandybrown_white {\
    border-radius: 4px;\
    background: repeating-linear-gradient(\
-     90deg,\
+     60deg,\
      sandybrown,\
      sandybrown 5px,\
      white 5px,\
@@ -126,7 +127,7 @@ protected:
 #element_middlebrown_white {\
    border-radius: 4px;\
    background: repeating-linear-gradient(\
-     90deg,\
+     60deg,\
      @middlebrown,\
      @middlebrown 5px,\
      white 5px,\
@@ -143,7 +144,7 @@ protected:
 #element_blue_white {\
    border-radius: 4px;\
    background: repeating-linear-gradient(\
-     90deg,\
+     60deg,\
      lightblue,\
      lightblue 5px,\
      white 5px,\
@@ -165,7 +166,7 @@ protected:
 #element_azure_white {\
    border-radius: 4px;\
    background: repeating-linear-gradient(\
-     90deg,\
+     60deg,\
      @paleazure,\
      @paleazure 5px,\
      white 5px,\
@@ -202,7 +203,8 @@ protected:
 #element_violet:active,\
 #element_azure:active,\
 #element_azure_white:active {\
-   background-image: image(OrangeRed);\
+  background-image: image(orange);\
+  color: white;\
 }";
     Glib::RefPtr<Gtk::CssProvider> m_LabelCssProvider;
     std::string label_css = "\
@@ -218,6 +220,21 @@ label {\
     ElementProperty m_PropertyWindow;
 
 private:
+    std::set< int > elements_radioactive = {
+        43, 61,
+        83, 84, 85, 86, 87, 88,
+        89, 90, 91, 92, 93, 94,
+        95, 96, 97, 98, 99,100,
+       101,102,103,104,105,106,
+       107,108,109,110,111,112,
+       113,114,115,116,117,118
+    };
+    std::set< int > elements_gaseous = {
+        1, 2, 7, 8, 9, 10, 17, 18, 36, 54, 86, 118
+    };
+    std::set< int > elements_liquid = {
+        35, 80
+    };
     std::vector< std::string > button_colors = {
         "element_green",
         "element_coral",
