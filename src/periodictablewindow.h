@@ -59,19 +59,23 @@ protected:
 
     //Signal handlers:
     void on_about_dialog_response(int response_id);
-    void on_action_quit();
     bool on_button_query_tooltip(int x, int y, bool keyboard_tooltip, const Glib::RefPtr<Gtk::Tooltip>& tooltip);
-    void on_calc_open();
-    void on_calc_close();
-    void on_help_about();
+    bool on_offscreen_window_damage_event(GdkEventExpose *event);
+    void on_menu_table_snapshot();
+    void on_menu_table_quit();
+    void on_menu_calc_open();
+    void on_menu_calc_close();
+    void on_menu_help_about();
 
-    //Containers
-
+    // Containers
+    Gtk::OffscreenWindow m_OffscreenWindow;
+    Gtk::Container *m_parent;
     //Child widgets:
     Gtk::Box m_VBox;
     Gtk::Box m_HBox;
     Gtk::MenuBar m_MenuBar;
     Gtk::MenuItem m_MenuTable;
+    Gtk::MenuItem s_MenuItemSnapshot;
     //Gtk::SeparatorMenuItem s_MenuItemLine;
     Gtk::MenuItem s_MenuItemQuit;
     Gtk::Menu s_MenuTable;
@@ -220,6 +224,7 @@ label {\
     ElementProperty m_PropertyWindow;
 
 private:
+    bool is_first_pass = false;
     std::set< int > elements_radioactive = {
         43, 61,
         83, 84, 85, 86, 87, 88,
@@ -252,6 +257,7 @@ private:
         "element_middlebrown_white",
     };
     std::vector< std::vector< std::pair<int,int> > > table_blueprint = {
+        {{ 0,0}},
         {{ 1,0},{-1,0},{ 1,4}},
         {{ 1,1},{ 1,2},{-2,0},{ 1,9},{ 1,0},{ 1,0},{ 1,0},{ 1,3},{ 1,4}},
         {{ 1,1},{ 1,2},{-3,0},{ 1,8},{ 1,9},{ 1,0},{ 1,0},{ 1,3},{ 1,4}},

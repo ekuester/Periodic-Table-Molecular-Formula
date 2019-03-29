@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="272.67857"
-     inkscape:cy="74.64394"
+     inkscape:cx="116.07143"
+     inkscape:cy="81.786797"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -80,6 +80,70 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-247.86874)">
+    <text
+       id="text1515"
+       style="font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
+       x="82.250038"
+       y="293.09903">
+      <tspan
+         style="font-size:9.33333302px"
+         id="tspan928">ordinal</tspan>
+    </text>
+    <text
+       id="text1525"
+       style="font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
+       x="36.92865"
+       y="289.33188">
+      <tspan
+         id="tspan890"
+         style="font-size:9.33333302px;stroke-width:0.75000042">gruppo</tspan>
+    </text>
+    <rect
+       id="LegBoxRand-9"
+       x="64.774193"
+       y="296.64294"
+       width="46.451614"
+       height="46.451614"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#eee8aa;fill-opacity:1;stroke:#000000;stroke-width:1.54838622;stroke-linecap:square" />
+    <path
+       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0"
+       d="m 72.000001,311.86874 -36,-19.15203"
+       id="LegLinieSerie-3"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="text1503-6"
+       style="font-weight:bold;font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#ff0000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
+       x="98.387199"
+       y="321.22571">
+      <tspan
+         style="font-size:10.66666698px"
+         id="tspan932-0">Cl</tspan>
+    </text>
+    <text
+       id="text1505-6"
+       style="font-weight:bold;font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
+       x="76.984207"
+       y="309.75125">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Liberation Sans', sans-serif;-inkscape-font-specification:'Liberation Sans, sans-serif Bold'"
+         id="tspan934-2">17</tspan>
+    </text>
+    <text
+       id="text1509-6"
+       style="font-size:6.75000381px;font-family:'Liberation Sans', sans-serif;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
+       x="75.963387"
+       y="336.10837">
+      <tspan
+         style="font-size:8px"
+         id="tspan930-1">35,453</tspan>
+    </text>
+    <path
+       sodipodi:nodetypes="cc"
+       id="path1106"
+       d="m 84.000001,317.86874 -24,1.5"
+       inkscape:connector-curvature="0"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     <rect
        style="font-size:12px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:1.5271132;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none"
        height="142.36761"
@@ -87,69 +151,11 @@
        y="248.68457"
        x="0.81655663"
        id="LegHintergrund" />
-    <rect
-       id="LegBoxRand"
-       x="64.774193"
-       y="296.64294"
-       width="46.451614"
-       height="46.451614"
-       style="font-size:12px;font-family:'Liberation Sans';fill:#ffff99;fill-opacity:1;stroke:#000000;stroke-width:1.54838622;stroke-linecap:square" />
-    <path
-       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-       inkscape:connector-curvature="0"
-       d="M 73.043617,306.39971 36,292.71671"
-       id="LegLinieSerie"
-       sodipodi:nodetypes="cc" />
-    <text
-       id="text1503"
-       style="font-weight:bold;font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#ff0000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="92.387199"
-       y="321.22574">
-      <tspan
-         style="font-size:10.66666698px"
-         id="tspan932">Cl</tspan>
-    </text>
-    <text
-       id="text1505"
-       style="font-weight:bold;font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="82.984207"
-       y="307.75125">
-      <tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Liberation Sans', sans-serif;-inkscape-font-specification:'Liberation Sans, sans-serif'"
-         id="tspan934">17</tspan>
-    </text>
-    <text
-       id="text1509"
-       style="font-size:6.75000381px;font-family:'Liberation Sans', sans-serif;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="75.963387"
-       y="336.1084">
-      <tspan
-         style="font-size:8px"
-         id="tspan930">35,453</tspan>
-    </text>
-    <text
-       id="text1515"
-       style="font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="88.500038"
-       y="290.77759">
-      <tspan
-         style="font-size:9.33333302px"
-         id="tspan928">ordinal</tspan>
-    </text>
     <text
        id="text1517"
        style="font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="48.928616"
-       y="317.03677">symbolo</text>
-    <text
-       id="text1525"
-       style="font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="36.92865"
-       y="290.89413">
-      <tspan
-         id="tspan890"
-         style="font-size:9.33333302px;stroke-width:0.75000042">gruppo</tspan>
-    </text>
+       x="57.288593"
+       y="322.03677">symbolo</text>
     <text
        id="text1529"
        style="font-size:9px;font-family:'Liberation Sans', sans-serif;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
@@ -513,12 +519,6 @@
          x="29.617676"
          y="340.61877"
          style="font-size:9px">atomico</tspan></text>
-    <path
-       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-       inkscape:connector-curvature="0"
-       d="m 80,316.86874 -28,-3"
-       id="LegLinieSerie-7"
-       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"

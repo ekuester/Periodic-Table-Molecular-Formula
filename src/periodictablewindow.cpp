@@ -37,6 +37,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
   m_MenuBar(),
   s_MenuTable(),
   //s_MenuItemLine(),
+  s_MenuItemSnapshot(),
   s_MenuItemQuit(),
   s_MenuCalc(),
   s_MenuItemOpen(),
@@ -46,21 +47,24 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
   m_Grid(),
   m_Dialog(),
   m_FormulaWindow(),
+  m_OffscreenWindow(),
   m_PropertyWindow()
 {
     //Set up window and the top-level container:
     set_title(_(app_title));
-    set_border_width(4);
-    set_default_size(1072, 564);
+    set_default_size(1072, 596);
     m_FormulaWindow.signal_hide().connect(sigc::mem_fun(*this,\
-        &PeriodicTableWindow::on_calc_close));
+        &PeriodicTableWindow::on_menu_calc_close));
     // menu "Table"
     m_MenuTable = Gtk::MenuItem(_("Table"));
+    s_MenuItemSnapshot.add_pixlabel("16x16/camera-snapshot.png", _("Print"), Gtk::Align::ALIGN_START);
+    s_MenuItemSnapshot.signal_activate().connect(sigc::mem_fun(*this,\
+        &PeriodicTableWindow::on_menu_table_snapshot));
     s_MenuItemQuit.add_pixlabel("16x16/application-exit.png", _("Exit"), Gtk::Align::ALIGN_START);
     s_MenuItemQuit.signal_activate().connect(sigc::mem_fun(*this,\
-        &PeriodicTableWindow::on_action_quit));
-
+        &PeriodicTableWindow::on_menu_table_quit));
     //s_MenuTable.append(s_MenuItemLine);
+    s_MenuTable.append(s_MenuItemSnapshot);
     s_MenuTable.append(s_MenuItemQuit);
 
     m_MenuTable.set_submenu(s_MenuTable);
@@ -69,25 +73,25 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     m_MenuCalc.set_submenu(s_MenuCalc);
     s_MenuItemOpen.add_pixlabel("16x16/document-open.png", _("Open"), Gtk::Align::ALIGN_START);
     s_MenuItemOpen.signal_activate().connect(sigc::mem_fun(*this,\
-        &PeriodicTableWindow::on_calc_open));
+        &PeriodicTableWindow::on_menu_calc_open));
     s_MenuItemClose.add_pixlabel("16x16/window-close.png", _("Close"), Gtk::Align::ALIGN_START);
     s_MenuItemClose.set_sensitive(false);
     s_MenuItemClose.signal_activate().connect(sigc::mem_fun(*this,\
-        &PeriodicTableWindow::on_calc_close));
+        &PeriodicTableWindow::on_menu_calc_close));
     s_MenuCalc.append(s_MenuItemOpen);
     s_MenuCalc.append(s_MenuItemClose);
     // menu "Help"
     m_MenuHelp = Gtk::MenuItem(_("Help"));
     s_MenuItemAbout.add_pixlabel("16x16/help-about.png", _("Info"), Gtk::Align::ALIGN_START);
     s_MenuItemAbout.signal_activate().connect(sigc::mem_fun(*this,\
-        &PeriodicTableWindow::on_help_about));
+        &PeriodicTableWindow::on_menu_help_about));
     s_MenuHelp.append(s_MenuItemAbout);
     m_MenuHelp.set_submenu(s_MenuHelp);
     // set menu bar
-    m_MenuBar.set_margin_bottom(4);
     m_MenuBar.append(m_MenuTable);
     m_MenuBar.append(m_MenuCalc);
     m_MenuBar.append(m_MenuHelp);
+    m_VBox.set_border_width(4);
     m_VBox.pack_start(m_MenuBar, Gtk::PACK_SHRINK);
 
     Glib::RefPtr<Gtk::CssProvider> m_LabelCssProvider = Gtk::CssProvider::create();
@@ -111,16 +115,20 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     text << "<span ";
                     if (elements_radioactive.count(element_ordinal))
                         text << "foreground=\"green\"";
-                    text << "size=\"small\" weight=\"bold\">" << element_ordinal;
-                    text << " </span>" << "<span rise=\"-14000\" ";
+                    text << "size=\"small\" weight=\"bold\">";
+                    text << element_ordinal << " </span>";
+                    // second line
+                    text << "<span rise=\"-14000\" ";
                     if (elements_gaseous.count(element_ordinal))
                         text << "foreground=\"red\"";
                     if (elements_liquid.count(element_ordinal))
                         text << "foreground=\"blue\"";
                     text << "size=\"10800\" weight=\"bold\">";
-                    text << element[1] << "</span>";
-                    text << std::endl << "<span size=\"small\">";
-                    text << std::setprecision(3) << std::fixed << mass << "</span>";
+                    text << element[1] << "</span>" << std::endl;
+                    // third line
+                    text << "<span size=\"small\">";
+                    text << std::setprecision(3) << std::fixed << mass;
+                    text << "</span>";
                     //Tooltip Window:
                     Gtk::Window* tooltip_window = new Gtk::Window(Gtk::WINDOW_POPUP);
                     tooltip_window->set_default_size(144, 24);
@@ -157,8 +165,22 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     i++;
                     break;
                 }
-                case -1:
-                {
+                case 0: {
+                    // setup text for title
+                    std::stringstream title_text;
+                    title_text << "<span stretch=\"semiexpanded\" weight=\"bold\" size=\"18000\">";
+                    title_text << _("··· Periodic Table of the Elements ···");
+                    title_text << "</span>";
+                    // empty space for title
+                    Gtk::Label* title = Gtk::manage(new Gtk::Label());
+                    title->set_size_request(864, 32);
+                    title->set_justify(Gtk::Justification::JUSTIFY_CENTER);
+                    title->set_markup(title_text.str());
+                    m_Grid.attach(*title, g, p, 18, 1); // column g, row p
+                    g++;
+                    break;
+                }
+                case -1: {
                     g += 16;
                     break;
                 }
@@ -242,8 +264,11 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
 
     m_Dialog.signal_response().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_about_dialog_response));
-    add(m_VBox);
+    
+    m_OffscreenWindow.signal_damage_event().connect(sigc::mem_fun(*this,
+        &PeriodicTableWindow::on_offscreen_window_damage_event));
 
+    add(m_VBox);
     show_all_children();
 }
 
@@ -255,23 +280,49 @@ bool PeriodicTableWindow::on_button_query_tooltip(int, int, bool, const Glib::Re
     return true;
 }
 
-void PeriodicTableWindow::on_action_quit() {
+bool PeriodicTableWindow::on_offscreen_window_damage_event(GdkEventExpose *event) {   
+    if (is_first_pass) {
+        Glib::RefPtr<Gdk::Pixbuf> osw_pixbuf = m_OffscreenWindow.get_pixbuf()->copy();
+        osw_pixbuf->save(_("PeriodicTable.png"), "png");
+       // allow only one pass, otherwise an empty OffscreenWindow is stored
+        is_first_pass = false;
+        m_VBox.reparent(*m_parent);
+        m_VBox.remove(m_Grid);
+        m_TableWindow.add(m_Grid);
+        m_VBox.pack_start(m_MenuBar, Gtk::PACK_SHRINK);
+        m_VBox.pack_start(m_TableWindow);
+    }
+    return true;
+}
+
+void PeriodicTableWindow::on_menu_table_snapshot() {
+    is_first_pass = true;
+    m_VBox.remove(m_MenuBar);
+    m_VBox.remove(m_TableWindow);
+    m_TableWindow.remove();
+    m_VBox.pack_start(m_Grid);
+    m_parent = m_VBox.get_parent();
+    m_VBox.reparent(m_OffscreenWindow);
+    m_OffscreenWindow.show();
+}
+
+void PeriodicTableWindow::on_menu_table_quit() {
     hide();
 }
 
-void PeriodicTableWindow::on_calc_open() {
+void PeriodicTableWindow::on_menu_calc_open() {
     s_MenuItemClose.set_sensitive(true);
     s_MenuItemOpen.set_sensitive(false);
     m_FormulaWindow.present();
 }
 
-void PeriodicTableWindow::on_calc_close() {
+void PeriodicTableWindow::on_menu_calc_close() {
     s_MenuItemClose.set_sensitive(false);
     s_MenuItemOpen.set_sensitive(true);
     m_FormulaWindow.hide();
 }
 
-void PeriodicTableWindow::on_help_about() {
+void PeriodicTableWindow::on_menu_help_about() {
     m_Dialog.show();
     //bring it to the front, in case it was already shown:
     m_Dialog.present();

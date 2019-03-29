@@ -67,7 +67,7 @@ ElementProperty::ElementProperty()
     // build first column with names of properties
     int row = 0;
     for (auto name : property_names) {
-        Gtk::Label* left = new Gtk::Label(_(name), Gtk::ALIGN_START);
+        Gtk::Label* left = Gtk::manage(new Gtk::Label(_(name), Gtk::ALIGN_START));
         left->set_hexpand_set(true);
         left->set_margin_right(8);
         left->set_margin_right(8);

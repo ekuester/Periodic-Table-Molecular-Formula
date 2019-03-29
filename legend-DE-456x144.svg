@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="338.53313"
+     inkscape:cx="102.4617"
      inkscape:cy="87.135332"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -83,17 +83,17 @@
        y="296.64294"
        width="46.451614"
        height="46.451614"
-       style="font-size:12px;font-family:'Liberation Sans';fill:#ffff99;fill-opacity:1;stroke:#000000;stroke-width:1.54838622;stroke-linecap:square" />
+       style="font-size:12px;font-family:'Liberation Sans';fill:#eee8aa;fill-opacity:1;stroke:#000000;stroke-width:1.54838622;stroke-linecap:square" />
     <path
        style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
        inkscape:connector-curvature="0"
-       d="M 73.043617,306.39971 36,292.71671"
+       d="M 72,311.86874 36,292.71671"
        id="LegLinieSerie"
        sodipodi:nodetypes="cc" />
     <text
        id="text1503"
        style="font-weight:bold;font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#ff0000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="92.387199"
+       x="98.387199"
        y="321.22574">
       <tspan
          style="font-size:10.66666698px"
@@ -102,10 +102,10 @@
     <text
        id="text1505"
        style="font-weight:bold;font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="82.984207"
-       y="307.75125">
+       x="76.984207"
+       y="309.75125">
       <tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Liberation Sans', sans-serif;-inkscape-font-specification:'Liberation Sans, sans-serif'"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Liberation Sans', sans-serif;-inkscape-font-specification:'Liberation Sans, sans-serif Bold'"
          id="tspan934">17</tspan>
     </text>
     <text
@@ -120,8 +120,8 @@
     <text
        id="text1515"
        style="font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="88.500038"
-       y="290.77759">
+       x="82.500038"
+       y="292.77759">
       <tspan
          style="font-size:9.33333302px"
          id="tspan928">Ordinal</tspan>
@@ -129,7 +129,7 @@
     <text
        id="text1517"
        style="font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="61.250046"
+       x="55.250046"
        y="321.50107">Symbol</text>
     <text
        id="text1519"
@@ -463,5 +463,11 @@
        y2="271.11874"
        style="font-weight:bold;font-size:16px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.50000083;stroke-linecap:square"
        id="line1490" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path1106"
+       d="m 84,317.86874 -24,1.5"
+       inkscape:connector-curvature="0"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
 </svg>
