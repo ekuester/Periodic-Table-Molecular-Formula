@@ -57,7 +57,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
         &PeriodicTableWindow::on_menu_calc_close));
     // menu "Table"
     m_MenuTable = Gtk::MenuItem(_("Table"));
-    s_MenuItemSnapshot.add_pixlabel("16x16/camera-snapshot.png", _("Print"), Gtk::Align::ALIGN_START);
+    s_MenuItemSnapshot.add_pixlabel("16x16/camera-snapshot.png", _("Snapshot"), Gtk::Align::ALIGN_START);
     s_MenuItemSnapshot.signal_activate().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_menu_table_snapshot));
     s_MenuItemQuit.add_pixlabel("16x16/application-exit.png", _("Exit"), Gtk::Align::ALIGN_START);
@@ -259,7 +259,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     std::vector<Glib::ustring> list_authors;
     list_authors.push_back(_("Dmitri Ivanovich Mendeleev, Saint Petersburg/Russia, 6 March 1869"));
     list_authors.push_back(_("IUPAC, International Union of Pure and Applied Chemistry"));
-    list_authors.push_back("Erich Küster, Krefeld/Germany");
+    list_authors.push_back(_("Erich Küster, Krefeld/Germany"));
     m_Dialog.set_authors(list_authors);
 
     m_Dialog.signal_response().connect(sigc::mem_fun(*this,\

@@ -43,7 +43,7 @@ msgstr "Bindungszeichen verkehrt plaziert"
 msgid "Bonding Type"
 msgstr "Bindungstyp"
 
-#: periodictablewindow.cpp:197
+#: periodictablewindow.cpp:251
 msgid "COMMENTS"
 msgstr "KOMMENTARE"
 
@@ -51,7 +51,7 @@ msgstr "KOMMENTARE"
 msgid "Calc"
 msgstr "Rechner"
 
-#: periodictablewindow.cpp:57
+#: periodictablewindow.cpp:77
 msgid "Close"
 msgstr "Schliessen"
 
@@ -63,7 +63,7 @@ msgstr "Schliessende ) fehlt"
 msgid "Closing ] missing"
 msgstr "Schliessende ] fehlt"
 
-#: periodictablewindow.cpp:189
+#: periodictablewindow.cpp:245
 msgid "Copyright © 2018 Erich Küster. All rights reserved."
 msgstr "Copyright © 2018 Erich Küster. Alle Rechte vorbehalten."
 
@@ -71,7 +71,7 @@ msgstr "Copyright © 2018 Erich Küster. Alle Rechte vorbehalten."
 msgid "Density [g/mL]"
 msgstr "Dichte [g/mL]"
 
-#: periodictablewindow.cpp:207
+#: periodictablewindow.cpp:260
 msgid "Dmitri Ivanovich Mendeleev, Saint Petersburg/Russia, 6 March 1869"
 msgstr "Dmitri Iwanowitsch Mendelejew, Sankt Petersburg/Russland, 6. März 1869"
 
@@ -91,11 +91,15 @@ msgstr "Elektronenkonfiguration"
 msgid "Element symbol expected"
 msgstr "Elementsymbol erwartet"
 
+#: periodictablewindow.cpp:262
+msgid "Erich Küster, Krefeld/Germany"
+msgstr "Erich Küster, Krefeld/Deutschland"
+
 #: molecularformula.cpp:133
 msgid "Error: Check input"
 msgstr "Eingabe überprüfen"
 
-#: periodictablewindow.cpp:43
+#: periodictablewindow.cpp:63
 msgid "Exit"
 msgstr "Verlassen"
 
@@ -119,7 +123,7 @@ msgstr "Gtk+: Rechner - Summenformel"
 msgid "Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight"
 msgstr "Gtk+: Anwendung für die Chemie - PeriodenSystem · Elementeigenschaften · Molekulargewicht"
 
-#: periodictablewindow.cpp:64
+#: periodictablewindow.cpp:84
 msgid "Help"
 msgstr "Hilfe"
 
@@ -131,7 +135,7 @@ msgstr "IUPAC, Internationale Union für reine und angewandte Chemie"
 msgid "Index 0 not allowed"
 msgstr "Index 0 nicht erlaubt"
 
-#: periodictablewindow.cpp:65
+#: periodictablewindow.cpp:85
 msgid "Info"
 msgstr "Über"
 
@@ -175,7 +179,7 @@ msgstr "Keine Formel eingegeben"
 msgid "No valid element symbol (actual not in table)"
 msgstr "Kein gültiges Elementsymbol (nicht vorhanden)"
 
-#: periodictablewindow.cpp:54
+#: periodictablewindow.cpp:64
 msgid "Open"
 msgstr "Öffnen"
 
@@ -191,13 +195,17 @@ msgstr "Summenformel:"
 msgid "Oxidation States"
 msgstr "Oxidationsstufen"
 
-#: periodictablewindow.cpp:190
+#: periodictablewindow.cpp:246
 msgid "Periodic Table and Molecular Formula for Chemists"
 msgstr "Periodensystem und Summenformel für Chemiker"
 
 #: molecularformula.h:40
 msgid "Place holder, no error"
 msgstr "Platzhalter, keine Fehlerart"
+
+#: periodictablewindow.cpp:42
+msgid "Snapshot"
+msgstr "Schnappschuss"
 
 #: elementproperty.h:79
 msgid "Source URL"
@@ -223,9 +231,9 @@ msgstr "Zu viele Bindungszeichen"
 msgid "Unexpected response!"
 msgstr "Antwort so nicht erwartet"
 
-#: periodictablewindow.cpp:190
-msgid "Version 1.5.2"
-msgstr "Version 1.5.2"
+#: periodictablewindow.cpp:244
+msgid "Version 1.5.4"
+msgstr "Version 1.5.4"
 
 #: elementproperty.h:78
 msgid "Year of Discovery"
@@ -235,11 +243,11 @@ msgstr "Jahr der Entdeckung"
 msgid "cpkHexColor"
 msgstr "cpkHexFarbe"
 
-#: periodictablewindow.cpp:228
+#: periodictablewindow.cpp:257
 msgid "gtkmm Website - C++ Interfaces for GTK+ and GNOME"
 msgstr ""
 
-#: periodictablewindow.cpp:164
+#: periodictablewindow.cpp:193
 msgid "legend-EN-456x144.svg"
 msgstr "legend-DE-456x144.svg"
 
@@ -250,3 +258,7 @@ msgstr "siehe <a href=\""
 #: elementproperty.h:68
 msgid "van der Waals Radius [pm]"
 msgstr ""
+
+#: periodictablewindow.cpp:172
+msgid "··· Periodic Table of the Elements ···"
+msgstr "··· Periodensystem der Elemente ···"

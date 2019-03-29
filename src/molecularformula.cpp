@@ -16,7 +16,7 @@
 //  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 //  File:   molecularformula.cpp
-//          Summenformel V 1.5.2
+//          Summenformel V 1.5.4
 //       1993 initially command line version
 // 15.12.1993 Englische Version mit defines
 // 20.03.1995 V 1.3.3  Eingabepuffer größer
