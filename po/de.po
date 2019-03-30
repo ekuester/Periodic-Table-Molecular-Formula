@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GTKPeriodicTable 1.5.2\n"
+"Project-Id-Version: GTKPeriodicTable 1.5.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-23 15:21+0100\n"
-"PO-Revision-Date: 2019-03-19 13:32+0100\n"
+"PO-Revision-Date: 2019-03-30 11:54+0100\n"
 "Last-Translator: Erich Küster <erich.kuester@arcor.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -47,7 +47,7 @@ msgstr "Bindungstyp"
 msgid "COMMENTS"
 msgstr "KOMMENTARE"
 
-#: periodictablewindow.cpp:52
+#: periodictablewindow.cpp:72
 msgid "Calc"
 msgstr "Rechner"
 
@@ -92,8 +92,8 @@ msgid "Element symbol expected"
 msgstr "Elementsymbol erwartet"
 
 #: periodictablewindow.cpp:262
-msgid "Erich Küster, Krefeld/Germany"
-msgstr "Erich Küster, Krefeld/Deutschland"
+msgid "Erich Küster, Krefeld / Germany"
+msgstr "Erich Küster, Krefeld / Deutschland"
 
 #: molecularformula.cpp:133
 msgid "Error: Check input"
@@ -119,7 +119,7 @@ msgstr "Gtk+: Anwendung - Elementeigenschaften"
 msgid "Gtk+: Calculator - Molecular Formula"
 msgstr "Gtk+: Rechner - Summenformel"
 
-#: periodictablewindow.cpp:15
+#: periodictablewindow.cpp:30
 msgid "Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight"
 msgstr "Gtk+: Anwendung für die Chemie - PeriodenSystem · Elementeigenschaften · Molekulargewicht"
 
@@ -127,7 +127,7 @@ msgstr "Gtk+: Anwendung für die Chemie - PeriodenSystem · Elementeigenschaften
 msgid "Help"
 msgstr "Hilfe"
 
-#: periodictablewindow.cpp:208
+#: periodictablewindow.cpp:261
 msgid "IUPAC, International Union of Pure and Applied Chemistry"
 msgstr "IUPAC, Internationale Union für reine und angewandte Chemie"
 
@@ -147,7 +147,7 @@ msgstr "Ionenradius [pm]"
 msgid "Ionization Energy"
 msgstr "Ionisierungsenergie"
 
-#: periodictablewindow.cpp:191
+#: periodictablewindow.cpp:247
 msgid "LICENSE"
 msgstr "Lizenz"
 
@@ -219,7 +219,7 @@ msgstr "Zustand @RT"
 msgid "Symbol"
 msgstr "Symbol"
 
-#: periodictablewindow.cpp:42
+#: periodictablewindow.cpp:59
 msgid "Table"
 msgstr "Tabelle"
 
@@ -227,7 +227,7 @@ msgstr "Tabelle"
 msgid "Too many bond signs"
 msgstr "Zu viele Bindungszeichen"
 
-#: periodictablewindow.cpp:255
+#: periodictablewindow.cpp:339
 msgid "Unexpected response!"
 msgstr "Antwort so nicht erwartet"
 
