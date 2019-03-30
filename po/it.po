@@ -228,6 +228,7 @@ msgid "Too many bond signs"
 msgstr "Troppe legature"
 
 #: periodictablewindow.cpp:339
+msgid "Unexpected response!"
 msgstr "Risposta non cosi attesa!"
 
 #: periodictablewindow.cpp:190
