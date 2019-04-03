@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GTKPeriodicTable 1.5.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-23 15:21+0100\n"
-"PO-Revision-Date: 2019-03-30 11:54+0100\n"
+"PO-Revision-Date: 2019-04-03 21:39+0100\n"
 "Last-Translator: Erich Küster <erich.kuester@arcor.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -21,11 +21,15 @@ msgstr ""
 
 #: molecularformula.cpp:56
 msgid " Elementary Analysis:"
-msgstr "Elementaranalyse"
+msgstr " Elementaranalyse"
 
 #: elementproperty.cpp:89
 msgid "\">Wikipedia</a> article"
 msgstr "\">Wikipedia</a> Artikel"
+
+#: periodictablewindow.cpp:98
+msgid "About"
+msgstr "Über"
 
 #: elementproperty.h:66
 msgid "Atomic Radius [pm]"
@@ -135,10 +139,6 @@ msgstr "IUPAC, Internationale Union für reine und angewandte Chemie"
 msgid "Index 0 not allowed"
 msgstr "Index 0 nicht erlaubt"
 
-#: periodictablewindow.cpp:85
-msgid "Info"
-msgstr "Über"
-
 #: elementproperty.h:67
 msgid "Ion Radius [pm]"
 msgstr "Ionenradius [pm]"
@@ -195,6 +195,10 @@ msgstr "Summenformel:"
 msgid "Oxidation States"
 msgstr "Oxidationsstufen"
 
+#: periodictablewindow.cpp:65
+msgid "Page Setup"
+msgstr "Seite einrichten"
+
 #: periodictablewindow.cpp:246
 msgid "Periodic Table and Molecular Formula for Chemists"
 msgstr "Periodensystem und Summenformel für Chemiker"
@@ -202,6 +206,14 @@ msgstr "Periodensystem und Summenformel für Chemiker"
 #: molecularformula.h:40
 msgid "Place holder, no error"
 msgstr "Platzhalter, keine Fehlerart"
+
+#: periodictablewindow.cpp:68
+msgid "Print Preview"
+msgstr "Druckvorschau"
+
+#: periodictablewindow.cpp:71
+msgid "Print..."
+msgstr "Drucken..."
 
 #: periodictablewindow.cpp:42
 msgid "Snapshot"

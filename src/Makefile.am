@@ -9,7 +9,8 @@ elementschema.h elementschema.cpp \
 formulaparser.h formulaparser.cpp \
 main.cpp \
 molecularformula.h molecularformula.cpp \
-periodictablewindow.h periodictablewindow.cpp
+periodictablewindow.h periodictablewindow.cpp \
+printformoperation.h printformoperation.cpp
 
 GTKPeriodicTable_CPPFLAGS = $(GTKMM_CFLAGS) $(CAIRO_CFLAGS) \
 -DPROGRAMNAME_LOCALEDIR=\"$(PROGRAMNAME_LOCALEDIR)\" \

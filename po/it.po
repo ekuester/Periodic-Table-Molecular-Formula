@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GTKPeriodicTable 1.5.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-23 15:21+0100\n"
-"PO-Revision-Date: 2019-03-30 11:56+0100\n"
+"PO-Revision-Date: 2019-04-03 21:40+0100\n"
 "Last-Translator: Erich Küster <erich.kuester@arcor.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it\n"
@@ -21,11 +21,15 @@ msgstr ""
 
 #: molecularformula.cpp:56
 msgid " Elementary Analysis:"
-msgstr "Analysi elementare"
+msgstr " Analysi elementare"
 
 #: elementproperty.cpp:89
 msgid "\">Wikipedia</a> article"
 msgstr "\">Wikipedia</a> articolo"
+
+#: periodictablewindow.cpp:98
+msgid "About"
+msgstr "Informazioni"
 
 #: elementproperty.h:66
 msgid "Atomic Radius [pm]"
@@ -101,7 +105,7 @@ msgstr "Errore: Controlla la richiesta"
 
 #: periodictablewindow.cpp:63
 msgid "Exit"
-msgstr "Abbandona"
+msgstr "Esci"
 
 #: molecularformula.cpp:52
 msgid "Formula:"
@@ -134,10 +138,6 @@ msgstr "IUPAC, Unione internazionale per la chimica pura e applicata"
 #: molecularformula.h:48
 msgid "Index 0 not allowed"
 msgstr "Indice 0 non permesso"
-
-#: periodictablewindow.cpp:85
-msgid "Info"
-msgstr "Info"
 
 #: elementproperty.h:67
 msgid "Ion Radius [pm]"
@@ -195,6 +195,10 @@ msgstr "Formula molecolare:"
 msgid "Oxidation States"
 msgstr "Stati di ossidazione"
 
+#: periodictablewindow.cpp:65
+msgid "Page Setup"
+msgstr "Impostazione Pagina"
+
 #: periodictablewindow.cpp:190
 msgid "Periodic Table and Molecular Formula for Chemists"
 msgstr "Tavola periodica e formula molecolare per chimici"
@@ -203,9 +207,17 @@ msgstr "Tavola periodica e formula molecolare per chimici"
 msgid "Place holder, no error"
 msgstr "Posto vuoto, nessun errore"
 
+#: periodictablewindow.cpp:68
+msgid "Print Preview"
+msgstr "Anteprima di stampa"
+
+#: periodictablewindow.cpp:71
+msgid "Print..."
+msgstr "Stampa..."
+
 #: periodictablewindow.cpp:42
 msgid "Snapshot"
-msgstr "fa scatto"
+msgstr "Fa Scatto"
 
 #: elementproperty.h:79
 msgid "Source URL"

@@ -25,6 +25,8 @@
 
 #include "periodictablewindow.h"
 #include "about.xpm"
+#include "gtkmm-2.4/gtkmm/enums.h"
+#include "gtkmm-2.4/gtkmm/widget.h"
 
 const char* app_title \
 = N_("Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight");
@@ -37,7 +39,10 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
   m_MenuBar(),
   s_MenuTable(),
   //s_MenuItemLine(),
-  s_MenuItemSnapshot(),
+  s_MenuItemPageSetup(),
+  s_MenuItemPrintPreview(),
+  s_MenuItemPrint(),
+  s_MenuItemLine(),
   s_MenuItemQuit(),
   s_MenuCalc(),
   s_MenuItemOpen(),
@@ -51,20 +56,28 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
   m_PropertyWindow()
 {
     //Set up window and the top-level container:
-    set_title(_(app_title));
     set_default_size(1072, 596);
+    set_title(_(app_title));
     m_FormulaWindow.signal_hide().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_menu_calc_close));
     // menu "Table"
     m_MenuTable = Gtk::MenuItem(_("Table"));
-    s_MenuItemSnapshot.add_pixlabel("16x16/camera-snapshot.png", _("Snapshot"), Gtk::Align::ALIGN_START);
-    s_MenuItemSnapshot.signal_activate().connect(sigc::mem_fun(*this,\
-        &PeriodicTableWindow::on_menu_table_snapshot));
+    s_MenuItemPageSetup.add_pixlabel("16x16/document-page-setup.png", _("Page Setup"), Gtk::Align::ALIGN_START);
+    s_MenuItemPageSetup.signal_activate().connect(sigc::mem_fun(*this,\
+        &PeriodicTableWindow::on_menu_table_page_setup));
+    s_MenuItemPrintPreview.add_pixlabel("16x16/document-print-preview.png", _("Print Preview"), Gtk::Align::ALIGN_START);
+    s_MenuItemPrintPreview.signal_activate().connect(sigc::mem_fun(*this,\
+        &PeriodicTableWindow::on_menu_table_print_preview));
+    s_MenuItemPrint.add_pixlabel("16x16/document-print.png", _("Print..."), Gtk::Align::ALIGN_START);
+    s_MenuItemPrint.signal_activate().connect(sigc::mem_fun(*this,\
+        &PeriodicTableWindow::on_menu_table_print));
     s_MenuItemQuit.add_pixlabel("16x16/application-exit.png", _("Exit"), Gtk::Align::ALIGN_START);
     s_MenuItemQuit.signal_activate().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_menu_table_quit));
-    //s_MenuTable.append(s_MenuItemLine);
-    s_MenuTable.append(s_MenuItemSnapshot);
+    s_MenuTable.append(s_MenuItemPageSetup);
+    s_MenuTable.append(s_MenuItemPrintPreview);
+    s_MenuTable.append(s_MenuItemPrint);
+    s_MenuTable.append(s_MenuItemLine);
     s_MenuTable.append(s_MenuItemQuit);
 
     m_MenuTable.set_submenu(s_MenuTable);
@@ -82,7 +95,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     s_MenuCalc.append(s_MenuItemClose);
     // menu "Help"
     m_MenuHelp = Gtk::MenuItem(_("Help"));
-    s_MenuItemAbout.add_pixlabel("16x16/help-about.png", _("Info"), Gtk::Align::ALIGN_START);
+    s_MenuItemAbout.add_pixlabel("16x16/help-about.png", _("About"), Gtk::Align::ALIGN_START);
     s_MenuItemAbout.signal_activate().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_menu_help_about));
     s_MenuHelp.append(s_MenuItemAbout);
@@ -173,10 +186,10 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     title_text << "</span>";
                     // empty space for title
                     Gtk::Label* title = Gtk::manage(new Gtk::Label());
-                    title->set_size_request(864, 32);
+                    title->set_size_request(480, 32);
                     title->set_justify(Gtk::Justification::JUSTIFY_CENTER);
                     title->set_markup(title_text.str());
-                    m_Grid.attach(*title, g, p, 18, 1); // column g, row p
+                    m_Grid.attach(*title, 2, p, 10, 1); // column g, row p
                     g++;
                     break;
                 }
@@ -259,12 +272,14 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     std::vector<Glib::ustring> list_authors;
     list_authors.push_back(_("Dmitri Ivanovich Mendeleev, Saint Petersburg/Russia, 6 March 1869"));
     list_authors.push_back(_("IUPAC, International Union of Pure and Applied Chemistry"));
-    list_authors.push_back(_("Erich Küster, Krefeld / Germany"));
+    list_authors.push_back("Erich Küster, Krefeld/Germany");
     m_Dialog.set_authors(list_authors);
 
     m_Dialog.signal_response().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_about_dialog_response));
-    
+    // no background color
+    m_OffscreenWindow.set_app_paintable(true);
+    m_OffscreenWindow.set_decorated(false);
     m_OffscreenWindow.signal_damage_event().connect(sigc::mem_fun(*this,
         &PeriodicTableWindow::on_offscreen_window_damage_event));
 
@@ -280,11 +295,10 @@ bool PeriodicTableWindow::on_button_query_tooltip(int, int, bool, const Glib::Re
     return true;
 }
 
-bool PeriodicTableWindow::on_offscreen_window_damage_event(GdkEventExpose *event) {   
+bool PeriodicTableWindow::on_offscreen_window_damage_event(GdkEventExpose *event) {
     if (is_first_pass) {
-        Glib::RefPtr<Gdk::Pixbuf> osw_pixbuf = m_OffscreenWindow.get_pixbuf()->copy();
-        osw_pixbuf->save(_("PeriodicTable.png"), "png");
-       // allow only one pass, otherwise an empty OffscreenWindow is stored
+        m_refTablePixbuf = m_OffscreenWindow.get_pixbuf()->copy();
+        // allow only one pass, otherwise an empty OffscreenWindow is stored
         is_first_pass = false;
         m_VBox.reparent(*m_parent);
         m_VBox.remove(m_Grid);
@@ -293,17 +307,6 @@ bool PeriodicTableWindow::on_offscreen_window_damage_event(GdkEventExpose *event
         m_VBox.pack_start(m_TableWindow);
     }
     return true;
-}
-
-void PeriodicTableWindow::on_menu_table_snapshot() {
-    is_first_pass = true;
-    m_VBox.remove(m_MenuBar);
-    m_VBox.remove(m_TableWindow);
-    m_TableWindow.remove();
-    m_VBox.pack_start(m_Grid);
-    m_parent = m_VBox.get_parent();
-    m_VBox.reparent(m_OffscreenWindow);
-    m_OffscreenWindow.show();
 }
 
 void PeriodicTableWindow::on_menu_table_quit() {
@@ -339,4 +342,128 @@ void PeriodicTableWindow::on_about_dialog_response(int response_id) {
             std::cout << _("Unexpected response!") << std::endl;
             break;
     }
+}
+
+void PeriodicTableWindow::on_printoperation_status_changed()
+{
+    Glib::ustring status_msg;
+
+    if (m_refPrintFormOperation->is_finished())
+    {
+        status_msg = "Print job completed.";
+    }
+    else
+    {
+        //You could also use get_status().
+        status_msg = m_refPrintFormOperation->get_status_string();
+    }
+//    no status bar in the moment
+//    m_ContextId = m_Statusbar.push(status_msg, m_ContextId);
+	std::cout << status_msg << std::endl;
+}
+
+void PeriodicTableWindow::on_printoperation_done(Gtk::PrintOperationResult result)
+{
+    //Printing is "done" when the print data is spooled.
+    if (result == Gtk::PRINT_OPERATION_RESULT_ERROR)
+    {
+        Gtk::MessageDialog err_dialog(*this, "Error printing form", false,
+            Gtk::MESSAGE_ERROR, Gtk::BUTTONS_OK, true);
+        err_dialog.run();
+    }
+    else if (result == Gtk::PRINT_OPERATION_RESULT_APPLY)
+    {
+        //Update PrintSettings with the ones used in this PrintOperation:
+        m_refSettings = m_refPrintFormOperation->get_print_settings();
+    }
+
+    if (!m_refPrintFormOperation->is_finished())
+    {
+        //We will connect to the status-changed signal to track status
+        //and update a status bar. In addition, you can, for example,
+        //keep a list of active print operations, or provide a progress dialog.
+        m_refPrintFormOperation->signal_status_changed().connect(sigc::mem_fun(*this,
+                &PeriodicTableWindow::on_printoperation_status_changed));
+    }
+}
+
+void PeriodicTableWindow::page_settings_setup() {
+    //Create a new PrintOperation with PageSetup and PrintSettings:
+    if (!m_refPageSetup) {
+        m_refPageSetup = Gtk::PageSetup::create();
+        m_refPageSetup->set_orientation(Gtk::PAGE_ORIENTATION_LANDSCAPE);
+    }
+    if (!m_refSettings) {
+        m_refSettings = Gtk::PrintSettings::create();
+        // set landscape and 300 dpi in print settings
+        m_refSettings->set_orientation(Gtk::PAGE_ORIENTATION_LANDSCAPE);
+        m_refSettings->set_resolution(300);
+    }
+}
+
+void PeriodicTableWindow::print_or_preview(Gtk::PrintOperationAction print_action) {
+    page_settings_setup();
+    m_refPrintFormOperation = PrintFormOperation::create();
+    m_refPrintFormOperation->set_default_page_setup(m_refPageSetup);
+    // if using PRINT_OPERATION_ACTION_EXPORT
+    m_refPrintFormOperation->set_export_filename("PeriodicTable.pdf");
+    // only one page should be printed
+    m_refPrintFormOperation->set_n_pages(1);
+    // pixel buffer to print
+    m_refPrintFormOperation->set_pixbuf(m_refTablePixbuf);
+    m_refPrintFormOperation->set_print_settings(m_refSettings);
+    m_refPrintFormOperation->set_track_print_status();
+    m_refPrintFormOperation->set_use_full_page(true);
+    m_refPrintFormOperation->signal_done().connect(sigc::mem_fun(*this,
+            &PeriodicTableWindow::on_printoperation_done));
+    try {
+        // run preview or print
+        m_refPrintFormOperation->run(print_action, *this);
+    } catch (const Gtk::PrintError& ex) {
+        //See documentation for exact Gtk::PrintError error codes.
+        std::cerr << "An error occurred while trying to run a print operation:"
+                << ex.what() << std::endl;
+    }
+}
+
+void PeriodicTableWindow::on_menu_table_page_setup() {
+    page_settings_setup();
+    //Show the page setup dialog, asking it to start with the existing settings:
+    auto new_page_setup =
+            Gtk::run_page_setup_dialog(*this, m_refPageSetup, m_refSettings);
+
+    //Save the chosen page setup dialog for use when printing, previewing, or
+    //showing the page setup dialog again:
+    m_refPageSetup = new_page_setup;
+}
+
+void PeriodicTableWindow::trigger_table_snapshot() {
+    is_first_pass = true;
+    m_VBox.remove(m_MenuBar);
+    m_VBox.remove(m_TableWindow);
+    m_TableWindow.remove();
+    m_VBox.pack_start(m_Grid);
+    m_parent = m_VBox.get_parent();
+    m_VBox.reparent(m_OffscreenWindow);
+    m_OffscreenWindow.show();
+    // must wait as long as events are pending otherwise program crashes
+    while (Gtk::Main::events_pending()) {
+        Gtk::Main::iteration(true);
+    }
+}
+
+// not implemented yet
+void PeriodicTableWindow::on_menu_table_print_export() {
+    trigger_table_snapshot();
+    print_or_preview(Gtk::PRINT_OPERATION_ACTION_EXPORT);
+}
+
+void PeriodicTableWindow::on_menu_table_print_preview() {
+    trigger_table_snapshot();
+    print_or_preview(Gtk::PRINT_OPERATION_ACTION_PREVIEW);
+}
+
+void PeriodicTableWindow::on_menu_table_print() {
+    trigger_table_snapshot();
+    print_or_preview(Gtk::PRINT_OPERATION_ACTION_PRINT_DIALOG);
 }

@@ -39,6 +39,7 @@
 #include "elementschema.h"
 #include "formulaparser.h"
 #include "molecularformula.h"
+#include "printformoperation.h"
 
 class ElementProperty;
 class ElementSchema;
@@ -56,16 +57,31 @@ public:
 
 protected:
     //Methods:
+    void print_or_preview(Gtk::PrintOperationAction print_action);
 
     //Signal handlers:
     void on_about_dialog_response(int response_id);
     bool on_button_query_tooltip(int x, int y, bool keyboard_tooltip, const Glib::RefPtr<Gtk::Tooltip>& tooltip);
     bool on_offscreen_window_damage_event(GdkEventExpose *event);
-    void on_menu_table_snapshot();
+    void trigger_table_snapshot();
+    void on_menu_table_page_setup();
+    void on_menu_table_print_export();
+    void on_menu_table_print_preview();
+    void on_menu_table_print();
     void on_menu_table_quit();
     void on_menu_calc_open();
     void on_menu_calc_close();
     void on_menu_help_about();
+
+    void page_settings_setup();
+    void on_printoperation_status_changed();
+    void on_printoperation_done(Gtk::PrintOperationResult result);
+
+   //Printing-related objects
+    Glib::RefPtr<Gdk::Pixbuf> m_refTablePixbuf;
+    Glib::RefPtr<Gtk::PageSetup> m_refPageSetup;
+    Glib::RefPtr<Gtk::PrintSettings> m_refSettings;
+    Glib::RefPtr<PrintFormOperation> m_refPrintFormOperation;
 
     // Containers
     Gtk::OffscreenWindow m_OffscreenWindow;
@@ -75,8 +91,10 @@ protected:
     Gtk::Box m_HBox;
     Gtk::MenuBar m_MenuBar;
     Gtk::MenuItem m_MenuTable;
-    Gtk::MenuItem s_MenuItemSnapshot;
-    //Gtk::SeparatorMenuItem s_MenuItemLine;
+    Gtk::MenuItem s_MenuItemPageSetup;
+    Gtk::MenuItem s_MenuItemPrintPreview;
+    Gtk::MenuItem s_MenuItemPrint;
+    Gtk::SeparatorMenuItem s_MenuItemLine;
     Gtk::MenuItem s_MenuItemQuit;
     Gtk::Menu s_MenuTable;
     Gtk::MenuItem m_MenuCalc;

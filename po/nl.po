@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GTKPeriodicTable 1.5.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-23 15:21+0100\n"
-"PO-Revision-Date: 2019-03-30 12:18+0100\n"
+"PO-Revision-Date: 2019-04-03 21:41+0100\n"
 "Last-Translator: Erich Küster <erich.kuester@arcor.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nl\n"
@@ -21,11 +21,15 @@ msgstr ""
 
 #: molecularformula.cpp:56
 msgid " Elementary Analysis:"
-msgstr "Elementar-analyse"
+msgstr " Elementar-analyse"
 
 #: elementproperty.cpp:89
 msgid "\">Wikipedia</a> article"
 msgstr "\">Wikipedia</a> artikel"
+
+#: periodictablewindow.cpp:98
+msgid "About"
+msgstr "Erover"
 
 #: elementproperty.h:66
 msgid "Atomic Radius [pm]"
@@ -101,7 +105,7 @@ msgstr "Fout: controleer invoer"
 
 #: periodictablewindow.cpp:63
 msgid "Exit"
-msgstr "Verlaten"
+msgstr "Afsluiten"
 
 #: molecularformula.cpp:52
 msgid "Formula:"
@@ -134,10 +138,6 @@ msgstr "IUPAC, Internationale Unie voor Zuivere en Toegepaste Scheikunde"
 #: molecularformula.h:48
 msgid "Index 0 not allowed"
 msgstr "Index 0 niet veroorlofd"
-
-#: periodictablewindow.cpp:85
-msgid "Info"
-msgstr "Erover"
 
 #: elementproperty.h:67
 msgid "Ion Radius [pm]"
@@ -195,6 +195,10 @@ msgstr "Somformule:"
 msgid "Oxidation States"
 msgstr "Oxidatietoestanden"
 
+#: periodictablewindow.cpp:65
+msgid "Page Setup"
+msgstr "Pagina-instellingen"
+
 #: periodictablewindow.cpp:190
 msgid "Periodic Table and Molecular Formula for Chemists"
 msgstr "Periodiek Systeem en Molecuulformule voor Scheikundige"
@@ -202,6 +206,14 @@ msgstr "Periodiek Systeem en Molecuulformule voor Scheikundige"
 #: molecularformula.h:40
 msgid "Place holder, no error"
 msgstr "Plaatshouder, geen fout"
+
+#: periodictablewindow.cpp:68
+msgid "Print Preview"
+msgstr "Afdrukvoorbeeld"
+
+#: periodictablewindow.cpp:71
+msgid "Print..."
+msgstr "Afdrukken..."
 
 #: periodictablewindow.cpp:42
 msgid "Snapshot"
