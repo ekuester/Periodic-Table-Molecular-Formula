@@ -1,12 +1,12 @@
-# Translations for GTKPeriodicTable, dutch version.
+# Translations for Periodic-Table-Molecular-Formula, dutch version.
 # Copyright (C) 2018 Erich Küster
-# This file is distributed under the same license as the GTKPeriodicTable package.
+# This file is distributed under the same license as the Periodic-Table-Molecular-Formula package.
 # Erich Küster <erich.kuester@arcor.de>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GTKPeriodicTable 1.5.4\n"
+"Project-Id-Version: Periodic-Table-Molecular-Formula 1.5.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-23 15:21+0100\n"
 "PO-Revision-Date: 2019-04-03 21:41+0100\n"
