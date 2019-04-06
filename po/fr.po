@@ -121,7 +121,7 @@ msgstr "Gtk+: Calculatrice - Formule Moléculaire"
 #: periodictablewindow.cpp:32
 msgid ""
 "Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight"
-msgstr "Application de la chimie · Tableau périodique · "
+msgstr "Gtk+: Application de la chimie · Tableau périodique · Propriétés de l'élément · Masse moleculaire"
 
 #: periodictablewindow.cpp:97
 msgid "Help"
@@ -260,5 +260,5 @@ msgid "van der Waals Radius [pm]"
 msgstr "Rayon de van der Waals [pm]"
 
 #: periodictablewindow.cpp:185
-msgid "··· Tableau périodique des éléments ···"
-msgstr ""
+msgid "··· Periodic Table of the Elements ···"
+msgstr "··· Tableau périodique des éléments ···"

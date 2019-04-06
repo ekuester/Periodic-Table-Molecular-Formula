@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="456"
+   width="464"
    height="144"
-   viewBox="0 0 456 144"
+   viewBox="0 0 464 144"
    version="1.1"
    id="svg970"
    inkscape:version="0.92.4 (unknown)"
-   sodipodi:docname="legend-IT-456x144.svg">
+   sodipodi:docname="legend-FR-456x144.svg">
   <defs
      id="defs964" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="329.46429"
-     inkscape:cy="81.786797"
+     inkscape:zoom="3.959798"
+     inkscape:cx="157.29545"
+     inkscape:cy="88.945425"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -71,7 +71,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -96,7 +96,7 @@
        y="289.33188">
       <tspan
          id="tspan890"
-         style="font-size:9.33333302px;stroke-width:0.75000042">gruppo</tspan>
+         style="font-size:9.33333302px;stroke-width:0.75000042">groupe</tspan>
     </text>
     <rect
        id="LegBoxRand-9"
@@ -145,17 +145,17 @@
        inkscape:connector-curvature="0"
        style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:1.5271132;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none"
-       height="142.36761"
-       width="454.4729"
-       y="248.68457"
-       x="0.81655663"
+       style="font-size:12px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:1.54040122;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none"
+       height="142.35432"
+       width="462.45959"
+       y="248.69121"
+       x="0.82320064"
        id="LegHintergrund" />
     <text
        id="text1517"
        style="font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
        x="57.288593"
-       y="322.03677">symbolo</text>
+       y="322.03677">symbole</text>
     <text
        id="text1529"
        style="font-size:9px;font-family:'Liberation Sans', sans-serif;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
@@ -163,7 +163,7 @@
        x="127.49472">
       <tspan
          style="font-size:10.66666698px"
-         id="tspan1794">Ordinale</tspan>
+         id="tspan1794">Ordinal</tspan>
     </text>
     <line
        id="line1531"
@@ -188,12 +188,12 @@
          id="tspan9444"
          x="139.66733"
          y="283.14401"
-         style="font-size:10.66666698px;stroke-width:0.74999994">nero = non radioattivo</tspan>
+         style="font-size:10.66666698px;stroke-width:0.74999994">noir = non radioactif</tspan>
     </text>
     <text
        id="text1543"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#00aa00;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="133.89296"
+       x="139.89296"
        y="294.92978">
       <!--
 				-->
@@ -204,9 +204,9 @@
       <tspan
          sodipodi:role="line"
          id="tspan9442"
-         x="133.89296"
+         x="139.89296"
          y="294.92978"
-         style="font-size:10.66666698px;stroke-width:0.74999994">verde = radioattivo</tspan>
+         style="font-size:10.66666698px;stroke-width:0.74999994">vert = radioactif</tspan>
     </text>
     <text
        id="text1546"
@@ -215,7 +215,7 @@
        x="127.51555">
       <tspan
          style="font-size:10.66666698px"
-         id="tspan1796">Symbolo</tspan>
+         id="tspan1796">Symbole</tspan>
     </text>
     <line
        id="line1548"
@@ -240,12 +240,12 @@
          id="tspan9463"
          x="139.25008"
          y="331.35834"
-         style="font-size:10.66666698px;stroke-width:0.74999994">nero = solido</tspan>
+         style="font-size:10.66666698px;stroke-width:0.74999994">noir = solide</tspan>
     </text>
     <text
        id="text1560"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="146.57152"
+       x="136.57152"
        y="342.31055">
       <!--
 				-->
@@ -256,14 +256,14 @@
       <tspan
          sodipodi:role="line"
          id="tspan9465"
-         x="146.57152"
+         x="136.57152"
          y="342.31055"
-         style="font-size:10.66666698px;stroke-width:0.74999994">blu = liquido</tspan>
+         style="font-size:10.66666698px;stroke-width:0.74999994">bleu = liquide</tspan>
     </text>
     <text
        id="text1566"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="134.42867"
+       x="129.29167"
        y="353.32263">
       <!--
 				-->
@@ -274,9 +274,9 @@
       <tspan
          sodipodi:role="line"
          id="tspan9467"
-         x="134.42867"
+         x="129.29167"
          y="353.32263"
-         style="font-size:10.66666698px;stroke-width:0.74999994">rosso = gas</tspan>
+         style="font-size:10.66666698px;stroke-width:0.74999994">rouge = gaz</tspan>
     </text>
     <text
        style="font-size:9px;font-family:'Liberation Sans', sans-serif;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
@@ -285,15 +285,15 @@
        x="259.46353">
       <tspan
          style="font-size:10.66666698px"
-         id="tspan1779">Gruppo</tspan>
+         id="tspan1779">Groupe</tspan>
     </text>
     <line
        id="line1571"
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.22491622;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.25257182;stroke-linecap:square"
        y2="271.28302"
-       x2="445.32111"
+       x2="453.87558"
        y1="271.28302"
-       x1="258.6019" />
+       x1="258.62982" />
     <rect
        style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#ff7f50;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
        id="SmallFarbe01"
@@ -335,85 +335,85 @@
        height="10"
        width="10"
        y="277.86874"
-       x="378" />
+       x="384" />
     <rect
        style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
        id="SmallFarbe07"
        height="10"
        width="10"
        y="290.86874"
-       x="378" />
+       x="384" />
     <rect
        style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#90ee90;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
        id="SmallFarbe08"
        height="10"
        width="10"
        y="303.86874"
-       x="378" />
+       x="384" />
     <rect
        style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#eee8aa;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
        id="SmallFarbe09"
        height="10"
        width="10"
        y="316.86874"
-       x="378" />
+       x="384" />
     <rect
        style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#e6e6fa;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
        id="SmallFarbe10"
        height="10"
        width="10"
        y="329.86874"
-       x="378" />
+       x="384" />
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1583"
        y="286.76459"
-       x="271.125">Metalli alkalini</text>
+       x="271.125">Métaux alcalins</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1585"
        y="299.51459"
-       x="271.12503">Metalli alcalino-terrosi</text>
+       x="271.12503">Métaux alcalino-terreux</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1587"
        y="313.29819"
-       x="271.125">Metalli di transizione</text>
+       x="271.125">Métaux de transition</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1589"
        y="325.76459"
-       x="271.12503">Lantanidi</text>
+       x="271.12503">Lantanides</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1591"
        y="338.76459"
-       x="271.97919">Attinidi</text>
+       x="271.97919">Actinides</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1593"
        y="286.76459"
-       x="390.625">Metalli</text>
+       x="396.625">Métaux</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1595"
        y="299.51459"
-       x="390.625">Metalloidi</text>
+       x="396.625">Metalloides</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1597"
        y="313.47858"
-       x="390.625">Non Metalli</text>
+       x="396.625">Non-métaux</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1599"
        y="326.15521"
-       x="391.47916">Alogeni</text>
+       x="396.625">Halogènes</text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
        id="text1601"
        y="338.6192"
-       x="390.96353">Gas nobili</text>
+       x="396.625">Gaz nobles</text>
     <text
        id="text1604"
        style="font-size:9px;font-family:'Liberation Sans', sans-serif;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
@@ -421,38 +421,38 @@
        x="259.97916">
       <tspan
          id="tspan1781"
-         style="font-size:10.66666698px">Area</tspan>
+         style="font-size:10.66666698px">Zone</tspan>
     </text>
     <line
        id="line1606"
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.22491622;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.25257182;stroke-linecap:square"
        y2="359.86902"
-       x2="445.32111"
+       x2="453.87558"
        y1="359.86902"
-       x1="258.6019" />
+       x1="258.62982" />
     <text
        id="text1612"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="274.80209"
+       x="288.80209"
        y="371.01221">
       <tspan
          sodipodi:role="line"
          id="tspan9426"
-         x="274.80209"
+         x="288.80209"
          y="371.01221"
-         style="font-size:10.66666698px;stroke-width:0.74999994">continuato = elemento naturale</tspan>
+         style="font-size:10.66666698px;stroke-width:0.74999994">continue = élément naturale</tspan>
     </text>
     <text
        id="text1618"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="270.88168"
+       x="284.88168"
        y="381.94315">
       <tspan
          sodipodi:role="line"
          id="tspan9428"
-         x="270.88168"
+         x="284.88168"
          y="381.94315"
-         style="font-size:10.66666698px;stroke-width:0.74999994">tratteggiata = elemento artificiale</tspan>
+         style="font-size:10.66666698px;stroke-width:0.74999994">hachurée = élément artificiel</tspan>
     </text>
     <text
        x="42.769547"
@@ -461,7 +461,7 @@
        id="text1488">
       <tspan
          id="tspan888"
-         style="font-size:13.33333969px;stroke-width:0.75000042">Legenda:</tspan>
+         style="font-size:13.33333969px;stroke-width:0.75000042">Légende:</tspan>
     </text>
     <line
        x1="12.75"
@@ -500,25 +500,25 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="19.419922"
+       x="17.419922"
        y="332.94019"
        id="text1017"><tspan
          sodipodi:role="line"
          id="tspan1015"
-         x="19.419922"
+         x="17.419922"
          y="332.94019"
-         style="font-size:9px">peso</tspan></text>
+         style="font-size:9px">poids</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="29.617676"
+       x="25.617676"
        y="340.61877"
        id="text1017-3"><tspan
          sodipodi:role="line"
          id="tspan1015-6"
-         x="29.617676"
+         x="25.617676"
          y="340.61877"
-         style="font-size:9px">atomico</tspan></text>
+         style="font-size:9px">atomique</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
