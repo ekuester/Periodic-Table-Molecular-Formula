@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 
-#: molecularformula.cpp:56
+#: molecularformula.cpp:66
 msgid " Elementary Analysis:"
 msgstr " Elementaranalyse"
 
-#: elementproperty.cpp:89
+#: elementproperty.cpp:107
 msgid "\">Wikipedia</a> article"
 msgstr "\">Wikipedia</a> Artikel"
 
@@ -31,11 +31,11 @@ msgstr "\">Wikipedia</a> Artikel"
 msgid "About"
 msgstr "Über"
 
-#: elementproperty.h:66
+#: elementproperty.h:80
 msgid "Atomic Radius [pm]"
 msgstr "Atomradius [pm]"
 
-#: elementproperty.h:75
+#: elementproperty.h:89
 msgid "Boiling Point [K]"
 msgstr "Siedepunkt [K]"
 
@@ -43,19 +43,19 @@ msgstr "Siedepunkt [K]"
 msgid "Bond sign misplaced here"
 msgstr "Bindungszeichen verkehrt plaziert"
 
-#: elementproperty.h:73
+#: elementproperty.h:87
 msgid "Bonding Type"
 msgstr "Bindungstyp"
 
-#: periodictablewindow.cpp:251
+#: periodictablewindow.cpp:264
 msgid "COMMENTS"
 msgstr "KOMMENTARE"
 
-#: periodictablewindow.cpp:72
+#: periodictablewindow.cpp:85
 msgid "Calc"
 msgstr "Rechner"
 
-#: periodictablewindow.cpp:77
+#: periodictablewindow.cpp:90
 msgid "Close"
 msgstr "Schliessen"
 
@@ -67,7 +67,7 @@ msgstr "Schliessende ) fehlt"
 msgid "Closing ] missing"
 msgstr "Schliessende ] fehlt"
 
-#: periodictablewindow.cpp:245
+#: periodictablewindow.cpp:258
 msgid "Copyright © 2018 Erich Küster. All rights reserved."
 msgstr "Copyright © 2018 Erich Küster. Alle Rechte vorbehalten."
 
@@ -76,8 +76,8 @@ msgid "Density [g/mL]"
 msgstr "Dichte [g/mL]"
 
 #: periodictablewindow.cpp:260
-msgid "Dmitri Ivanovich Mendeleev, Saint Petersburg/Russia, 6 March 1869"
-msgstr "Dmitri Iwanowitsch Mendelejew, Sankt Petersburg/Russland, 6. März 1869"
+msgid "Dmitri Ivanovich Mendeleev, Saint Petersburg / Russia, 6 March 1869"
+msgstr "Dmitri Iwanowitsch Mendelejew, Sankt Petersburg / Russland, 6. März 1869"
 
 #: elementproperty.h:70
 msgid "Electronaffinity"
@@ -244,8 +244,8 @@ msgid "Unexpected response!"
 msgstr "Antwort so nicht erwartet"
 
 #: periodictablewindow.cpp:244
-msgid "Version 1.5.4"
-msgstr "Version 1.5.4"
+msgid "Version 1.5.5"
+msgstr "Version 1.5.5"
 
 #: elementproperty.h:78
 msgid "Year of Discovery"
@@ -257,7 +257,7 @@ msgstr "cpkHexFarbe"
 
 #: periodictablewindow.cpp:257
 msgid "gtkmm Website - C++ Interfaces for GTK+ and GNOME"
-msgstr ""
+msgstr "gtkmm Webseite - C++ Interfaces for GTK+ and GNOME"
 
 #: periodictablewindow.cpp:193
 msgid "legend-EN-456x144.svg"

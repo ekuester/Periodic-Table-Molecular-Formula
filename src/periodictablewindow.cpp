@@ -254,7 +254,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     m_Dialog.set_transient_for(*this);
     m_Dialog.set_logo(Gdk::Pixbuf::create_from_xpm_data(about));
     m_Dialog.set_program_name(_(app_title));
-    m_Dialog.set_version(_("Version 1.5.2"));
+    m_Dialog.set_version(_("Version 1.6.0"));
     m_Dialog.set_copyright(_("Copyright © 2018 Erich Küster. All rights reserved."));
     m_Dialog.set_comments(_("Periodic Table and Molecular Formula for Chemists"));
     std::ifstream licenseFile("LICENSE");
@@ -270,7 +270,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     m_Dialog.set_website_label(_("gtkmm Website - C++ Interfaces for GTK+ and GNOME"));
 
     std::vector<Glib::ustring> list_authors;
-    list_authors.push_back(_("Dmitri Ivanovich Mendeleev, Saint Petersburg/Russia, 6 March 1869"));
+    list_authors.push_back(_("Dmitri Ivanovich Mendeleev, Saint Petersburg / Russia, 6 March 1869"));
     list_authors.push_back(_("IUPAC, International Union of Pure and Applied Chemistry"));
     list_authors.push_back("Erich Küster, Krefeld/Germany");
     m_Dialog.set_authors(list_authors);
