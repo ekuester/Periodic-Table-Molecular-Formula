@@ -203,7 +203,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     Gtk::Box *space = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL));
                     space->set_size_request(480, 144);
                     space->set_border_width(4);
-                    Gtk::Image *image = Gtk::manage(new Gtk::Image(_("legend-EN-456x144.svg")));
+                    Gtk::Image *image = Gtk::manage(new Gtk::Image(_("legend-EN-464x144.svg")));
                     space->pack_start(*image, Gtk::PackOptions::PACK_EXPAND_WIDGET);
                     m_Grid.attach(*space, g, p-1, 10, 3); // column g, row p
                     g += 10;
