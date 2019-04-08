@@ -260,8 +260,8 @@ msgid "gtkmm Website - C++ Interfaces for GTK+ and GNOME"
 msgstr "gtkmm Website - C++ Interfaces for GTK+ and GNOME"
 
 #: periodictablewindow.cpp:193
-msgid "legend-EN-456x144.svg"
-msgstr "legend-NL-456x144.svg"
+msgid "legend-EN-464x144.svg"
+msgstr "legend-NL-464x144.svg"
 
 #: elementproperty.cpp:88
 msgid "see <a href=\""

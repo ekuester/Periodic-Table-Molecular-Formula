@@ -22,7 +22,7 @@ make
 make install
 periodictable.sh
 ```
-will build and run the program for the current user. The Linux way of localization for the dutch/german/italian translation files is adapted.
+will build and run the program for the current user (replace username accordingly). The Linux way of localization for the dutch/french/german/italian translation files is adapted.
 
 Alternatively (but only as english version) you can easily compile and run the program in Terminal with the added shell script:
 ```
@@ -33,6 +33,7 @@ I wrote this program to become familiar with the C++ language, especially the GT
 Very interesting in GTK 3.0 is the mode of setting colors in widgets: First place to go is<br/>
 &nbsp; <https://developer.gnome.org/gtk3/stable/chap-css-overview.html><br/>
 It is essential to generate the necessary CSS data in the right syntax.<br/>
+Printing of the table is possible, you will learn to use an Gtk::OffscreenWindow for that.
 
 Usage:<br/>
 You will find the program mostly self explaining. On start you are confronted with the actual table of elements according with IUPAC (International Union of Pure and Applied Chemistry). Divergent from their nomenclature I choose the latinized element names, which clearly explain the origin of the chemical element symbols, mainly from<br/>
