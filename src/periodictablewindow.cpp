@@ -272,7 +272,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     std::vector<Glib::ustring> list_authors;
     list_authors.push_back(_("Dmitri Ivanovich Mendeleev, Saint Petersburg / Russia, 6 March 1869"));
     list_authors.push_back(_("IUPAC, International Union of Pure and Applied Chemistry"));
-    list_authors.push_back("Erich Küster, Krefeld/Germany");
+    list_authors.push_back(_("Erich Küster, Krefeld / Germany"));
     m_Dialog.set_authors(list_authors);
 
     m_Dialog.signal_response().connect(sigc::mem_fun(*this,\

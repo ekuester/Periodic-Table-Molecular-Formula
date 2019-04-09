@@ -94,6 +94,10 @@ msgstr ""
 msgid "Element symbol expected"
 msgstr ""
 
+#: periodictablewindow.cpp:275
+msgid "Erich Küster, Krefeld / Germany"
+msgstr ""
+
 #: molecularformula.cpp:143
 msgid "Error: Check input"
 msgstr ""

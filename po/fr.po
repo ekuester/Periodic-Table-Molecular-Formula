@@ -94,6 +94,10 @@ msgstr "Configuration électronique"
 msgid "Element symbol expected"
 msgstr "Symbole de l'élément attendue"
 
+#: periodictablewindow.cpp:275
+msgid "Erich Küster, Krefeld / Germany"
+msgstr "Erich Küster, Krefeld / Allemagne"
+
 #: molecularformula.cpp:143
 msgid "Error: Check input"
 msgstr "Erreur: Vérifier l'entrée"

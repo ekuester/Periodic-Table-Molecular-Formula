@@ -95,7 +95,7 @@ msgstr "Configurazione elettronica"
 msgid "Element symbol expected"
 msgstr "Simbolo di un elemento atteso"
 
-#: periodictablewindow.cpp:262
+#: periodictablewindow.cpp:275
 msgid "Erich Küster, Krefeld / Germany"
 msgstr "Erich Küster, Krefeld / Germania"
 

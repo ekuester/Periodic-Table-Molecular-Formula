@@ -95,7 +95,7 @@ msgstr "Elektronenkonfiguration"
 msgid "Element symbol expected"
 msgstr "Elementsymbol erwartet"
 
-#: periodictablewindow.cpp:262
+#: periodictablewindow.cpp:275
 msgid "Erich Küster, Krefeld / Germany"
 msgstr "Erich Küster, Krefeld / Deutschland"
 
