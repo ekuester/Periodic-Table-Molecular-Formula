@@ -15,7 +15,6 @@
  */
 
 #include "printformoperation.h"
-#include "gdkmm-2.4/gdkmm/pixbuf.h"
 
 PrintFormOperation::PrintFormOperation()
 {

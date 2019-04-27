@@ -20,13 +20,11 @@
 //  Created by Erich Kuester, Krefeld, Germany
 //    Copyright © 2014 - 2019 Erich Kuester.
 //          All rights reserved.
-//  Last changes on March 22, 2019
+//  Last changes on April 21, 2019 for version 1.6.2
  */
 
 #include "periodictablewindow.h"
 #include "about.xpm"
-#include "gtkmm-2.4/gtkmm/enums.h"
-#include "gtkmm-2.4/gtkmm/widget.h"
 
 const char* app_title \
 = N_("Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight");
@@ -56,7 +54,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
   m_PropertyWindow()
 {
     //Set up window and the top-level container:
-    set_default_size(1072, 596);
+    set_default_size(1048, 620);
     set_title(_(app_title));
     m_FormulaWindow.signal_hide().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_menu_calc_close));
@@ -115,15 +113,15 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
         int g = 0;
         for (auto group : period) {
             switch (group.first) {
-                case 1:
+                case 3:
                 {
                     auto element = elements[i];
                     std::stringstream text;
                     // use momentan valid locale
                     text.imbue(std::locale(""));
-                    int element_ordinal = i + 1;//element[0];
+                    int element_ordinal = i + 1;
                     double mass;
-                    stringstream massStream(element[3]);
+                    stringstream massStream(element[4]);
                     massStream >> mass; 
                     text << "<span ";
                     if (elements_radioactive.count(element_ordinal))
@@ -137,7 +135,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     if (elements_liquid.count(element_ordinal))
                         text << "foreground=\"blue\"";
                     text << "size=\"10800\" weight=\"bold\">";
-                    text << element[1] << "</span>" << std::endl;
+                    text << element[2] << "</span>" << std::endl;
                     // third line
                     text << "<span size=\"small\">";
                     text << std::setprecision(3) << std::fixed << mass;
@@ -151,6 +149,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     element_label->set_markup(text.str());
                     //Button:
                     Gtk::Button* element_button = Gtk::manage(new Gtk::Button());
+                    element_button->set_hexpand(Gtk::EXPAND);
                     element_button->set_size_request(48, 48);
                     std::string button_name = button_colors[group.second];
                     element_button->set_name(button_name);
@@ -163,7 +162,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     // will call set_has_tooltip() for us.
                     element_button->set_tooltip_window(*tooltip_window);
                     //Button's custom tooltip window:
-                    Gtk::Label* label = Gtk::manage(new Gtk::Label(element[2]));
+                    Gtk::Label* label = Gtk::manage(new Gtk::Label(element[0]));
                     label->get_style_context()->add_provider(\
                         m_LabelCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
                     label->show();
@@ -178,19 +177,46 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     i++;
                     break;
                 }
+                case 2: {
+                    // write number of group
+                    stringstream s;
+                    s << "<span weight=\"bold\">" << group.second << "</span>";
+                    Gtk::Label* g_l = Gtk::manage(new Gtk::Label(Glib::ustring()));
+                    g_l->set_markup(s.str());
+                    Gtk::Box *g_b = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+                    g_b->set_size_request(48,12);
+                    g_b->pack_end(*g_l, false, false, 4);
+                    m_Grid.attach(*g_b, g, p, 1, 1); // column g, row p
+                    g++;
+                    break;
+                }
+                case 1: {
+                    if (group.second > 0) {
+                        // write number of period
+                        stringstream s;
+                        s << "<span weight=\"bold\">" << group.second << "</span>";
+                        Gtk::Label* p_l = Gtk::manage(new Gtk::Label());
+                        p_l->set_markup(s.str());
+                        Gtk::Box *p_b = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL));
+                        p_b->set_size_request(8,48);
+                        p_b->pack_end(*p_l, false, false, 4);
+                        m_Grid.attach(*p_b, g, p, 1, 1);
+                    }
+                    g++;
+                    break;
+                }
                 case 0: {
                     // setup text for title
                     std::stringstream title_text;
                     title_text << "<span stretch=\"semiexpanded\" weight=\"bold\" size=\"18000\">";
-                    title_text << _("··· Periodic Table of the Elements ···");
+                    title_text << _("—  Periodic Table of the Elements  —");
                     title_text << "</span>";
                     // empty space for title
                     Gtk::Label* title = Gtk::manage(new Gtk::Label());
                     title->set_size_request(480, 32);
                     title->set_justify(Gtk::Justification::JUSTIFY_CENTER);
                     title->set_markup(title_text.str());
-                    m_Grid.attach(*title, 2, p, 10, 1); // column g, row p
-                    g++;
+                    m_Grid.attach(*title, 1, p, 18, 1);
                     break;
                 }
                 case -1: {
@@ -215,7 +241,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     break;
                 }
                 case -4: {
-                    // space for lanthanoides and actinoids
+                    // space for lanthanides and actinides
                     Gtk::Label* space = Gtk::manage(new Gtk::Label(Glib::ustring()));
                     space->set_size_request(48, 48);
                     m_Grid.attach(*space, g, p, 1, 1); // column g, row p
@@ -224,11 +250,10 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     break;
                 }
                 case -5: {
-                    // empty space before extra lanthanoids resp. actinoids period
+                    // empty space before extra lanthanides resp. actinides period
                     Gtk::Label* space = Gtk::manage(new Gtk::Label(Glib::ustring()));
                     space->set_size_request(48, 12);
                     m_Grid.attach(*space, g, p, 1, 1); // column g, row p
-                    g++;
                     break;
                 }
                 case -6: {
@@ -247,14 +272,15 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
         }
         p++;
     }
-    m_Grid.set_column_homogeneous(true);
+    m_Grid.set_column_homogeneous(false);
+    m_Grid.set_row_homogeneous(false);
     m_TableWindow.add(m_Grid);
     m_VBox.pack_start(m_TableWindow);
 
     m_Dialog.set_transient_for(*this);
     m_Dialog.set_logo(Gdk::Pixbuf::create_from_xpm_data(about));
     m_Dialog.set_program_name(_(app_title));
-    m_Dialog.set_version(_("Version 1.6.0"));
+    m_Dialog.set_version(_("Version 1.6.2"));
     m_Dialog.set_copyright(_("Copyright © 2018 Erich Küster. All rights reserved."));
     m_Dialog.set_comments(_("Periodic Table and Molecular Formula for Chemists"));
     std::ifstream licenseFile("LICENSE");

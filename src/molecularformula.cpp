@@ -145,8 +145,8 @@ int MolecularFormula::errorAlert(int messageNumber) {
         Gtk::MESSAGE_ERROR,\
         Gtk::BUTTONS_OK, // Gtk::BUTTONS_OK, Gtk::BUTTONS_NONE,
         true);
-	// intermediate step to translate the status message
-	const char* message = _(m_StatusMessages[messageNumber].data());
+    // intermediate step to translate the status message
+    const char* message = _(m_StatusMessages[messageNumber].data());
     dialog.set_secondary_text(message);
     return dialog.run();
 }
@@ -168,7 +168,7 @@ void MolecularFormula::on_activated() {
         // begin the formula parsing
         ElementSchema overallFormula = ElementSchema();
         FormulaParser* formulaParser = new FormulaParser(inputString);
-        std:vector<ElementSchema::FormulaItem> elementArray;
+        std::vector<ElementSchema::FormulaItem> elementArray;
         do {
             // run through at least once
             try {

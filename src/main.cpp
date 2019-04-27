@@ -4,6 +4,12 @@
 #include <gtkmm/application.h>
 #include "periodictablewindow.h"
 
+#ifndef NLS
+#define NLS 1
+#define PROGRAMNAME_LOCALEDIR "."
+#define GETTEXT_PACKAGE "GTKPeriodicTable"
+#endif
+
 int main(int argc, char *argv[])
 {
 #ifdef NLS

@@ -47,6 +47,8 @@ public:
 
 protected:
     int m_ElementIndex = -1;
+    std::string scheme = "https://";
+    std::string wikipedia = ".wikipedia.org/wiki/";
     // Subroutines
     // Signal Handlers
     void on_button_clicked(int advance);
@@ -70,6 +72,7 @@ protected:
 
 private:
     std::vector<const char*> property_names = {
+//        N_("Synonym"),
         N_("Ordinal"),
         N_("Symbol"),
         N_("Name"),
@@ -90,16 +93,16 @@ private:
         N_("Density [g/mL]"),
         N_("Group, Block"),
         N_("Year of Discovery"),
-        N_("Source URL")
+        N_("Further Information")
     };
 
     struct element {
+        Glib::ustring synonym;
         int ordinal;
-        string symbol;
+        std::string symbol;
         Glib::ustring name;
         double mass;
     };
 };
 
 #endif /* ELEMENTPROPERTYWINDOW_H */
-

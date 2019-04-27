@@ -24,10 +24,10 @@
 ElementSchema::ElementSchema() {
     for (auto element : elements) {
         double mass;
-        stringstream massStream(element[3]);
+        stringstream massStream(element[4]);
         massStream >> mass; 
-        FormulaItem formulaItem = {element[1], mass, 0};
-        formulaTable[element[1]] = formulaItem;
+        FormulaItem formulaItem = {element[2], mass, 0};
+        formulaTable[element[2]] = formulaItem;
     }
 }
 

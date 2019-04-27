@@ -41,6 +41,7 @@ ElementProperty::ElementProperty()
     set_border_width(4);
     set_default_size(392, 496);
     set_type_hint(Gdk::WindowTypeHint::WINDOW_TYPE_HINT_DIALOG);
+    // set position of window
     move(512, 64);
     m_VBox.pack_start(m_TitleLabel, Gtk::PackOptions::PACK_SHRINK);
     m_Grid.set_column_spacing(8);
@@ -68,10 +69,10 @@ ElementProperty::ElementProperty()
     int row = 0;
     for (auto name : property_names) {
         Gtk::Label* left = Gtk::manage(new Gtk::Label(_(name), Gtk::ALIGN_START));
-        left->set_hexpand_set(true);
+        left->set_hexpand(Gtk::EXPANDER_SEMI_EXPANDED);
         left->set_margin_right(8);
         left->set_margin_right(8);
-        left->set_vexpand(false);
+        left->set_vexpand(Gtk::EXPANDER_COLLAPSED);
         m_Grid.attach(*left, 0, row, 1, 1); // column 0, row row
         row++;
     }
@@ -83,6 +84,8 @@ ElementProperty::ElementProperty(const ElementProperty& orig) {
 ElementProperty::~ElementProperty() {
 }
 
+#define ELEMENT_NAME_INDEX 3
+#define ELEMENT_NAME_ROW 2
 void ElementProperty::on_element_clicked(int index) {
     // place to give more information about the specific element
     if (m_ElementIndex >= 0) {
@@ -92,26 +95,42 @@ void ElementProperty::on_element_clicked(int index) {
     m_ElementIndex = index;
     auto element = elements[index];
     stringstream title;
-    title << "<b>" << element[2] << "</b>";
+    title << "<b>" << element[0] << "</b>";
     m_TitleLabel.set_markup(title.str());
+    m_TitleLabel.set_margin_bottom(8);
+    auto element_name = std::string(_(element[ELEMENT_NAME_INDEX].data()));
+    stringstream url;
+    url << scheme << _("en") << wikipedia << element_name; 
+    stringstream wiki;
+    wiki << _("see <a href=\"") << url.str() << "\" title=\""
+        << url.str() << _("\">Wikipedia</a> article");
     int row = 0;
     // iterator over vector of strings
     auto value = element.begin();
-    while (value != element.end()) {
+    bool loop = true;
+    while (loop) {
+        value++;
         Gtk::Label* right = Gtk::manage(new Gtk::Label());
         right->set_alignment(Gtk::ALIGN_START);
-        auto markup = *value;
-        if (std::next(value) == element.end()) {
-            stringstream markup_url;
-            markup_url << _("see <a href=\"") << *value << "\" title=\""
-                << *value << _("\">Wikipedia</a> article");
-            markup = markup_url.str();
+        right->set_hexpand(Gtk::EXPANDER_SEMI_EXPANDED);
+        right->set_vexpand(Gtk::EXPANDER_COLLAPSED);
+        if (value != element.end()) {
+            if (!(*value).empty()) {
+                if (row == ELEMENT_NAME_ROW)
+                {
+                    // look for anomalies in element name
+                    auto pos = element_name.find('_');
+                    right->set_label(element_name.substr(0, pos));
+                } else {
+                    right->set_label(_((*value).data()));
+                }
+            }
+        } else {
+            right->set_markup(wiki.str());
+            loop = false;            
         }
-        right->set_markup(markup);
-        right->set_vexpand(false);
         m_Grid.attach(*right, 1, row, 1, 1); // column 1, row row
         row++;
-        value++;
     }
     add(m_VBox);
     show_all_children();
@@ -120,6 +139,7 @@ void ElementProperty::on_element_clicked(int index) {
 
 void ElementProperty::on_button_clicked(int advance) {
     int index = m_ElementIndex + advance;
-    if ((index >= 0) || (index < elements.size()))
+    if ((index >= 0) && (index < elements.size())) {
         on_element_clicked(index);
+    }
 }
