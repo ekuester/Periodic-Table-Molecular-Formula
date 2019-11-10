@@ -52,7 +52,7 @@
 //  renewed on September 27, 2018 at 18:36
 //  Copyright © 2014 - 2019 Erich Kuester.
 //      All rights reserved.
-//  Last changes on October 31, 2018
+//  Last changes on November 9, 2019
  */
 
 #include "molecularformula.h"
@@ -63,12 +63,12 @@ MolecularFormula::MolecularFormula()
   m_FormulaLabel(_("Overall formula:")),
   m_WeightLabel(_("Molar mass:")),
   m_TextWindow(),
-  m_TextFrame(_(" Elementary Analysis:"))
+  m_TextFrame(_(" Elementary Analysis: "))
 {
     set_border_width(5);
-    set_default_size(160, 320);
+    set_default_size(160, 332);
     // set background image
-    set_name("window_azure");
+    set_name("window_seashell");
     Glib::RefPtr<Gtk::CssProvider> windowCssProvider = Gtk::CssProvider::create();
     windowCssProvider->load_from_data(window_css);
     get_style_context()->add_provider(\
@@ -83,7 +83,7 @@ MolecularFormula::MolecularFormula()
     m_VBox.pack_start(m_Grid);
     m_Grid.set_border_width(6);
     //Arrange the widgets inside the grid
-    m_Grid.set_row_spacing(16);
+    m_Grid.set_row_spacing(12);
     m_Grid.set_column_spacing(10);
 
     m_InputLabel.set_hexpand(true);
@@ -112,19 +112,30 @@ MolecularFormula::MolecularFormula()
     //Create the Text Buffer
     m_refTextBuffer = Gtk::TextBuffer::create();
     m_TextView.set_buffer(m_refTextBuffer);
-    // set background image
-    m_TextView.set_name("textview_azure");
-    m_TextView.override_background_color(Gdk::RGBA("rgb(193, 227, 255, 1.0)"),\
-        Gtk::StateFlags::STATE_FLAG_NORMAL);
+    // set background color of textview
+    m_TextView.set_name("view_seashell");
+    Glib::RefPtr<Gtk::CssProvider> textviewCssProvider = Gtk::CssProvider::create();
+    textviewCssProvider->load_from_data(window_css);
+    m_TextView.get_style_context()->add_provider(\
+        textviewCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
     m_TextView.set_editable(false);
     m_TextView.set_left_margin(8);
-    m_TextWindow.set_size_request(-1, 112);
+    m_TextWindow.set_min_content_width(-1);
+    m_TextWindow.set_min_content_height(144);
+    //m_TextWindow.set_size_request(-1, 112);
     m_TextView.set_wrap_mode(Gtk::WRAP_WORD);
     
     //Add the TextView to a Frame, inside a ScrolledWindow
     m_TextWindow.add(m_TextView);
     //Only show the scrollbars when they are necessary:
     m_TextWindow.set_policy(Gtk::POLICY_AUTOMATIC, Gtk::POLICY_AUTOMATIC);
+    m_TextFrame.set_margin_top(16);
+    // set background color of frame
+    m_TextFrame.set_name("frame_seashell");
+    Glib::RefPtr<Gtk::CssProvider> frameCssProvider = Gtk::CssProvider::create();
+    frameCssProvider->load_from_data(window_css);
+    m_TextFrame.get_style_context()->add_provider(\
+        frameCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
     m_TextFrame.add(m_TextWindow);
     m_VBox.pack_start(m_TextFrame, Gtk::PACK_EXPAND_WIDGET);
     m_VBox.set_border_width(6);

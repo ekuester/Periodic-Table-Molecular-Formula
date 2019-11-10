@@ -89,6 +89,7 @@ protected:
     //Child widgets:
     Gtk::Box m_VBox;
     Gtk::Box m_HBox;
+    Gtk::Box *m_Space;
     Gtk::MenuBar m_MenuBar;
     Gtk::MenuItem m_MenuTable;
     Gtk::MenuItem s_MenuItemPageSetup;
@@ -108,32 +109,43 @@ protected:
     Gtk::Grid m_Grid;
 
     std::string window_css = "\
+@define-color karry rgb(255, 221, 193);\
 @define-color paleazure rgb(193, 227, 255);\
-#window_azure {\
+#window_karry {\
    border-radius: 4px;\
-   background-image: image(@paleazure);\
+   color: black;\
+   background-image: image(@karry);\
+}\
+#legend {\
+   background-image: url(\"legend-EN-480x140.svg\");\
+   background-size: cover;\
 }";
 
     std::string button_css = "\
 #element_yellow {\
    border-radius: 4px;\
+   color: black;\
    background-color: palegoldenrod;\
    background-image: none;\
 }\
 #element_salmon {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(salmon);\
 }\
 #element_coral {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(coral);\
 }\
 #element_sandybrown {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(sandybrown);\
 }\
 #element_sandybrown_white {\
    border-radius: 4px;\
+   color: black;\
    background: repeating-linear-gradient(\
      60deg,\
      sandybrown,\
@@ -144,10 +156,12 @@ protected:
 @define-color middlebrown rgb(219, 147, 86);\
 #element_middlebrown {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(@middlebrown);\
 }\
 #element_middlebrown_white {\
    border-radius: 4px;\
+   color: black;\
    background: repeating-linear-gradient(\
      60deg,\
      @middlebrown,\
@@ -157,14 +171,17 @@ protected:
 }\
 #element_green {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(lightgreen);\
 }\
 #element_blue {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(lightblue);\
 }\
 #element_blue_white {\
    border-radius: 4px;\
+   color: black;\
    background: repeating-linear-gradient(\
      60deg,\
      lightblue,\
@@ -174,19 +191,23 @@ protected:
 }\
 #element_cyan {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(cyan);\
 }\
 #element_violet {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(lavender);\
 }\
 @define-color paleazure rgb(193, 227, 255);\
 #element_azure {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(@paleazure);\
 }\
 #element_azure_white {\
    border-radius: 4px;\
+   color: black;\
    background: repeating-linear-gradient(\
      60deg,\
      @paleazure,\

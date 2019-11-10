@@ -39,7 +39,6 @@ ElementProperty::ElementProperty()
         windowCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
     set_title(_("Gtk+: Application - Element Properties"));
     set_border_width(4);
-    set_default_size(392, 496);
     set_type_hint(Gdk::WindowTypeHint::WINDOW_TYPE_HINT_DIALOG);
     // set position of window
     move(512, 64);
@@ -95,15 +94,13 @@ void ElementProperty::on_element_clicked(int index) {
     m_ElementIndex = index;
     auto element = elements[index];
     stringstream title;
-    title << "<b>" << element[0] << "</b>";
+    title << "<b>" << setw(48) << element[0] << setw(48) << "</b>";
     m_TitleLabel.set_markup(title.str());
     m_TitleLabel.set_margin_bottom(8);
+    // Get the name of the current locale
+    std::locale current("");
+    char decimal = use_facet<numpunct<char> > (current).decimal_point(); 
     auto element_name = std::string(_(element[ELEMENT_NAME_INDEX].data()));
-    stringstream url;
-    url << scheme << _("en") << wikipedia << element_name; 
-    stringstream wiki;
-    wiki << _("see <a href=\"") << url.str() << "\" title=\""
-        << url.str() << _("\">Wikipedia</a> article");
     int row = 0;
     // iterator over vector of strings
     auto value = element.begin();
@@ -116,16 +113,31 @@ void ElementProperty::on_element_clicked(int index) {
         right->set_vexpand(Gtk::EXPANDER_COLLAPSED);
         if (value != element.end()) {
             if (!(*value).empty()) {
-                if (row == ELEMENT_NAME_ROW)
-                {
+                std::string label;
+                if (row == ELEMENT_NAME_ROW) {
                     // look for anomalies in element name
                     auto pos = element_name.find('_');
-                    right->set_label(element_name.substr(0, pos));
+                    label = element_name.substr(0, pos);
                 } else {
-                    right->set_label(_((*value).data()));
+                    // look for decimal point
+                    auto pos = (*value).find('.');
+                    if (pos != std::string::npos) {
+                        label = (*value).substr(0, pos)
+                            + decimal
+                            + (*value).substr(pos+1);
+                        right->set_label(label);
+                    } else {
+                        label = std::string(_((*value).data()));
+                    }
                 }
+                right->set_label(label);
             }
         } else {
+            stringstream url;
+            url << scheme << _("en") << wikipedia << element_name; 
+            stringstream wiki;
+            wiki << _("see <a href=\"") << url.str() << "\" title=\""
+                << url.str() << _("\">Wikipedia</a> article");
             right->set_markup(wiki.str());
             loop = false;            
         }
@@ -135,6 +147,10 @@ void ElementProperty::on_element_clicked(int index) {
     add(m_VBox);
     show_all_children();
     present();
+    // now set property window size, works well in hiDPI environment
+    // we need 25 lines
+    int height = m_TitleLabel.get_height() * 25;
+    set_size_request(m_TitleLabel.get_width(), height);
 }
 
 void ElementProperty::on_button_clicked(int advance) {

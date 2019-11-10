@@ -17,19 +17,19 @@ While working under Fedora Linux I choose C++ as the programming language in com
 
 The normal procedure for building the program is using the standard autotools. The following sequence
 ```
-./autogen.sh --prefix=/home/username/.local
+./autogen.sh --prefix=$HOME/.local
 make
 make install
 periodictable.sh
 ```
-will build and run the program for the current user (replace username accordingly). The Linux way of localization for the dutch/french/german/italian translation files is adapted.
+will build and run the program for the current user. The Linux way of localization for the dutch/french/german/italian translation files is adapted.
 
 Alternatively (but only as english version) you can easily compile and run the program in Terminal with the added shell script:
 ```
 sh ./GTKPeriodicTable.sh
 ```
 
-I wrote this program to become familiar with the C++ language, especially the GTK-API under the gtkmm wrapper and to get a feeling how to display different widgets on the screen. Take it as example for handling of windows, menus, buttons, labels, entries and textviews.<br/>
+I wrote this program to become familiar with the C++ language, especially the GTK-API under the gtkmm wrapper and to get a feeling how to display different widgets on the screen. Take it as example for handling of windows, menus, buttons, labels, entries and textviews. Nowadays you have to consider features regarding hiDPI displays and when using dark themes.<br/>
 Very interesting in GTK 3.0 is the mode of setting colors in widgets: First place to go is<br/>
 &nbsp; <https://developer.gnome.org/gtk3/stable/chap-css-overview.html><br/>
 It is essential to generate the necessary CSS data in the right syntax.<br/>

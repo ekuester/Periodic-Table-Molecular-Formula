@@ -53,8 +53,13 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
   m_OffscreenWindow(),
   m_PropertyWindow()
 {
-    //Set up window and the top-level container:
-    set_default_size(1048, 620);
+    // Set up window and the top-level container
+    // set background image of window
+    set_name("window_karry");
+    Glib::RefPtr<Gtk::CssProvider> windowCssProvider = Gtk::CssProvider::create();
+    windowCssProvider->load_from_data(window_css);
+    get_style_context()->add_provider(\
+        windowCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
     set_title(_(app_title));
     m_FormulaWindow.signal_hide().connect(sigc::mem_fun(*this,\
         &PeriodicTableWindow::on_menu_calc_close));
@@ -126,14 +131,21 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     text << "<span ";
                     if (elements_radioactive.count(element_ordinal))
                         text << "foreground=\"green\"";
+                    else
+                        text << "foreground=\"black\"";
                     text << "size=\"small\" weight=\"bold\">";
                     text << element_ordinal << " </span>";
                     // second line
                     text << "<span rise=\"-14000\" ";
-                    if (elements_gaseous.count(element_ordinal))
-                        text << "foreground=\"red\"";
-                    if (elements_liquid.count(element_ordinal))
-                        text << "foreground=\"blue\"";
+                    if ((elements_gaseous.count(element_ordinal))\
+                        || (elements_liquid.count(element_ordinal))) {
+                        if (elements_gaseous.count(element_ordinal))
+                            text << "foreground=\"red\"";
+                        else
+                            text << "foreground=\"blue\"";
+                    }
+//                    else
+//                        text << "foreground=\"black\"";
                     text << "size=\"10800\" weight=\"bold\">";
                     text << element[2] << "</span>" << std::endl;
                     // third line
@@ -149,7 +161,9 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     element_label->set_markup(text.str());
                     //Button:
                     Gtk::Button* element_button = Gtk::manage(new Gtk::Button());
-                    element_button->set_hexpand(Gtk::EXPAND);
+                    // buttons can expand horizontally and vertically
+                    //element_button->set_hexpand(Gtk::EXPAND);
+                    //element_button->set_vexpand(Gtk::EXPAND);
                     element_button->set_size_request(48, 48);
                     std::string button_name = button_colors[group.second];
                     element_button->set_name(button_name);
@@ -180,7 +194,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                 case 2: {
                     // write number of group
                     stringstream s;
-                    s << "<span weight=\"bold\">" << group.second << "</span>";
+                    s << "<span weight=\"bold\" foreground=\"black\">" << group.second << "</span>";
                     Gtk::Label* g_l = Gtk::manage(new Gtk::Label(Glib::ustring()));
                     g_l->set_markup(s.str());
                     Gtk::Box *g_b = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
@@ -194,7 +208,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     if (group.second > 0) {
                         // write number of period
                         stringstream s;
-                        s << "<span weight=\"bold\">" << group.second << "</span>";
+                        s << "<span weight=\"bold\" foreground=\"black\">" << group.second << "</span>";
                         Gtk::Label* p_l = Gtk::manage(new Gtk::Label());
                         p_l->set_markup(s.str());
                         Gtk::Box *p_b = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL));
@@ -208,12 +222,13 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                 case 0: {
                     // setup text for title
                     std::stringstream title_text;
-                    title_text << "<span stretch=\"semiexpanded\" weight=\"bold\" size=\"18000\">";
+                    title_text << "<span stretch=\"expanded\" weight=\"bold\" size=\"18000\" ";
+                    title_text << "foreground=\"black\">";
                     title_text << _("—  Periodic Table of the Elements  —");
                     title_text << "</span>";
                     // empty space for title
                     Gtk::Label* title = Gtk::manage(new Gtk::Label());
-                    title->set_size_request(480, 32);
+                    //title->set_size_request(480, 32);
                     title->set_justify(Gtk::Justification::JUSTIFY_CENTER);
                     title->set_markup(title_text.str());
                     m_Grid.attach(*title, 1, p, 18, 1);
@@ -226,15 +241,28 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                 case -2: {
                     // space for legend in room above transition metals
                     // from block 3 to 12, period 1 to period 3
-                    Gtk::Box *space = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL));
-                    space->set_size_request(480, 144);
-                    space->set_border_width(4);
-                    Gtk::Image *image = Gtk::manage(new Gtk::Image(_("legend-EN-464x144.svg")));
-                    space->pack_start(*image, Gtk::PackOptions::PACK_EXPAND_WIDGET);
-                    m_Grid.attach(*space, g, p-1, 10, 3); // column g, row p
+                    m_Space = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL));
+                    m_Space->set_size_request(480, 144);
+                    //m_Space->set_border_width(4);
+                    m_Space->set_name("legend");
+                    Glib::RefPtr<Gtk::CssProvider> legendCssProvider = Gtk::CssProvider::create();
+                    std::string image_url = _("legend-EN-480x140.svg");
+                    stringstream legend;
+                    legend << "#legend {background-image: url(\"" << image_url \
+                        << "\"); background-size: cover; }";
+                    std::string legend_css = legend.str();
+                    legendCssProvider->load_from_data(legend_css);
+                    m_Space->get_style_context()->add_provider(\
+                        legendCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
+                    //Glib::RefPtr<Gdk::Pixbuf> pixbuf = \
+                        Gdk::Pixbuf::create_from_file(_("legend-EN-464x144.svg"), 696, 216, true);
+                    //Gtk::Image *image = Gtk::manage(new Gtk::Image(pixbuf));
+                    //Gtk::Image *image = Gtk::manage(new Gtk::Image(_("legend-EN-480x144.svg")));
+                    //m_Space->pack_start(*image, Gtk::PackOptions::PACK_EXPAND_WIDGET);
+                    m_Grid.attach(*m_Space, g, p-1, 10, 3); // column g, row p
                     g += 10;
                     break;
-                }
+           }
                 case -3: {
                     // give room above transition metals
                     g += 10;
@@ -274,7 +302,10 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     }
     m_Grid.set_column_homogeneous(false);
     m_Grid.set_row_homogeneous(false);
+    m_TableWindow.set_min_content_width(864);
+    m_TableWindow.set_min_content_height(444);
     m_TableWindow.add(m_Grid);
+    m_TableWindow.set_policy(Gtk::POLICY_AUTOMATIC, Gtk::POLICY_AUTOMATIC);
     m_VBox.pack_start(m_TableWindow);
 
     m_Dialog.set_transient_for(*this);
@@ -311,6 +342,8 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
 
     add(m_VBox);
     show_all_children();
+    present();
+    move(64,96);
 }
 
 PeriodicTableWindow::~PeriodicTableWindow() {

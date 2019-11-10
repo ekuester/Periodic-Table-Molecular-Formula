@@ -3,6 +3,7 @@
  * Author: kuestere
  *
  * Created on 27. September 2018, 18:36
+ * Last changes on November 9, 2019
  */
 
 #ifndef MOLECULARFORMULA_H
@@ -72,10 +73,20 @@ protected:
     Glib::RefPtr<Gtk::TextBuffer> m_refTextBuffer;
 
     std::string window_css = "\
-@define-color paleazure rgb(193, 227, 255);\
-#window_azure {\
+#window_seashell {\
    border-radius: 4px;\
-   background-image: image(@paleazure);\
+   color: black;\
+   background-color: seashell;\
+}\
+#frame_seashell {\
+   border-radius: 4px;\
+   color: black;\
+   background-color: seashell;\
+}\
+#view_seashell text {\
+   border-radius: 0px;\
+   color: black;\
+   background-color: seashell;\
 }";
 
 };

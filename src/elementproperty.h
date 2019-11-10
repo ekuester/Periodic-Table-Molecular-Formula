@@ -65,8 +65,10 @@ protected:
 
     std::string window_css = "\
 @define-color paleazure rgb(193, 227, 255);\
+@define-color serenade rgb(255, 235, 219);\
 #window_azure {\
    border-radius: 4px;\
+   color: black;\
    background-image: image(@paleazure);\
 }";
 
@@ -90,7 +92,7 @@ private:
         N_("Bonding Type"),
         N_("Melting Point [K]"),
         N_("Boiling Point [K]"),
-        N_("Density [g/mL]"),
+        N_("Density [g/m\u2113]"),
         N_("Group, Block"),
         N_("Year of Discovery"),
         N_("Further Information")

@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: molecularformula.cpp:66
-msgid " Elementary Analysis:"
-msgstr " Analysi elementare"
+msgid " Elementary Analysis: "
+msgstr " Analysi elementare: "
 
 #: elementproperty.cpp:103
 msgid "\">Wikipedia</a> article"
@@ -790,8 +790,8 @@ msgid "lanthanoid"
 msgstr "Lanthanide"
 
 #: periodictablewindow.cpp:232
-msgid "legend-EN-464x144.svg"
-msgstr "legend-IT-464x144.svg"
+msgid "legend-EN-480x140.svg"
+msgstr "legend-IT-480x140.svg"
 
 #: elementschema.h:73 elementschema.h:118
 msgid "liquid"
