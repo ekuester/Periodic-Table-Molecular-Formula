@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="480"
-   height="140"
-   viewBox="0 0 480 140"
+   width="960"
+   height="280"
+   viewBox="0 0 960 280"
    version="1.1"
    id="svg970"
    inkscape:version="0.92.4 (unknown)"
@@ -25,8 +25,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="174.9617"
+     inkscape:zoom="1.979899"
+     inkscape:cx="438.02721"
      inkscape:cy="87.135332"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -69,100 +69,100 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-251.86874)">
+     transform="translate(0,-111.86874)">
     <rect
        id="LegBoxRand"
-       x="64.774193"
-       y="296.64294"
-       width="46.451614"
-       height="46.451614"
-       style="font-size:12px;font-family:'Liberation Sans';fill:#eee8aa;fill-opacity:1;stroke:#000000;stroke-width:1.54838622;stroke-linecap:square" />
+       x="140.63164"
+       y="198.96512"
+       width="92.903229"
+       height="92.903229"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#eee8aa;fill-opacity:1;stroke:#000000;stroke-width:3.09677243;stroke-linecap:square" />
     <path
-       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        inkscape:connector-curvature="0"
-       d="M 72,311.86874 36,292.71671"
+       d="M 155.08323,229.41668 83.083239,191.11262"
        id="LegLinieSerie"
        sodipodi:nodetypes="cc" />
     <text
        id="text1503"
-       style="font-weight:bold;font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#ff0000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="98.387199"
-       y="321.22574">
+       style="font-weight:bold;font-size:18.00000954px;font-family:'Liberation Sans';text-anchor:end;fill:#ff0000;stroke:none;stroke-width:1.50000083;stroke-linecap:square"
+       x="207.85767"
+       y="248.13071">
       <tspan
-         style="font-size:10.66666698px"
+         style="font-size:21.33333397px;stroke-width:1.50000083"
          id="tspan932">Cl</tspan>
     </text>
     <text
        id="text1505"
-       style="font-weight:bold;font-size:9.00000477px;font-family:'Liberation Sans', sans-serif;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="76.984207"
-       y="309.75125">
+       style="font-weight:bold;font-size:18.00000954px;font-family:'Liberation Sans';text-anchor:start;fill:#000000;stroke:none;stroke-width:1.50000083;stroke-linecap:square"
+       x="165.05167"
+       y="225.18173">
       <tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Liberation Sans', sans-serif;-inkscape-font-specification:'Liberation Sans, sans-serif Bold'"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, sans-serif Bold';stroke-width:1.50000083"
          id="tspan934">17</tspan>
     </text>
     <text
        id="text1509"
-       style="font-size:6.75000381px;font-family:'Liberation Sans', sans-serif;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
-       x="75.963387"
-       y="336.1084">
+       style="font-size:13.50000763px;font-family:'Liberation Sans';text-anchor:start;fill:#000000;stroke:none;stroke-width:1.50000083;stroke-linecap:square"
+       x="163.01003"
+       y="277.89603">
       <tspan
-         style="font-size:8px"
+         style="font-size:16px;stroke-width:1.50000083"
          id="tspan930">35,453</tspan>
     </text>
     <text
        id="text1515"
-       style="font-size:10.66666667px;font-family:'Liberation Sans', sans-serif;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square;-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
-       x="82.500038"
-       y="292.77759">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.50000083;stroke-linecap:square"
+       x="176.08333"
+       y="191.23441">
       <tspan
-         style="font-size:10.66666667px;-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-family:'Liberation Sans', sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:1.50000083"
          id="tspan928">Ordinal</tspan>
     </text>
     <text
        id="text1517"
-       style="font-size:10.66666667px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square;-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-align:end;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
-       x="55.250046"
-       y="321.50107">Symbol</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;stroke:none;stroke-width:1.50000083;stroke-linecap:square"
+       x="121.58332"
+       y="248.68137">Symbol</text>
     <text
        id="text1519"
-       style="font-size:10.66666667px;font-family:'Liberation Sans', sans-serif;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square;-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-align:end;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
-       x="61.500046"
-       y="336.50125">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;stroke:none;stroke-width:1.50000083;stroke-linecap:square"
+       x="134.08334"
+       y="278.68173">
       <tspan
-         style="font-size:10.66666667px;-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-family:'Liberation Sans', sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:end;text-align:end;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;stroke-width:1.50000083"
          id="tspan911">Atomgewicht</tspan>
     </text>
     <text
        id="text1525"
-       style="font-size:10.66666667px;font-family:'Liberation Sans', sans-serif;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square;-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
-       x="36.92865"
-       y="290.89413">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.50000083;stroke-linecap:square"
+       x="84.940536"
+       y="187.4675">
       <tspan
          id="tspan890"
-         style="font-size:10.66666667px;stroke-width:0.75000042;-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-family:'Liberation Sans', sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Serie</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:1.50000083">Serie</tspan>
     </text>
     <text
        id="text1529"
-       style="font-size:9px;font-family:'Liberation Sans', sans-serif;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       y="266.25119"
-       x="125.49465">
+       style="font-size:18px;font-family:'Liberation Sans';fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       y="138.18159"
+       x="262.07254">
       <tspan
-         style="font-size:10.66666698px"
+         style="font-size:21.33333397px;stroke-width:1.49999988"
          id="tspan1794">Ordinal</tspan>
     </text>
     <line
        id="line1531"
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.1754427;stroke-linecap:square"
-       y2="270.7858"
-       x2="247.41225"
-       y1="270.7858"
-       x1="124.59734" />
+       style="font-size:12px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:2.35088539;stroke-linecap:square"
+       y2="147.25081"
+       x2="505.90775"
+       y1="147.25081"
+       x1="260.27792" />
     <text
        id="text1537"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="125.70298"
-       y="281.89404">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       x="262.4892"
+       y="169.4673">
       <!--
 				-->
       <!--
@@ -172,15 +172,15 @@
       <tspan
          sodipodi:role="line"
          id="tspan9444"
-         x="125.70298"
-         y="281.89404"
-         style="font-size:10.66666698px;stroke-width:0.74999994">schwarz = nicht radioaktiv</tspan>
+         x="262.4892"
+         y="169.4673"
+         style="font-size:21.33333397px;stroke-width:1.49999988">schwarz = nicht radioaktiv</tspan>
     </text>
     <text
        id="text1543"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#00aa00;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="143.6786"
-       y="292.25119">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#00aa00;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       x="298.44046"
+       y="190.18161">
       <!--
 				-->
       <!--
@@ -190,31 +190,31 @@
       <tspan
          sodipodi:role="line"
          id="tspan9442"
-         x="143.6786"
-         y="292.25119"
-         style="font-size:10.66666698px;stroke-width:0.74999994">grün = radioaktiv</tspan>
+         x="298.44046"
+         y="190.18161"
+         style="font-size:21.33333397px;stroke-width:1.49999988">grün = radioaktiv</tspan>
     </text>
     <text
        id="text1546"
-       style="font-size:9px;font-family:'Liberation Sans', sans-serif;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       y="315.00122"
-       x="125.51548">
+       style="font-size:18px;font-family:'Liberation Sans';fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       y="235.68167"
+       x="262.1142">
       <tspan
-         style="font-size:10.66666698px"
+         style="font-size:21.33333397px;stroke-width:1.49999988"
          id="tspan1796">Symbol</tspan>
     </text>
     <line
        id="line1548"
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.17539608;stroke-linecap:square"
-       y2="320.29059"
-       x2="247.40259"
-       y1="320.29059"
-       x1="124.59741" />
+       style="font-size:12px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:2.35079217;stroke-linecap:square"
+       y2="246.26041"
+       x2="505.88843"
+       y1="246.26041"
+       x1="260.27808" />
     <text
        id="text1554"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="124.75001"
-       y="331.53693">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       x="260.58325"
+       y="268.75308">
       <!--
 				-->
       <!--
@@ -224,15 +224,15 @@
       <tspan
          sodipodi:role="line"
          id="tspan9463"
-         x="124.75001"
-         y="331.53693"
-         style="font-size:10.66666698px;stroke-width:0.74999994">schwarz = Feststoff</tspan>
+         x="260.58325"
+         y="268.75308"
+         style="font-size:21.33333397px;stroke-width:1.49999988">schwarz = Feststoff</tspan>
     </text>
     <text
        id="text1560"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="144.21431"
-       y="342.69763">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       x="299.51187"
+       y="291.07449">
       <!--
 				-->
       <!--
@@ -242,15 +242,15 @@
       <tspan
          sodipodi:role="line"
          id="tspan9465"
-         x="144.21431"
-         y="342.69763"
-         style="font-size:10.66666698px;stroke-width:0.74999994">blau = Flüssigkeit</tspan>
+         x="299.51187"
+         y="291.07449"
+         style="font-size:21.33333397px;stroke-width:1.49999988">blau = Flüssigkeit</tspan>
     </text>
     <text
        id="text1566"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="152.60718"
-       y="353.85837">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       x="316.29758"
+       y="313.39597">
       <!--
 				-->
       <!--
@@ -260,207 +260,207 @@
       <tspan
          sodipodi:role="line"
          id="tspan9467"
-         x="152.60718"
-         y="353.85837"
-         style="font-size:10.66666698px;stroke-width:0.74999994">rot = Gas</tspan>
+         x="316.29758"
+         y="313.39597"
+         style="font-size:21.33333397px;stroke-width:1.49999988">rot = Gas</tspan>
     </text>
     <text
-       style="font-size:9px;font-family:'Liberation Sans', sans-serif;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-size:18px;font-family:'Liberation Sans';fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1569"
-       y="266.25119"
-       x="272.50012">
+       y="138.18159"
+       x="556.08356">
       <tspan
-         style="font-size:10.66666698px"
+         style="font-size:21.33333397px;stroke-width:1.49999988"
          id="tspan1779">Serie</tspan>
     </text>
     <line
        id="line1571"
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.25248718;stroke-linecap:square"
-       y2="270.75629"
-       x2="467.84955"
-       y1="270.75629"
-       x1="272.63025" />
+       style="font-size:12px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:2.50497437;stroke-linecap:square"
+       y2="147.19179"
+       x2="946.78241"
+       y1="147.19179"
+       x1="556.34381" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#ff7f50;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#ff7f50;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe01"
-       height="10"
-       width="10"
-       y="277.86874"
-       x="274.00046" />
+       height="20"
+       width="20"
+       y="161.4167"
+       x="559.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#fa8072;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#fa8072;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe02"
-       height="10"
-       width="10"
-       y="290.86874"
-       x="274.00046" />
+       height="20"
+       width="20"
+       y="187.41672"
+       x="559.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#add8e6;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#add8e6;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe03"
-       height="10"
-       width="10"
-       y="303.86874"
-       x="274.00046" />
+       height="20"
+       width="20"
+       y="213.41672"
+       x="559.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#f4a460;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#f4a460;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe04"
-       height="10"
-       width="10"
-       y="316.86874"
-       x="274.00046" />
+       height="20"
+       width="20"
+       y="239.41672"
+       x="559.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#db9356;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#db9356;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe05"
-       height="10"
-       width="10"
-       y="329.86874"
-       x="274.00046" />
+       height="20"
+       width="20"
+       y="265.41672"
+       x="559.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#c1e3ff;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#c1e3ff;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe06"
-       height="10"
-       width="10"
-       y="277.86874"
-       x="386.00046" />
+       height="20"
+       width="20"
+       y="161.4167"
+       x="783.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe07"
-       height="10"
-       width="10"
-       y="290.86874"
-       x="386.00046" />
+       height="20"
+       width="20"
+       y="187.41672"
+       x="783.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#90ee90;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#90ee90;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe08"
-       height="10"
-       width="10"
-       y="303.86874"
-       x="386.00046" />
+       height="20"
+       width="20"
+       y="213.41672"
+       x="783.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#eee8aa;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#eee8aa;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe09"
-       height="10"
-       width="10"
-       y="316.86874"
-       x="386.00046" />
+       height="20"
+       width="20"
+       y="239.41672"
+       x="783.08417" />
     <rect
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:#e6e6fa;fill-opacity:1;stroke:none;stroke-width:0.99999934;stroke-linecap:square"
+       style="font-size:12px;font-family:'Liberation Sans';fill:#e6e6fa;fill-opacity:1;stroke:none;stroke-width:1.99999869;stroke-linecap:square"
        id="SmallFarbe10"
-       height="10"
-       width="10"
-       y="329.86874"
-       x="386.00046" />
+       height="20"
+       width="20"
+       y="265.41672"
+       x="783.08417" />
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1583"
-       y="286.76459"
-       x="287.47983">Alkalimetalle</text>
+       y="179.20839"
+       x="586.04291">Alkalimetalle</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1585"
-       y="299.51459"
-       x="286.62567">Erdalkalimetalle</text>
+       y="204.7084"
+       x="584.33466">Erdalkalimetalle</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1587"
-       y="313.29819"
-       x="286.67773">Übergangsmetalle</text>
+       y="232.2756"
+       x="584.43878">Übergangsmetalle</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1589"
-       y="325.76459"
-       x="286.62567">Lanthanoide</text>
+       y="257.2084"
+       x="584.33466">Lanthanoide</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1591"
-       y="338.76459"
-       x="287.47983">Actinoide</text>
+       y="283.2084"
+       x="586.04291">Actinoide</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1593"
-       y="286.76459"
-       x="398.62546">Metalle</text>
+       y="179.20839"
+       x="808.33417">Metalle</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1595"
-       y="299.51459"
-       x="398.62546">Halbmetalle</text>
+       y="204.7084"
+       x="808.33417">Halbmetalle</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1597"
-       y="313.47858"
-       x="398.62546">Nichtmetalle</text>
+       y="232.63638"
+       x="808.33417">Nichtmetalle</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1599"
-       y="326.15521"
-       x="398.62546">Halogene</text>
+       y="257.98965"
+       x="808.33417">Halogene</text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
        id="text1601"
-       y="338.6192"
-       x="398.62546">Edelgase</text>
+       y="282.91763"
+       x="808.33417">Edelgase</text>
     <text
        id="text1604"
-       style="font-size:9px;font-family:'Liberation Sans', sans-serif;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       y="355.36856"
-       x="272.50012">
+       style="font-size:18px;font-family:'Liberation Sans';fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       y="316.41635"
+       x="556.08356">
       <tspan
          id="tspan1781"
-         style="font-size:10.66666698px">Fläche</tspan>
+         style="font-size:21.33333397px;stroke-width:1.49999988">Fläche</tspan>
     </text>
     <line
        id="line1606"
-       style="font-size:12px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.25248718;stroke-linecap:square"
-       y2="359.86902"
-       x2="467.86011"
-       y1="359.86902"
-       x1="272.64081" />
+       style="font-size:12px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:2.50497437;stroke-linecap:square"
+       y2="325.41727"
+       x2="946.80353"
+       y1="325.41727"
+       x1="556.36493" />
     <text
        id="text1612"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="281.05255"
-       y="371.01221">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       x="573.18842"
+       y="347.70364">
       <tspan
          sodipodi:role="line"
          id="tspan9426"
-         x="281.05255"
-         y="371.01221"
-         style="font-size:10.66666698px;stroke-width:0.74999994">durchgehend = natürliches Element</tspan>
+         x="573.18842"
+         y="347.70364"
+         style="font-size:21.33333397px;stroke-width:1.49999988">durchgehend = natürliches Element</tspan>
     </text>
     <text
        id="text1618"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.74999994;stroke-linecap:square"
-       x="296.70358"
-       y="381.76459">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.49999988;stroke-linecap:square"
+       x="604.49042"
+       y="369.2084">
       <tspan
          sodipodi:role="line"
          id="tspan9428"
-         x="296.70358"
-         y="381.76459"
-         style="font-size:10.66666698px;stroke-width:0.74999994">schraffiert = künstliches Element</tspan>
+         x="604.49042"
+         y="369.2084"
+         style="font-size:21.33333397px;stroke-width:1.49999988">schraffiert = künstliches Element</tspan>
     </text>
     <text
-       x="42.750008"
-       y="264.75122"
-       style="font-weight:bold;font-size:12.00000668px;font-family:'Liberation Sans', sans-serif;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.75000042;stroke-linecap:square"
+       x="96.583252"
+       y="135.18166"
+       style="font-weight:bold;font-size:24.00001335px;font-family:'Liberation Sans';text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.50000083;stroke-linecap:square"
        id="text1488">
       <tspan
          id="tspan888"
-         style="font-size:13.33333969px;stroke-width:0.75000042">Legende:</tspan>
+         style="font-size:26.66667938px;stroke-width:1.50000083">Legende:</tspan>
     </text>
     <line
-       x1="12.75"
-       y1="271.11874"
-       x2="72.750069"
-       y2="271.11874"
-       style="font-weight:bold;font-size:16px;font-family:'Liberation Sans', sans-serif;fill:none;stroke:#000000;stroke-width:1.50000083;stroke-linecap:square"
+       x1="36.583241"
+       y1="147.9167"
+       x2="156.58339"
+       y2="147.9167"
+       style="font-weight:bold;font-size:16px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:3.00000167;stroke-linecap:square"
        id="line1490" />
     <path
        sodipodi:nodetypes="cc"
        id="path1106"
-       d="m 84,317.86874 -24,1.5"
+       d="m 179.08323,241.41668 -48,3"
        inkscape:connector-curvature="0"
-       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="font-size:12px;font-family:'Liberation Sans';fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
 </svg>

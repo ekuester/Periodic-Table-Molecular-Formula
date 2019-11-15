@@ -111,10 +111,10 @@ protected:
     std::string window_css = "\
 @define-color karry rgb(255, 221, 193);\
 @define-color paleazure rgb(193, 227, 255);\
-#window_karry {\
+#window_seashell {\
    border-radius: 4px;\
    color: black;\
-   background-image: image(@karry);\
+   background-color: seashell;\
 }\
 #legend {\
    background-image: url(\"legend-EN-480x140.svg\");\
