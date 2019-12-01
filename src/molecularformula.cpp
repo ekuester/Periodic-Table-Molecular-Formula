@@ -52,7 +52,7 @@
 //  renewed on September 27, 2018 at 18:36
 //  Copyright © 2014 - 2019 Erich Kuester.
 //      All rights reserved.
-//  Last changes on November 9, 2019
+//  Last changes on November 29, 2019
  */
 
 #include "molecularformula.h"
@@ -67,7 +67,12 @@ MolecularFormula::MolecularFormula()
 {
     set_border_width(5);
     set_default_size(160, 332);
-    // set background image
+    Glib::RefPtr<Gio::MemoryInputStream> stream = Gio::MemoryInputStream::create();
+    // generate and set icon with sigma symbol for mathematical sum function
+    stream->add_data(icon_svg);
+    set_icon(Gdk::Pixbuf::create_from_stream(stream));
+    stream->close();
+    // set background color
     set_name("window_seashell");
     Glib::RefPtr<Gtk::CssProvider> windowCssProvider = Gtk::CssProvider::create();
     windowCssProvider->load_from_data(window_css);
@@ -76,7 +81,7 @@ MolecularFormula::MolecularFormula()
     set_title(_("Gtk+: Calculator - Molecular Formula"));
     // if you want this window always on top
     set_type_hint(Gdk::WindowTypeHint::WINDOW_TYPE_HINT_DIALOG);
-    move(274, 64);
+    move(272, 64);
     // add vertical box
     add(m_VBox);
     // add grid with labels and entries

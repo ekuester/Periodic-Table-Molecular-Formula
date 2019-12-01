@@ -38,7 +38,7 @@ EXTRA_DIST += periodictable.sh.in
 
 # application icon 128x128
 appicondir=$(datadir)/pixmaps
-appicon_DATA=periodictable-square.svg
+appicon_DATA=periodictable.svg
 
-EXTRA_DIST += periodictable-square.svg
+EXTRA_DIST += periodictable.svg
 

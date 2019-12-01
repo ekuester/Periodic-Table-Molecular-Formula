@@ -20,7 +20,7 @@
 //  Created by Erich Kuester, Krefeld, Germany
 //    Copyright © 2014 - 2019 Erich Kuester.
 //          All rights reserved.
-//  Last changes on November 14, 2019 for version 1.6.3
+//  Last changes on April 21, 2019 for version 1.6.2
  */
 
 #include "periodictablewindow.h"
@@ -53,9 +53,13 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
   m_OffscreenWindow(),
   m_PropertyWindow()
 {
-    // Set up window and the top-level container
+    // Set up window with application icon and the top-level container
+    Glib::RefPtr<Gio::MemoryInputStream> stream = Gio::MemoryInputStream::create();
+    stream->add_data(icon_svg);
+    set_icon(Gdk::Pixbuf::create_from_stream(stream));
+    stream->close();
     // set background image of window
-    set_name("window_seashell");
+    set_name("window_karry");
     Glib::RefPtr<Gtk::CssProvider> windowCssProvider = Gtk::CssProvider::create();
     windowCssProvider->load_from_data(window_css);
     get_style_context()->add_provider(\
@@ -254,10 +258,15 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     legendCssProvider->load_from_data(legend_css);
                     m_Space->get_style_context()->add_provider(\
                         legendCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
+                    //Glib::RefPtr<Gdk::Pixbuf> pixbuf = \
+                        Gdk::Pixbuf::create_from_file(_("legend-EN-480x140.svg"));
+                    //Gtk::Image *image = Gtk::manage(new Gtk::Image(pixbuf));
+                    //Gtk::Image *image = Gtk::manage(new Gtk::Image(_("legend-EN-480x140.svg")));
+                    //m_Space->pack_start(*image, Gtk::PackOptions::PACK_EXPAND_WIDGET);
                     m_Grid.attach(*m_Space, g, p-1, 10, 3); // column g, row p
                     g += 10;
                     break;
-           }
+                }
                 case -3: {
                     // give room above transition metals
                     g += 10;
@@ -297,8 +306,8 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     }
     m_Grid.set_column_homogeneous(false);
     m_Grid.set_row_homogeneous(false);
-    m_TableWindow.set_min_content_width(616);
-    m_TableWindow.set_min_content_height(616);
+    m_TableWindow.set_min_content_width(1024);
+    m_TableWindow.set_min_content_height(768);
     m_TableWindow.add(m_Grid);
     m_TableWindow.set_policy(Gtk::POLICY_AUTOMATIC, Gtk::POLICY_AUTOMATIC);
     m_VBox.pack_start(m_TableWindow);
@@ -306,7 +315,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     m_Dialog.set_transient_for(*this);
     m_Dialog.set_logo(Gdk::Pixbuf::create_from_xpm_data(about));
     m_Dialog.set_program_name(_(app_title));
-    m_Dialog.set_version(_("Version 1.6.3"));
+    m_Dialog.set_version(_("Version 1.6.2"));
     m_Dialog.set_copyright(_("Copyright © 2018 Erich Küster. All rights reserved."));
     m_Dialog.set_comments(_("Periodic Table and Molecular Formula for Chemists"));
     std::ifstream licenseFile("LICENSE");

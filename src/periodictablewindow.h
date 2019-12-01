@@ -111,14 +111,10 @@ protected:
     std::string window_css = "\
 @define-color karry rgb(255, 221, 193);\
 @define-color paleazure rgb(193, 227, 255);\
-#window_seashell {\
+#window_karry {\
    border-radius: 4px;\
    color: black;\
-   background-color: seashell;\
-}\
-#legend {\
-   background-image: url(\"legend-EN-480x140.svg\");\
-   background-size: cover;\
+   background-image: image(@karry);\
 }";
 
     std::string button_css = "\
@@ -249,6 +245,76 @@ protected:
   background-image: image(orange);\
   color: white;\
 }";
+    std::string icon_svg = "\
+<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 67.733 67.733\">\
+  <defs>\
+    <filter id=\"a\" x=\"-.072\" width=\"1.144\" y=\"-.072\" height=\"1.144\"\
+    color-interpolation-filters=\"sRGB\">\
+      <feGaussianBlur stdDeviation=\"3.514\" />\
+    </filter>\
+  </defs>\
+  <g transform=\"translate(0 63.5) scale(.26458)\">\
+    <rect width=\"240\" height=\"240\" x=\"8.145\" y=\"-232.868\" rx=\"32\"\
+    ry=\"32\" fill=\"#2394da\" fill-opacity=\".939\" />\
+    <path d=\"M117.139 6.861A15.94 15.94 0 01120 16v88c0 8.864-7.136 16-16 16H16a15.94 15.94 0 01-9.139-2.861A15.95 15.95 0 0020 124h88c8.864 0 16-7.136 16-16V20a15.95 15.95 0 00-6.861-13.139z\"\
+    transform=\"matrix(2 0 0 2 .145 -240.868)\" opacity=\".36\"\
+    filter=\"url(#a)\" />\
+  </g>\
+  <g word-spacing=\"0\" letter-spacing=\"0\" font-weight=\"700\"\
+  font-family=\"Noto Sans\" stroke-width=\".529\">\
+    <text font-size=\"5.644\"\
+    style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'\"\
+    x=\"35.963\" y=\"283.482\" fill=\"#bbf\"\
+    transform=\"translate(0 -229.267)\">\
+      <tspan x=\"35.963\" y=\"283.482\">118</tspan>\
+    </text>\
+    <text font-size=\"11.289\"\
+    style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'\"\
+    x=\"45.875\" y=\"289.624\" fill=\"#bbf\"\
+    transform=\"translate(0 -229.267)\">\
+      <tspan x=\"45.875\" y=\"289.624\">Og</tspan>\
+    </text>\
+    <text font-size=\"5.644\"\
+    style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'\"\
+    x=\"3.267\" y=\"283.575\" fill=\"#f88\"\
+    transform=\"translate(0 -229.267)\">\
+      <tspan x=\"3.267\" y=\"283.575\">87</tspan>\
+    </text>\
+    <text font-size=\"11.289\"\
+    style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'\"\
+    x=\"9.306\" y=\"289.485\" fill=\"#f88\"\
+    transform=\"translate(0 -229.267)\">\
+      <tspan x=\"9.306\" y=\"289.485\">Fr</tspan>\
+    </text>\
+    <text font-size=\"11.289\" y=\"244.452\" x=\"9.231\"\
+    style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'\"\
+    fill=\"#00f200\" transform=\"translate(0 -229.267)\">\
+      <tspan y=\"244.452\" x=\"9.231\">H</tspan>\
+    </text>\
+    <text font-size=\"5.644\" y=\"238.348\" x=\"6.668\"\
+    style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'\"\
+    fill=\"#00f200\" transform=\"translate(0 -229.267)\">\
+      <tspan y=\"238.348\" x=\"6.668\">1</tspan>\
+    </text>\
+    <text font-size=\"11.289\" y=\"244.49\" x=\"45.172\"\
+    style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'\"\
+    fill=\"#bbf\" transform=\"translate(0 -229.267)\">\
+      <tspan y=\"244.49\" x=\"45.172\">He</tspan>\
+    </text>\
+    <text font-size=\"5.644\" y=\"238.348\" x=\"42.119\"\
+    style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'\"\
+    fill=\"#bbf\" transform=\"translate(0 -229.267)\">\
+      <tspan y=\"238.348\" x=\"42.119\">2</tspan>\
+    </text>\
+  </g>\
+  <text word-spacing=\"0\" letter-spacing=\"0\" font-size=\"25.94\"\
+  font-weight=\"700\" y=\"43.391\" x=\"6.0\"\
+  style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans; sans-serif'\"\
+  font-family=\"Noto Sans\" fill=\"#ffffac\" stroke-width=\".695\">\
+    <tspan font-size=\"29.645\" y=\"43.391\" x=\"6.0\">PTE</tspan>\
+  </text>\
+</svg>\
+";
     Glib::RefPtr<Gtk::CssProvider> m_LabelCssProvider;
     std::string label_css = "\
 label {\

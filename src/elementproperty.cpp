@@ -40,8 +40,6 @@ ElementProperty::ElementProperty()
     set_title(_("Gtk+: Application - Element Properties"));
     set_border_width(4);
     set_type_hint(Gdk::WindowTypeHint::WINDOW_TYPE_HINT_DIALOG);
-    // set position of window
-    move(512, 64);
     m_VBox.pack_start(m_TitleLabel, Gtk::PackOptions::PACK_SHRINK);
     m_Grid.set_column_spacing(8);
     // Add the Grid, inside a ScrolledWindow
@@ -90,9 +88,24 @@ void ElementProperty::on_element_clicked(int index) {
     if (m_ElementIndex >= 0) {
         remove();
         m_Grid.remove_column(1);
+        // otherwise no new icon is generated
+        hide();
     }
     m_ElementIndex = index;
+    // set position of window
+    move(512, 32);
     auto element = elements[index];
+    Glib::RefPtr<Gio::MemoryInputStream> stream = Gio::MemoryInputStream::create();
+    // generate and set icon with element symbol
+    stream->add_data(start_svg);
+    stream->add_data(defs_svg);
+    stream->add_data(rect_svg);
+    stream->add_data(transform_svg);
+    stream->add_data(middle_svg);
+    stream->add_data(element[2]);
+    stream->add_data(end_svg);
+    set_default_icon(Gdk::Pixbuf::create_from_stream(stream));
+    stream->close();
     stringstream title;
     title << "<b>" << setw(48) << element[0] << setw(48) << "</b>";
     m_TitleLabel.set_markup(title.str());
