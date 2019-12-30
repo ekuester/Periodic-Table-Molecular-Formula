@@ -1,4 +1,5 @@
 /* 
+ * Part of PeriodicTable - Periodic Table of the Elements
  * File:   molecularformula.h
  * Author: kuestere
  *

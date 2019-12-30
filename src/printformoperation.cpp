@@ -1,4 +1,5 @@
 /* gtkmm example Copyright (C) 2006 gtkmm development team
+ * Part of PeriodicTable - Periodic Table of the Elements
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2

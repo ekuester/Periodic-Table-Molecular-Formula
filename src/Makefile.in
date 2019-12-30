@@ -88,7 +88,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-install_PROGRAMS = GTKPeriodicTable$(EXEEXT)
+install_PROGRAMS = PeriodicTable$(EXEEXT)
 subdir = src
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/gettext.m4 \
@@ -106,16 +106,16 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(installdir)"
 PROGRAMS = $(install_PROGRAMS)
-am_GTKPeriodicTable_OBJECTS =  \
-	GTKPeriodicTable-elementproperty.$(OBJEXT) \
-	GTKPeriodicTable-elementschema.$(OBJEXT) \
-	GTKPeriodicTable-formulaparser.$(OBJEXT) \
-	GTKPeriodicTable-main.$(OBJEXT) \
-	GTKPeriodicTable-molecularformula.$(OBJEXT) \
-	GTKPeriodicTable-periodictablewindow.$(OBJEXT)
-GTKPeriodicTable_OBJECTS = $(am_GTKPeriodicTable_OBJECTS)
+am_PeriodicTable_OBJECTS =  \
+	PeriodicTable-elementproperty.$(OBJEXT) \
+	PeriodicTable-elementschema.$(OBJEXT) \
+	PeriodicTable-formulaparser.$(OBJEXT) \
+	PeriodicTable-main.$(OBJEXT) \
+	PeriodicTable-molecularformula.$(OBJEXT) \
+	PeriodicTable-periodictablewindow.$(OBJEXT)
+PeriodicTable_OBJECTS = $(am_PeriodicTable_OBJECTS)
 am__DEPENDENCIES_1 =
-GTKPeriodicTable_DEPENDENCIES = $(am__DEPENDENCIES_1)
+PeriodicTable_DEPENDENCIES = $(am__DEPENDENCIES_1)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -131,12 +131,12 @@ am__v_at_1 =
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__maybe_remake_depfiles = depfiles
-am__depfiles_remade = ./$(DEPDIR)/GTKPeriodicTable-elementproperty.Po \
-	./$(DEPDIR)/GTKPeriodicTable-elementschema.Po \
-	./$(DEPDIR)/GTKPeriodicTable-formulaparser.Po \
-	./$(DEPDIR)/GTKPeriodicTable-main.Po \
-	./$(DEPDIR)/GTKPeriodicTable-molecularformula.Po \
-	./$(DEPDIR)/GTKPeriodicTable-periodictablewindow.Po
+am__depfiles_remade = ./$(DEPDIR)/PeriodicTable-elementproperty.Po \
+	./$(DEPDIR)/PeriodicTable-elementschema.Po \
+	./$(DEPDIR)/PeriodicTable-formulaparser.Po \
+	./$(DEPDIR)/PeriodicTable-main.Po \
+	./$(DEPDIR)/PeriodicTable-molecularformula.Po \
+	./$(DEPDIR)/PeriodicTable-periodictablewindow.Po
 am__mv = mv -f
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
@@ -167,8 +167,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(GTKPeriodicTable_SOURCES)
-DIST_SOURCES = $(GTKPeriodicTable_SOURCES)
+SOURCES = $(PeriodicTable_SOURCES)
+DIST_SOURCES = $(PeriodicTable_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -339,7 +339,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 ACLOCAL_AMFLAGS = -I m4
 installdir = $(datadir)/$(PACKAGE)
-GTKPeriodicTable_SOURCES = about.xpm \
+PeriodicTable_SOURCES = about.xpm \
 elementproperty.h elementproperty.cpp \
 elementschema.h elementschema.cpp \
 formulaparser.h formulaparser.cpp \
@@ -347,12 +347,12 @@ main.cpp \
 molecularformula.h molecularformula.cpp \
 periodictablewindow.h periodictablewindow.cpp
 
-GTKPeriodicTable_CPPFLAGS = $(GTKMM_CFLAGS) $(CAIRO_CFLAGS) \
+PeriodicTable_CPPFLAGS = $(GTKMM_CFLAGS) $(CAIRO_CFLAGS) \
 -DPROGRAMNAME_LOCALEDIR=\"$(PROGRAMNAME_LOCALEDIR)\" \
 -DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\" \
 -DNLS=1
 
-GTKPeriodicTable_LDADD = $(GTKMM_LIBS) $(CAIRO_LIBS)
+PeriodicTable_LDADD = $(GTKMM_LIBS) $(CAIRO_LIBS)
 all: all-am
 
 .SUFFIXES:
@@ -429,9 +429,9 @@ uninstall-installPROGRAMS:
 clean-installPROGRAMS:
 	-test -z "$(install_PROGRAMS)" || rm -f $(install_PROGRAMS)
 
-GTKPeriodicTable$(EXEEXT): $(GTKPeriodicTable_OBJECTS) $(GTKPeriodicTable_DEPENDENCIES) $(EXTRA_GTKPeriodicTable_DEPENDENCIES) 
-	@rm -f GTKPeriodicTable$(EXEEXT)
-	$(AM_V_CXXLD)$(CXXLINK) $(GTKPeriodicTable_OBJECTS) $(GTKPeriodicTable_LDADD) $(LIBS)
+PeriodicTable$(EXEEXT): $(PeriodicTable_OBJECTS) $(PeriodicTable_DEPENDENCIES) $(EXTRA_PeriodicTable_DEPENDENCIES) 
+	@rm -f PeriodicTable$(EXEEXT)
+	$(AM_V_CXXLD)$(CXXLINK) $(PeriodicTable_OBJECTS) $(PeriodicTable_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -439,12 +439,12 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/GTKPeriodicTable-elementproperty.Po@am__quote@ # am--include-marker
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/GTKPeriodicTable-elementschema.Po@am__quote@ # am--include-marker
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/GTKPeriodicTable-formulaparser.Po@am__quote@ # am--include-marker
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/GTKPeriodicTable-main.Po@am__quote@ # am--include-marker
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/GTKPeriodicTable-molecularformula.Po@am__quote@ # am--include-marker
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/GTKPeriodicTable-periodictablewindow.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PeriodicTable-elementproperty.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PeriodicTable-elementschema.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PeriodicTable-formulaparser.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PeriodicTable-main.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PeriodicTable-molecularformula.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PeriodicTable-periodictablewindow.Po@am__quote@ # am--include-marker
 
 $(am__depfiles_remade):
 	@$(MKDIR_P) $(@D)
@@ -466,89 +466,89 @@ am--depfiles: $(am__depfiles_remade)
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
-GTKPeriodicTable-elementproperty.o: elementproperty.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-elementproperty.o -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-elementproperty.Tpo -c -o GTKPeriodicTable-elementproperty.o `test -f 'elementproperty.cpp' || echo '$(srcdir)/'`elementproperty.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-elementproperty.Tpo $(DEPDIR)/GTKPeriodicTable-elementproperty.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='elementproperty.cpp' object='GTKPeriodicTable-elementproperty.o' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-elementproperty.o: elementproperty.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-elementproperty.o -MD -MP -MF $(DEPDIR)/PeriodicTable-elementproperty.Tpo -c -o PeriodicTable-elementproperty.o `test -f 'elementproperty.cpp' || echo '$(srcdir)/'`elementproperty.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-elementproperty.Tpo $(DEPDIR)/PeriodicTable-elementproperty.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='elementproperty.cpp' object='PeriodicTable-elementproperty.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-elementproperty.o `test -f 'elementproperty.cpp' || echo '$(srcdir)/'`elementproperty.cpp
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-elementproperty.o `test -f 'elementproperty.cpp' || echo '$(srcdir)/'`elementproperty.cpp
 
-GTKPeriodicTable-elementproperty.obj: elementproperty.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-elementproperty.obj -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-elementproperty.Tpo -c -o GTKPeriodicTable-elementproperty.obj `if test -f 'elementproperty.cpp'; then $(CYGPATH_W) 'elementproperty.cpp'; else $(CYGPATH_W) '$(srcdir)/elementproperty.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-elementproperty.Tpo $(DEPDIR)/GTKPeriodicTable-elementproperty.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='elementproperty.cpp' object='GTKPeriodicTable-elementproperty.obj' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-elementproperty.obj: elementproperty.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-elementproperty.obj -MD -MP -MF $(DEPDIR)/PeriodicTable-elementproperty.Tpo -c -o PeriodicTable-elementproperty.obj `if test -f 'elementproperty.cpp'; then $(CYGPATH_W) 'elementproperty.cpp'; else $(CYGPATH_W) '$(srcdir)/elementproperty.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-elementproperty.Tpo $(DEPDIR)/PeriodicTable-elementproperty.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='elementproperty.cpp' object='PeriodicTable-elementproperty.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-elementproperty.obj `if test -f 'elementproperty.cpp'; then $(CYGPATH_W) 'elementproperty.cpp'; else $(CYGPATH_W) '$(srcdir)/elementproperty.cpp'; fi`
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-elementproperty.obj `if test -f 'elementproperty.cpp'; then $(CYGPATH_W) 'elementproperty.cpp'; else $(CYGPATH_W) '$(srcdir)/elementproperty.cpp'; fi`
 
-GTKPeriodicTable-elementschema.o: elementschema.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-elementschema.o -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-elementschema.Tpo -c -o GTKPeriodicTable-elementschema.o `test -f 'elementschema.cpp' || echo '$(srcdir)/'`elementschema.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-elementschema.Tpo $(DEPDIR)/GTKPeriodicTable-elementschema.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='elementschema.cpp' object='GTKPeriodicTable-elementschema.o' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-elementschema.o: elementschema.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-elementschema.o -MD -MP -MF $(DEPDIR)/PeriodicTable-elementschema.Tpo -c -o PeriodicTable-elementschema.o `test -f 'elementschema.cpp' || echo '$(srcdir)/'`elementschema.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-elementschema.Tpo $(DEPDIR)/PeriodicTable-elementschema.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='elementschema.cpp' object='PeriodicTable-elementschema.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-elementschema.o `test -f 'elementschema.cpp' || echo '$(srcdir)/'`elementschema.cpp
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-elementschema.o `test -f 'elementschema.cpp' || echo '$(srcdir)/'`elementschema.cpp
 
-GTKPeriodicTable-elementschema.obj: elementschema.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-elementschema.obj -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-elementschema.Tpo -c -o GTKPeriodicTable-elementschema.obj `if test -f 'elementschema.cpp'; then $(CYGPATH_W) 'elementschema.cpp'; else $(CYGPATH_W) '$(srcdir)/elementschema.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-elementschema.Tpo $(DEPDIR)/GTKPeriodicTable-elementschema.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='elementschema.cpp' object='GTKPeriodicTable-elementschema.obj' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-elementschema.obj: elementschema.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-elementschema.obj -MD -MP -MF $(DEPDIR)/PeriodicTable-elementschema.Tpo -c -o PeriodicTable-elementschema.obj `if test -f 'elementschema.cpp'; then $(CYGPATH_W) 'elementschema.cpp'; else $(CYGPATH_W) '$(srcdir)/elementschema.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-elementschema.Tpo $(DEPDIR)/PeriodicTable-elementschema.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='elementschema.cpp' object='PeriodicTable-elementschema.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-elementschema.obj `if test -f 'elementschema.cpp'; then $(CYGPATH_W) 'elementschema.cpp'; else $(CYGPATH_W) '$(srcdir)/elementschema.cpp'; fi`
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-elementschema.obj `if test -f 'elementschema.cpp'; then $(CYGPATH_W) 'elementschema.cpp'; else $(CYGPATH_W) '$(srcdir)/elementschema.cpp'; fi`
 
-GTKPeriodicTable-formulaparser.o: formulaparser.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-formulaparser.o -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-formulaparser.Tpo -c -o GTKPeriodicTable-formulaparser.o `test -f 'formulaparser.cpp' || echo '$(srcdir)/'`formulaparser.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-formulaparser.Tpo $(DEPDIR)/GTKPeriodicTable-formulaparser.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='formulaparser.cpp' object='GTKPeriodicTable-formulaparser.o' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-formulaparser.o: formulaparser.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-formulaparser.o -MD -MP -MF $(DEPDIR)/PeriodicTable-formulaparser.Tpo -c -o PeriodicTable-formulaparser.o `test -f 'formulaparser.cpp' || echo '$(srcdir)/'`formulaparser.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-formulaparser.Tpo $(DEPDIR)/PeriodicTable-formulaparser.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='formulaparser.cpp' object='PeriodicTable-formulaparser.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-formulaparser.o `test -f 'formulaparser.cpp' || echo '$(srcdir)/'`formulaparser.cpp
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-formulaparser.o `test -f 'formulaparser.cpp' || echo '$(srcdir)/'`formulaparser.cpp
 
-GTKPeriodicTable-formulaparser.obj: formulaparser.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-formulaparser.obj -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-formulaparser.Tpo -c -o GTKPeriodicTable-formulaparser.obj `if test -f 'formulaparser.cpp'; then $(CYGPATH_W) 'formulaparser.cpp'; else $(CYGPATH_W) '$(srcdir)/formulaparser.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-formulaparser.Tpo $(DEPDIR)/GTKPeriodicTable-formulaparser.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='formulaparser.cpp' object='GTKPeriodicTable-formulaparser.obj' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-formulaparser.obj: formulaparser.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-formulaparser.obj -MD -MP -MF $(DEPDIR)/PeriodicTable-formulaparser.Tpo -c -o PeriodicTable-formulaparser.obj `if test -f 'formulaparser.cpp'; then $(CYGPATH_W) 'formulaparser.cpp'; else $(CYGPATH_W) '$(srcdir)/formulaparser.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-formulaparser.Tpo $(DEPDIR)/PeriodicTable-formulaparser.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='formulaparser.cpp' object='PeriodicTable-formulaparser.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-formulaparser.obj `if test -f 'formulaparser.cpp'; then $(CYGPATH_W) 'formulaparser.cpp'; else $(CYGPATH_W) '$(srcdir)/formulaparser.cpp'; fi`
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-formulaparser.obj `if test -f 'formulaparser.cpp'; then $(CYGPATH_W) 'formulaparser.cpp'; else $(CYGPATH_W) '$(srcdir)/formulaparser.cpp'; fi`
 
-GTKPeriodicTable-main.o: main.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-main.o -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-main.Tpo -c -o GTKPeriodicTable-main.o `test -f 'main.cpp' || echo '$(srcdir)/'`main.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-main.Tpo $(DEPDIR)/GTKPeriodicTable-main.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='main.cpp' object='GTKPeriodicTable-main.o' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-main.o: main.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-main.o -MD -MP -MF $(DEPDIR)/PeriodicTable-main.Tpo -c -o PeriodicTable-main.o `test -f 'main.cpp' || echo '$(srcdir)/'`main.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-main.Tpo $(DEPDIR)/PeriodicTable-main.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='main.cpp' object='PeriodicTable-main.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-main.o `test -f 'main.cpp' || echo '$(srcdir)/'`main.cpp
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-main.o `test -f 'main.cpp' || echo '$(srcdir)/'`main.cpp
 
-GTKPeriodicTable-main.obj: main.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-main.obj -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-main.Tpo -c -o GTKPeriodicTable-main.obj `if test -f 'main.cpp'; then $(CYGPATH_W) 'main.cpp'; else $(CYGPATH_W) '$(srcdir)/main.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-main.Tpo $(DEPDIR)/GTKPeriodicTable-main.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='main.cpp' object='GTKPeriodicTable-main.obj' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-main.obj: main.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-main.obj -MD -MP -MF $(DEPDIR)/PeriodicTable-main.Tpo -c -o PeriodicTable-main.obj `if test -f 'main.cpp'; then $(CYGPATH_W) 'main.cpp'; else $(CYGPATH_W) '$(srcdir)/main.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-main.Tpo $(DEPDIR)/PeriodicTable-main.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='main.cpp' object='PeriodicTable-main.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-main.obj `if test -f 'main.cpp'; then $(CYGPATH_W) 'main.cpp'; else $(CYGPATH_W) '$(srcdir)/main.cpp'; fi`
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-main.obj `if test -f 'main.cpp'; then $(CYGPATH_W) 'main.cpp'; else $(CYGPATH_W) '$(srcdir)/main.cpp'; fi`
 
-GTKPeriodicTable-molecularformula.o: molecularformula.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-molecularformula.o -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-molecularformula.Tpo -c -o GTKPeriodicTable-molecularformula.o `test -f 'molecularformula.cpp' || echo '$(srcdir)/'`molecularformula.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-molecularformula.Tpo $(DEPDIR)/GTKPeriodicTable-molecularformula.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='molecularformula.cpp' object='GTKPeriodicTable-molecularformula.o' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-molecularformula.o: molecularformula.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-molecularformula.o -MD -MP -MF $(DEPDIR)/PeriodicTable-molecularformula.Tpo -c -o PeriodicTable-molecularformula.o `test -f 'molecularformula.cpp' || echo '$(srcdir)/'`molecularformula.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-molecularformula.Tpo $(DEPDIR)/PeriodicTable-molecularformula.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='molecularformula.cpp' object='PeriodicTable-molecularformula.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-molecularformula.o `test -f 'molecularformula.cpp' || echo '$(srcdir)/'`molecularformula.cpp
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-molecularformula.o `test -f 'molecularformula.cpp' || echo '$(srcdir)/'`molecularformula.cpp
 
-GTKPeriodicTable-molecularformula.obj: molecularformula.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-molecularformula.obj -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-molecularformula.Tpo -c -o GTKPeriodicTable-molecularformula.obj `if test -f 'molecularformula.cpp'; then $(CYGPATH_W) 'molecularformula.cpp'; else $(CYGPATH_W) '$(srcdir)/molecularformula.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-molecularformula.Tpo $(DEPDIR)/GTKPeriodicTable-molecularformula.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='molecularformula.cpp' object='GTKPeriodicTable-molecularformula.obj' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-molecularformula.obj: molecularformula.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-molecularformula.obj -MD -MP -MF $(DEPDIR)/PeriodicTable-molecularformula.Tpo -c -o PeriodicTable-molecularformula.obj `if test -f 'molecularformula.cpp'; then $(CYGPATH_W) 'molecularformula.cpp'; else $(CYGPATH_W) '$(srcdir)/molecularformula.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-molecularformula.Tpo $(DEPDIR)/PeriodicTable-molecularformula.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='molecularformula.cpp' object='PeriodicTable-molecularformula.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-molecularformula.obj `if test -f 'molecularformula.cpp'; then $(CYGPATH_W) 'molecularformula.cpp'; else $(CYGPATH_W) '$(srcdir)/molecularformula.cpp'; fi`
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-molecularformula.obj `if test -f 'molecularformula.cpp'; then $(CYGPATH_W) 'molecularformula.cpp'; else $(CYGPATH_W) '$(srcdir)/molecularformula.cpp'; fi`
 
-GTKPeriodicTable-periodictablewindow.o: periodictablewindow.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-periodictablewindow.o -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-periodictablewindow.Tpo -c -o GTKPeriodicTable-periodictablewindow.o `test -f 'periodictablewindow.cpp' || echo '$(srcdir)/'`periodictablewindow.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-periodictablewindow.Tpo $(DEPDIR)/GTKPeriodicTable-periodictablewindow.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='periodictablewindow.cpp' object='GTKPeriodicTable-periodictablewindow.o' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-periodictablewindow.o: periodictablewindow.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-periodictablewindow.o -MD -MP -MF $(DEPDIR)/PeriodicTable-periodictablewindow.Tpo -c -o PeriodicTable-periodictablewindow.o `test -f 'periodictablewindow.cpp' || echo '$(srcdir)/'`periodictablewindow.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-periodictablewindow.Tpo $(DEPDIR)/PeriodicTable-periodictablewindow.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='periodictablewindow.cpp' object='PeriodicTable-periodictablewindow.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-periodictablewindow.o `test -f 'periodictablewindow.cpp' || echo '$(srcdir)/'`periodictablewindow.cpp
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-periodictablewindow.o `test -f 'periodictablewindow.cpp' || echo '$(srcdir)/'`periodictablewindow.cpp
 
-GTKPeriodicTable-periodictablewindow.obj: periodictablewindow.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT GTKPeriodicTable-periodictablewindow.obj -MD -MP -MF $(DEPDIR)/GTKPeriodicTable-periodictablewindow.Tpo -c -o GTKPeriodicTable-periodictablewindow.obj `if test -f 'periodictablewindow.cpp'; then $(CYGPATH_W) 'periodictablewindow.cpp'; else $(CYGPATH_W) '$(srcdir)/periodictablewindow.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/GTKPeriodicTable-periodictablewindow.Tpo $(DEPDIR)/GTKPeriodicTable-periodictablewindow.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='periodictablewindow.cpp' object='GTKPeriodicTable-periodictablewindow.obj' libtool=no @AMDEPBACKSLASH@
+PeriodicTable-periodictablewindow.obj: periodictablewindow.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT PeriodicTable-periodictablewindow.obj -MD -MP -MF $(DEPDIR)/PeriodicTable-periodictablewindow.Tpo -c -o PeriodicTable-periodictablewindow.obj `if test -f 'periodictablewindow.cpp'; then $(CYGPATH_W) 'periodictablewindow.cpp'; else $(CYGPATH_W) '$(srcdir)/periodictablewindow.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/PeriodicTable-periodictablewindow.Tpo $(DEPDIR)/PeriodicTable-periodictablewindow.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='periodictablewindow.cpp' object='PeriodicTable-periodictablewindow.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(GTKPeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o GTKPeriodicTable-periodictablewindow.obj `if test -f 'periodictablewindow.cpp'; then $(CYGPATH_W) 'periodictablewindow.cpp'; else $(CYGPATH_W) '$(srcdir)/periodictablewindow.cpp'; fi`
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(PeriodicTable_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o PeriodicTable-periodictablewindow.obj `if test -f 'periodictablewindow.cpp'; then $(CYGPATH_W) 'periodictablewindow.cpp'; else $(CYGPATH_W) '$(srcdir)/periodictablewindow.cpp'; fi`
 
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
@@ -677,12 +677,12 @@ clean: clean-am
 clean-am: clean-generic clean-installPROGRAMS mostlyclean-am
 
 distclean: distclean-am
-		-rm -f ./$(DEPDIR)/GTKPeriodicTable-elementproperty.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-elementschema.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-formulaparser.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-main.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-molecularformula.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-periodictablewindow.Po
+		-rm -f ./$(DEPDIR)/PeriodicTable-elementproperty.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-elementschema.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-formulaparser.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-main.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-molecularformula.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-periodictablewindow.Po
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-tags
@@ -728,12 +728,12 @@ install-ps-am:
 installcheck-am:
 
 maintainer-clean: maintainer-clean-am
-		-rm -f ./$(DEPDIR)/GTKPeriodicTable-elementproperty.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-elementschema.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-formulaparser.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-main.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-molecularformula.Po
-	-rm -f ./$(DEPDIR)/GTKPeriodicTable-periodictablewindow.Po
+		-rm -f ./$(DEPDIR)/PeriodicTable-elementproperty.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-elementschema.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-formulaparser.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-main.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-molecularformula.Po
+	-rm -f ./$(DEPDIR)/PeriodicTable-periodictablewindow.Po
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 

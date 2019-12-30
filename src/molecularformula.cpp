@@ -1,5 +1,5 @@
 /*
-//  Part of GTKPeriodicTable - Periodic Table of the Elements
+//  Part of PeriodicTable - Periodic Table of the Elements
 //  Copyright (C) 2018  Erich Küster
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -42,17 +42,15 @@
 // 30.10.2018 V 1.5.1 completed with Periodic Table in a window
 // 28.02.2019 V 1.5.2 some translations and switch-over to autotools
 //  Created by Erich Kuester, Krefeld, Germany
-//    Copyright © 2014 - 2019 Erich Kuester.
-//            All rights reserved.
 //
 //  for bonds: "-" ":" "=" "." ""
 //  for complex formulas "[" "]" "(" ")"
 //  for hydration water, Eisenheptahydrate = FeSO4.[H2O]7
 //
 //  renewed on September 27, 2018 at 18:36
-//  Copyright © 2014 - 2019 Erich Kuester.
-//      All rights reserved.
-//  Last changes on November 29, 2019
+//  Copyright © 2014 - 2020 Erich Kuester.
+//        All rights reserved.
+//    Last version on GitHub 1.6.4
  */
 
 #include "molecularformula.h"

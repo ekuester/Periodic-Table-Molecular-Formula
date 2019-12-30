@@ -1,4 +1,4 @@
-// project: GTKPeriodicTable
+// Project: PeriodicTable
 // file: main.cpp
 
 #include <gtkmm/application.h>
@@ -7,7 +7,7 @@
 #ifndef NLS
 #define NLS 1
 #define PROGRAMNAME_LOCALEDIR "."
-#define GETTEXT_PACKAGE "GTKPeriodicTable"
+#define GETTEXT_PACKAGE "PeriodicTable"
 #endif
 
 int main(int argc, char *argv[])

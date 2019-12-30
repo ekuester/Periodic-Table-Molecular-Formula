@@ -1,5 +1,5 @@
 /*
-//  Part of GTKPeriodicTable - Periodic Table of the Elements
+//  Part of PeriodicTable - Periodic Table of the Elements
 //  Copyright (C) 2018  Erich Küster
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -18,9 +18,9 @@
 //  File:   periodictablewindow.cpp
 //
 //  Created by Erich Kuester, Krefeld, Germany
-//    Copyright © 2014 - 2019 Erich Kuester.
+//    Copyright © 2014 - 2020 Erich Kuester.
 //          All rights reserved.
-//  Last changes on April 21, 2019 for version 1.6.2
+//     Last version on GitHub 1.6.2
  */
 
 #include "periodictablewindow.h"
