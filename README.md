@@ -24,7 +24,7 @@ periodictable.sh
 ```
 will build and run the program for the current user. The Linux way of localization for the dutch/french/german/italian translation files is adapted.
 
-Alternatively (but only as english version) you can easily compile and run the program in Terminal with the added shell script:
+Alternatively (for all supported languages) you can easily compile and run the program in Terminal with the added shell script:
 ```
 sh ./GTKPeriodicTable.sh
 ```

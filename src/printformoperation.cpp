@@ -1,6 +1,5 @@
 /* gtkmm example Copyright (C) 2006 gtkmm development team
- * Part of PeriodicTable - Periodic Table of the Elements
- *
+ * Part of gtkPeriodicTable - Periodic Table of the Elements
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation.
@@ -13,6 +12,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ * slightly modified, last changes January 3rd, 2020
  */
 
 #include "printformoperation.h"

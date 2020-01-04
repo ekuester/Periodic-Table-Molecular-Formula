@@ -1,4 +1,4 @@
-// Project: PeriodicTable
+// Part of gtkPeriodicTable - Periodic Table of the Elements
 // file: main.cpp
 
 #include <gtkmm/application.h>
@@ -7,7 +7,7 @@
 #ifndef NLS
 #define NLS 1
 #define PROGRAMNAME_LOCALEDIR "."
-#define GETTEXT_PACKAGE "PeriodicTable"
+#define GETTEXT_PACKAGE "GTKPeriodicTable"
 #endif
 
 int main(int argc, char *argv[])

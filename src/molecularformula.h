@@ -1,5 +1,5 @@
 /* 
- * Part of PeriodicTable - Periodic Table of the Elements
+ * Part of gtkPeriodicTable - Periodic Table of the Elements
  * File:   molecularformula.h
  * Author: kuestere
  *

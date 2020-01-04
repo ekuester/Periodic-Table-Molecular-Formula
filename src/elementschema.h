@@ -1,5 +1,5 @@
 /*
-//  Part of PeriodicTable - Periodic Table of the Elements
+//  Part of gtkPeriodicTable - Periodic Table of the Elements
 //  Copyright (C) 2018  Erich Küster
 //
 //  This program is free software: you can redistribute it and/or modify
