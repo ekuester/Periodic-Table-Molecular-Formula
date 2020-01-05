@@ -1,7 +1,7 @@
 # Translations for Periodic-Table-Molecular-Formula.
 # Copyright (C) 2019 Erich Küster
 # This file is distributed under the same license as the Periodic-Table-Molecular-Formula package.
-# Erich Küster <erich.kuester@arcor.de>, 2019.
+# Erich Küster <erich.kuester@arcor.de>, 2020.
 #
 #, fuzzy
 msgid ""
@@ -167,7 +167,7 @@ msgid "Copper"
 msgstr ""
 
 #: periodictablewindow.cpp:284
-msgid "Copyright © 2018 Erich Küster. All rights reserved."
+msgid "Copyright © 2020 Erich Küster. All rights reserved."
 msgstr ""
 
 #: elementschema.h:134
@@ -689,7 +689,7 @@ msgid "Vanadium"
 msgstr ""
 
 #: periodictablewindow.cpp:283
-msgid "Version 1.6.2"
+msgid "Version 1.6.4"
 msgstr ""
 
 #: elementschema.h:92

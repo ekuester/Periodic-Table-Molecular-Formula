@@ -1,12 +1,12 @@
 # Translations for Periodic-Table-Molecular-Formula, french version.
-# Copyright (C) 2018 Erich Küster
+# Copyright (C) 2020 Erich Küster
 # This file is distributed under the same license as the Periodic-Table-Molecular-Formula package.
-# Erich Küster <erich.kuester@arcor.de>, 2018.
+# Erich Küster <erich.kuester@arcor.de>, 2020.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Periodic-Table-Molecular-Formula 1.6.2\n"
+"Project-Id-Version: Periodic-Table-Molecular-Formula 1.6.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 18:53+0200\n"
 "PO-Revision-Date: 2019-04-21 17:54+ZONE\n"
@@ -167,8 +167,8 @@ msgid "Copper"
 msgstr "Cuivre"
 
 #: periodictablewindow.cpp:284
-msgid "Copyright © 2018 Erich Küster. All rights reserved."
-msgstr "Copyright © 2018 Erich Küster. Tous les droits sont réservés."
+msgid "Copyright © 2020 Erich Küster. All rights reserved."
+msgstr "Copyright © 2020 Erich Küster. Tous les droits sont réservés."
 
 #: elementschema.h:134
 msgid "Curium"
@@ -691,8 +691,8 @@ msgid "Vanadium"
 msgstr ""
 
 #: periodictablewindow.cpp:283
-msgid "Version 1.6.2"
-msgstr ""
+msgid "Version 1.6.4"
+msgstr "Version 1.6.4"
 
 #: elementschema.h:92
 msgid "Xenon"
