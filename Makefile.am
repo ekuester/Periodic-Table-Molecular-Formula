@@ -5,11 +5,15 @@ ACLOCAL_AMFLAGS = -I m4
 bin_SCRIPTS = periodictable.sh
 
 LATERAL_FILES = COMMENTAREN COMMENTAIRES COMMENTI COMMENTS KOMMENTARE LICENSE README.md
-LEGEND_FILES = $(wildcard legend*.svg)
+LEGEND_FILES = legend-DE-480x140.svg\
+ legend-EN-480x140.svg\
+ legend-FR-480x140.svg\
+ legend-IT-480x140.svg\
+ legend-NL-480x140.svg
 lateraldir = $(pkgdatadir)
-lateral_DATA = $(LATERAL_FILES)
+lateral_DATA = $(LATERAL_FILES) $(LEGEND_FILES)
 
-EXTRA_DIST = 16x16 autogen.sh GTKPeriodicTable.sh $(LATERAL_FILES)
+EXTRA_DIST = 16x16 autogen.sh GTKPeriodicTable.sh $(LATERAL_FILES) $(LEGEND_FILES)
 
 CLEANFILES =
 
