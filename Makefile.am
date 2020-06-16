@@ -13,7 +13,9 @@ LEGEND_FILES = legend-DE-480x140.svg\
 lateraldir = $(pkgdatadir)
 lateral_DATA = $(LATERAL_FILES) $(LEGEND_FILES)
 
-EXTRA_DIST = 16x16 autogen.sh GTKPeriodicTable.sh $(LATERAL_FILES) $(LEGEND_FILES)
+EXTRA_DIST = 16x16 package autogen.sh GTKPeriodicTable.sh\
+ $(LATERAL_FILES)\
+ $(LEGEND_FILES)
 
 CLEANFILES =
 
