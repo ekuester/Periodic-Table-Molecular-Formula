@@ -1,69 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-viewBox="0 0 67.733 67.733">
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="256" height="256" viewBox="0 0 67.733 67.733"
+xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="a" x="-.072" width="1.144" y="-.072" height="1.144"
+    <filter id="a" x="-.072" y="-.072" width="1.144" height="1.144"
     color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="3.514" />
     </filter>
   </defs>
   <g transform="translate(0 63.5) scale(.26458)">
-    <rect width="240" height="240" x="8.145" y="-232.868" rx="32"
+    <rect x="8.145" y="-232.87" width="240" height="240" rx="32"
     ry="32" fill="#2394da" fill-opacity=".939" />
-    <path d="M117.139 6.861A15.94 15.94 0 01120 16v88c0 8.864-7.136 16-16 16H16a15.94 15.94 0 01-9.139-2.861A15.95 15.95 0 0020 124h88c8.864 0 16-7.136 16-16V20a15.95 15.95 0 00-6.861-13.139z"
-    transform="matrix(2 0 0 2 .145 -240.868)" opacity=".36"
-    filter="url(#a)" />
+    <path transform="matrix(2 0 0 2 .145 -240.87)"
+    d="M117.139 6.861A15.94 15.94 0 01120 16v88c0 8.864-7.136 16-16 16H16a15.94 15.94 0 01-9.139-2.861A15.95 15.95 0 0020 124h88c8.864 0 16-7.136 16-16V20a15.95 15.95 0 00-6.861-13.139z"
+    filter="url(#a)" opacity=".36" />
   </g>
-  <g word-spacing="0" letter-spacing="0" font-weight="700"
-  font-family="Noto Sans" stroke-width=".529">
-    <text font-size="5.644"
-    style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-    x="35.963" y="283.482" fill="#bbf"
-    transform="translate(0 -229.267)">
+  <g font-family="Noto Sans" font-weight="700" letter-spacing="0"
+  stroke-width=".529" word-spacing="0">
+    <text transform="translate(0 -229.27)" x="35.963" y="283.482"
+    fill="#bbf" font-size="5.644" style="line-height:1.25">
       <tspan x="35.963" y="283.482">118</tspan>
     </text>
-    <text font-size="11.289"
-    style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-    x="45.875" y="289.624" fill="#bbf"
-    transform="translate(0 -229.267)">
+    <text transform="translate(0 -229.27)" x="45.875" y="289.624"
+    fill="#bbf" font-size="11.289" style="line-height:1.25">
       <tspan x="45.875" y="289.624">Og</tspan>
     </text>
-    <text font-size="5.644"
-    style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-    x="3.267" y="283.575" fill="#f88"
-    transform="translate(0 -229.267)">
+    <text transform="translate(0 -229.27)" x="3.267" y="283.575"
+    fill="#f88" font-size="5.644" style="line-height:1.25">
       <tspan x="3.267" y="283.575">87</tspan>
     </text>
-    <text font-size="11.289"
-    style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-    x="9.306" y="289.485" fill="#f88"
-    transform="translate(0 -229.267)">
+    <text transform="translate(0 -229.27)" x="9.306" y="289.485"
+    fill="#f88" font-size="11.289" style="line-height:1.25">
       <tspan x="9.306" y="289.485">Fr</tspan>
     </text>
-    <text font-size="11.289" y="244.452" x="9.231"
-    style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-    fill="#00f200" transform="translate(0 -229.267)">
-      <tspan y="244.452" x="9.231">H</tspan>
+    <text transform="translate(0 -229.27)" x="9.231" y="244.452"
+    fill="#00f200" font-size="11.289" style="line-height:1.25">
+      <tspan x="9.231" y="244.452">H</tspan>
     </text>
-    <text font-size="5.644" y="238.348" x="6.668"
-    style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-    fill="#00f200" transform="translate(0 -229.267)">
-      <tspan y="238.348" x="6.668">1</tspan>
+    <text transform="translate(0 -229.27)" x="6.668" y="238.348"
+    fill="#00f200" font-size="5.644" style="line-height:1.25">
+      <tspan x="6.668" y="238.348">1</tspan>
     </text>
-    <text font-size="11.289" y="244.49" x="45.172"
-    style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-    fill="#bbf" transform="translate(0 -229.267)">
-      <tspan y="244.49" x="45.172">He</tspan>
+    <text transform="translate(0 -229.27)" x="45.172" y="244.49"
+    fill="#bbf" font-size="11.289" style="line-height:1.25">
+      <tspan x="45.172" y="244.49">He</tspan>
     </text>
-    <text font-size="5.644" y="238.348" x="42.119"
-    style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-    fill="#bbf" transform="translate(0 -229.267)">
-      <tspan y="238.348" x="42.119">2</tspan>
+    <text transform="translate(0 -229.27)" x="42.119" y="238.348"
+    fill="#bbf" font-size="5.644" style="line-height:1.25">
+      <tspan x="42.119" y="238.348">2</tspan>
     </text>
   </g>
-  <text word-spacing="0" letter-spacing="0" font-size="25.94"
-  font-weight="700" y="43.391" x="3.682"
-  style="line-height:1.25;-inkscape-font-specification:'Noto Sans Bold; sans-serif'"
-  font-family="Noto Sans" fill="#ffffac" stroke-width=".695">
-    <tspan font-size="29.645" y="43.391" x="3.682">PTE</tspan>
+  <text x="3.682" y="43.391" fill="#ffffac" font-family="Noto Sans"
+  font-size="25.94" font-weight="700" letter-spacing="0"
+  stroke-width=".695" word-spacing="0" style="line-height:1.25">
+    <tspan x="3.682" y="43.391" font-size="29.645">PTE</tspan>
   </text>
 </svg>

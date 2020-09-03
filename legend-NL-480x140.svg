@@ -1,1 +1,206 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280"><g font-family="Liberation Sans"><text style="-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" x="84.275" y="194.864" transform="matrix(1 0 0 1 0 -111.869)" font-weight="400" font-size="21.333" text-anchor="middle" stroke-width="1.5" stroke-linecap="square"><tspan style="-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center">Groep</tspan></text><text style="-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end" x="136.448" y="280.558" font-weight="400" font-size="21.333" text-anchor="end" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan style="-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end">Atoommassa</tspan></text><text style="-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end" x="115.162" y="247.557" font-weight="400" font-size="21.333" text-anchor="end" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">Symbool</text><path font-size="12" fill="#eee8aa" stroke="#000" stroke-width="3.097" stroke-linecap="square" d="M142.996 88.972h92.903v92.903h-92.903z"/><path d="M153.448 119.424l-56-30" font-size="12" stroke="#000" stroke-width="2"/><text style="-inkscape-font-specification:'Liberation Sans, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end" x="206.222" y="250.007" font-weight="700" font-size="24" text-anchor="end" fill="red" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan style="-inkscape-font-specification:'Liberation Sans, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end">Cl</tspan></text><text x="167.416" y="227.058" font-weight="700" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan style="-inkscape-font-specification:'Liberation Sans, sans-serif Bold'" font-size="16">17</tspan></text><text x="165.375" y="279.772" font-size="13.5" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan font-size="16">35,453</tspan></text><path d="M173.448 131.424h-52" font-size="12" stroke="#000" stroke-width="2"/><text style="-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" x="181.478" y="188.948" font-weight="400" font-size="21.333" text-anchor="middle" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan style="-inkscape-font-specification:'Liberation Sans, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center">volgnummer</tspan></text><text y="140.058" x="265.354" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan font-size="21.333">Volgnummer</tspan></text><path font-size="12" fill="none" stroke="#000" stroke-width="2.332" stroke-linecap="square" d="M262.624 37.258h241.649"/><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="283.211" y="170.986" font-weight="400" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">   <tspan x="283.211" y="170.986" font-size="21.333">zwart = niet radioactief</tspan></text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="280.234" y="193.486" font-weight="400" font-size="18" fill="#0a0" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">   <tspan x="280.234" y="193.486" font-size="21.333">groen = radioactief</tspan></text><text y="237.558" x="264.479" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan font-size="21.333">Symbool</tspan></text><path font-size="12" fill="none" stroke="#000" stroke-width="2.313" stroke-linecap="square" d="M262.604 136.267h237.688"/><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="282.591" y="270.629" font-weight="400" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">   <tspan x="282.591" y="270.629" font-size="21.333">zwart = vaste stof</tspan></text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="278.305" y="294.368" font-weight="400" font-size="18" fill="#00f" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">   <tspan x="278.305" y="294.368" font-size="21.333">blauw = vloeistof</tspan></text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="290.805" y="315.986" font-weight="400" font-size="18" fill="red" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">   <tspan x="290.805" y="315.986" font-size="21.333">rood = gas</tspan></text><text y="140.058" x="554.448" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan font-size="21.333">Groep</tspan></text><path font-size="12" fill="none" stroke="#000" stroke-width="2.505" stroke-linecap="square" d="M554.709 37.2h390.439"/><path font-size="12" fill="coral" d="M557.449 51.424h20v20h-20z"/><path font-size="12" fill="salmon" d="M557.449 77.424h20v20h-20z"/><path font-size="12" fill="#add8e6" d="M557.449 103.424h20v20h-20z"/><path font-size="12" fill="#f4a460" d="M557.449 129.424h20v20h-20z"/><path font-size="12" fill="#db9356" d="M557.449 155.424h20v20h-20z"/><path font-size="12" fill="#c1e3ff" d="M797.449 51.424h20v20h-20z"/><path font-size="12" fill="#0ff" d="M797.449 77.424h20v20h-20z"/><path font-size="12" fill="#90ee90" d="M797.449 103.424h20v20h-20z"/><path font-size="12" fill="#eee8aa" d="M797.449 129.424h20v20h-20z"/><path font-size="12" fill="#e6e6fa" d="M797.449 155.424h20v20h-20z"/><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="181.084" x="584.408" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">alkalimetalen</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="206.584" x="582.699" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">aardalkalimetalen</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="234.152" x="582.803" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">overgangsmetalen</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="259.084" x="582.699" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">lanthaniden</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="285.084" x="584.408" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">actiniden</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="181.084" x="822.699" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">metalen</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="206.584" x="822.699" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">metalloiden</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="234.512" x="822.699" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">niet-metalen</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="259.866" x="822.699" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">halogenen</text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" y="284.794" x="822.699" font-weight="400" font-size="21.333" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)">edelgassen</text><text y="318.292" x="554.448" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan font-size="21.333">Areaal</tspan></text><path font-size="12" fill="none" stroke="#000" stroke-width="2.505" stroke-linecap="square" d="M554.709 215.2h390.439"/><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="567.625" y="349.223" font-weight="400" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan x="567.625" y="349.223" font-size="21.333">doorgaand = natuurlijk element</tspan></text><text style="-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="574.355" y="371.442" font-weight="400" font-size="18" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan x="574.355" y="371.442" font-size="21.333">gearceerd = gesynthetiseerd element</tspan></text><text x="102.224" y="137.058" style="-inkscape-font-specification:'Liberation Sans, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" font-weight="700" font-size="29.333" text-anchor="middle" stroke-width="1.5" stroke-linecap="square" transform="translate(0 -111.869)"><tspan style="-inkscape-font-specification:'Liberation Sans, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center">Verklaring:</tspan></text><path font-weight="700" font-size="16" fill="none" stroke="#000" stroke-width="3.316" stroke-linecap="square" d="M29.217 37.822h146.615"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="960" height="280" xmlns="http://www.w3.org/2000/svg">
+  <g font-family="Liberation Sans">
+    <text transform="translate(0 -111.87)" x="84.275" y="194.864"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5" text-align="center" text-anchor="middle"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan text-align="center"
+      style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+      Groep</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="136.448" y="280.558"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5" text-align="end" text-anchor="end"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan text-align="end"
+      style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+      Atoommassa</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="115.162" y="247.557"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5" text-align="end" text-anchor="end"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    Symbool</text>
+    <path d="m143 88.972h92.903v92.903h-92.903z" fill="#eee8aa"
+    font-size="12" stroke="#000" stroke-linecap="square"
+    stroke-width="3.097" />
+    <path d="m153.45 119.42-56-30" font-size="12" stroke="#000"
+    stroke-width="2" />
+    <text transform="translate(0 -111.87)" x="206.222" y="250.007"
+    fill="red" font-size="24" font-weight="700"
+    stroke-linecap="square" stroke-width="1.5" text-align="end"
+    text-anchor="end"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan text-align="end"
+      style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+      Cl</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="167.416" y="227.058"
+    font-size="18" font-weight="700" stroke-linecap="square"
+    stroke-width="1.5">
+      <tspan font-size="16">17</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="165.375" y="279.772"
+    font-size="13.5" stroke-linecap="square" stroke-width="1.5">
+      <tspan font-size="16">35,453</tspan>
+    </text>
+    <path d="m173.45 131.42h-52" font-size="12" stroke="#000"
+    stroke-width="2" />
+    <text transform="translate(0 -111.87)" x="181.478" y="188.948"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5" text-align="center" text-anchor="middle"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan text-align="center"
+      style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+      volgnummer</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="265.354" y="140.058"
+    font-size="18" stroke-linecap="square" stroke-width="1.5">
+      <tspan font-size="21.333">Volgnummer</tspan>
+    </text>
+    <path d="m262.62 37.258h241.65" fill="none" font-size="12"
+    stroke="#000" stroke-linecap="square" stroke-width="2.332" />
+    <text transform="translate(0 -111.87)" x="283.211" y="170.986"
+    font-size="18" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan x="283.211" y="170.986" font-size="21.333">zwart = niet radioactief</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="280.234" y="193.486"
+    fill="#0a0" font-size="18" font-weight="400"
+    stroke-linecap="square" stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan x="280.234" y="193.486" font-size="21.333">groen = radioactief</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="264.479" y="237.558"
+    font-size="18" stroke-linecap="square" stroke-width="1.5">
+      <tspan font-size="21.333">Symbool</tspan>
+    </text>
+    <path d="m262.6 136.27h237.69" fill="none" font-size="12"
+    stroke="#000" stroke-linecap="square" stroke-width="2.313" />
+    <text transform="translate(0 -111.87)" x="282.591" y="270.629"
+    font-size="18" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan x="282.591" y="270.629" font-size="21.333">zwart = vaste stof</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="278.305" y="294.368"
+    fill="#00f" font-size="18" font-weight="400"
+    stroke-linecap="square" stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan x="278.305" y="294.368" font-size="21.333">blauw = vloeistof</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="290.805" y="315.986"
+    fill="red" font-size="18" font-weight="400"
+    stroke-linecap="square" stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan x="290.805" y="315.986" font-size="21.333">rood = gas</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="554.448" y="140.058"
+    font-size="18" stroke-linecap="square" stroke-width="1.5">
+      <tspan font-size="21.333">Groep</tspan>
+    </text>
+    <path d="m554.71 37.2h390.44" fill="none" font-size="12"
+    stroke="#000" stroke-linecap="square" stroke-width="2.505" />
+    <path d="m557.45 51.424h20v20h-20z" fill="coral"
+    font-size="12" />
+    <path d="m557.45 77.424h20v20h-20z" fill="salmon"
+    font-size="12" />
+    <path d="m557.45 103.42h20v20h-20z" fill="#add8e6"
+    font-size="12" />
+    <path d="m557.45 129.42h20v20h-20z" fill="#f4a460"
+    font-size="12" />
+    <path d="m557.45 155.42h20v20h-20z" fill="#db9356"
+    font-size="12" />
+    <path d="m797.45 51.424h20v20h-20z" fill="#c1e3ff"
+    font-size="12" />
+    <path d="m797.45 77.424h20v20h-20z" fill="#0ff"
+    font-size="12" />
+    <path d="m797.45 103.42h20v20h-20z" fill="#90ee90"
+    font-size="12" />
+    <path d="m797.45 129.42h20v20h-20z" fill="#eee8aa"
+    font-size="12" />
+    <path d="m797.45 155.42h20v20h-20z" fill="#e6e6fa"
+    font-size="12" />
+    <text transform="translate(0 -111.87)" x="584.408" y="181.084"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    alkalimetalen</text>
+    <text transform="translate(0 -111.87)" x="582.699" y="206.584"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    aardalkalimetalen</text>
+    <text transform="translate(0 -111.87)" x="582.803" y="234.152"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    overgangsmetalen</text>
+    <text transform="translate(0 -111.87)" x="582.699" y="259.084"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    lanthaniden</text>
+    <text transform="translate(0 -111.87)" x="584.408" y="285.084"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    actiniden</text>
+    <text transform="translate(0 -111.87)" x="822.699" y="181.084"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    metalen</text>
+    <text transform="translate(0 -111.87)" x="822.699" y="206.584"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    metalloiden</text>
+    <text transform="translate(0 -111.87)" x="822.699" y="234.512"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    niet-metalen</text>
+    <text transform="translate(0 -111.87)" x="822.699" y="259.866"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    halogenen</text>
+    <text transform="translate(0 -111.87)" x="822.699" y="284.794"
+    font-size="21.333" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    edelgassen</text>
+    <text transform="translate(0 -111.87)" x="554.448" y="318.292"
+    font-size="18" stroke-linecap="square" stroke-width="1.5">
+      <tspan font-size="21.333">Areaal</tspan>
+    </text>
+    <path d="m554.71 215.2h390.44" fill="none" font-size="12"
+    stroke="#000" stroke-linecap="square" stroke-width="2.505" />
+    <text transform="translate(0 -111.87)" x="567.625" y="349.223"
+    font-size="18" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan x="567.625" y="349.223" font-size="21.333">doorgaand = natuurlijk element</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="574.355" y="371.442"
+    font-size="18" font-weight="400" stroke-linecap="square"
+    stroke-width="1.5"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan x="574.355" y="371.442" font-size="21.333">gearceerd = gesynthetiseerd element</tspan>
+    </text>
+    <text transform="translate(0 -111.87)" x="102.224" y="137.058"
+    font-size="29.333" font-weight="700" stroke-linecap="square"
+    stroke-width="1.5" text-align="center" text-anchor="middle"
+    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+    <tspan text-align="center"
+      style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+      Verklaring:</tspan>
+    </text>
+    <path d="m29.217 37.822h146.62" fill="none" font-size="16"
+    font-weight="700" stroke="#000" stroke-linecap="square"
+    stroke-width="3.316" />
+  </g>
+</svg>
