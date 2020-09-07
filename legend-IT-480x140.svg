@@ -1,243 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg width="960" height="280" xmlns="http://www.w3.org/2000/svg">
-  <text transform="translate(0 -111.87)" x="167.488" y="187.753"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  text-align="center" text-anchor="middle"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan text-align="center"
-    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    ordinal</tspan>
+!--- legend text -->
+  <text x="102.0" y="28.1" font-family="Noto Sans" fill="#0" text-anchor="middle">
+    <tspan font-size="28" font-weight="700">Legenda:</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="76.845" y="180.219"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  text-align="center" text-anchor="middle"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan text-align="center"
-    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    gruppo</tspan>
+<!--- underline legend text -->
+  <path d="m23.5 38.143h160" fill="none"
+    stroke="#000" stroke-linecap="square" stroke-width="3.0" />
+!--- ordinal text -->
+  <text x="178.55" y="80.1" font-family="Noto Sans" fill="#0" text-anchor="middle">
+    <tspan font-size="18">ordinale</tspan>
   </text>
-  <path d="m132.54 82.972h92.903v92.903h-92.903z" fill="#eee8aa"
-  font-family="Liberation Sans" font-size="12" stroke="#000"
-  stroke-linecap="square" stroke-width="3.097" />
-  <path d="m146.99 113.42-72-38.304" font-family="Liberation Sans"
-  font-size="12" stroke="#000" stroke-width="2" />
-  <text transform="translate(0 -111.87)" x="199.762" y="244.007"
-  fill="red" font-family="Liberation Sans" font-size="18"
-  font-weight="700" stroke-linecap="square" stroke-width="1.5"
-  text-anchor="end">
-    <tspan font-size="21.333">Cl</tspan>
+<!--- yellow square with black edging -->
+  <path d="m131.55 87.191h92.903v92.903h-92.903z" fill="#eee8aa"
+  stroke="#000" stroke-linecap="square" stroke-width="3.097" />
+<!--- groupe text -->
+  <text x="73.53" y="76.453" font-family="Noto Sans" fill="#0" text-anchor="middle">
+    <tspan font-size="18">gruppo</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="156.956" y="221.058"
-  font-family="Liberation Sans" font-size="18" font-weight="700"
-  stroke-linecap="square" stroke-width="1.5">
-    <tspan font-size="16">17</tspan>
+<!--- black line into color of square -->
+  <path d="m146 117.64-72-38.304" stroke="#000" stroke-width="2" />
+<!--- ordinal number -->
+  <text x="155.968" y="113.407" font-family="Noto Sans"
+    fill="#0" text-anchor="begin">
+    <tspan font-size="16" font-weight="700">17</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="154.915" y="273.772"
-  font-family="Liberation Sans" font-size="13.5"
-  stroke-linecap="square" stroke-width="1.5">
+<!--- symbol text -->
+  <text x="110.55" y="134.356" font-family="Noto Sans" fill="#0" text-anchor="end">
+    <tspan font-size="18">symbolo</tspan>
+  </text>38.143
+<!--- black line to red Cl symbol -->
+  <path d="m170 129.64h-56" stroke="#000" stroke-width="2" />
+<!--- red Chlor symbol -->
+  <text x="196.774" y="136.356" font-family="Noto Sans" fill="red" text-anchor="end">
+    <tspan font-size="21.333" font-weight="700">Cl</tspan>
+  </text>
+<!--- atomic weight text -->
+  <text x="36.84" y="160.654" font-family="Noto Sans" fill="#0">
+      <tspan font-size="18">peso</tspan>
+      <tspan dx="-44" dy="15" font-size="18">atomico</tspan>
+   </text>
+<!--- atomic weight number -->
+  <text x="178.55" y="166.121" font-family="Noto Sans" fill="#0" text-anchor="middle">
     <tspan font-size="16">35,453</tspan>
   </text>
-  <path d="m170.99 125.42h-56" font-family="Liberation Sans"
-  font-size="12" stroke="#000" stroke-width="2" />
-  <text transform="translate(0 -111.87)" x="108.832" y="241.629"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  text-align="end" text-anchor="end"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  symbolo</text>
-  <text transform="translate(0 -111.87)" x="253.977" y="134.058"
-  font-family="Liberation Sans" font-size="18"
-  stroke-linecap="square" stroke-width="1.5">
+<!--- ordinal text -->
+  <text x="258.66" y="28.1" font-family="Noto Sans" fill="#0">
     <tspan font-size="21.333">Ordinale</tspan>
   </text>
-  <path d="m252.18 31.258h245.63" fill="none"
-  font-family="Liberation Sans" font-size="12" stroke="#000"
-  stroke-linecap="square" stroke-width="2.351" />
-  <text transform="translate(0 -111.87)" x="278.323" y="167.843"
-  font-family="Liberation Sans" font-size="18" font-weight="400"
-  stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan x="278.323" y="167.843" font-size="21.333">nero = non radioattivo</tspan>
+<!--- underline ordinal text -->
+  <path d="m250.0 38.143h242.7" fill="none"
+    stroke="#000" stroke-linecap="square" stroke-width="2.5" />
+  <text x="329.5" y="60.8" font-family="Noto Sans" fill="#0" text-anchor="end">
+    <tspan font-size="20">nero&#160;</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="266.774" y="191.415"
-  fill="#0a0" font-family="Liberation Sans" font-size="18"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan x="266.774" y="191.415" font-size="21.333">verde = radioattivo</tspan>
+  <text x="329.5" y="60.8" font-family="Noto Sans" fill="#0" text-anchor="start">
+    <tspan font-size="20">= non radioattivo</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="254.019" y="231.558"
-  font-family="Liberation Sans" font-size="18"
-  stroke-linecap="square" stroke-width="1.5">
+  <text x="329.5" y="83.8" font-family="Noto Sans" fill="green" text-anchor="end">
+    <tspan font-size="20">verde&#160;</tspan>
+  </text>
+  <text x="329.5" y="83.8" font-family="Noto Sans" fill="green" text-anchor="start">
+    <tspan font-size="20">= radioattivo</tspan>
+  </text>&#160;
+<!--- symbol text -->
+  <text x="258.66" y="124.5" font-family="Noto Sans" fill="#0">
     <tspan font-size="21.333">Symbolo</tspan>
   </text>
-  <path d="m252.18 130.27h245.61" fill="none"
-  font-family="Liberation Sans" font-size="12" stroke="#000"
-  stroke-linecap="square" stroke-width="2.351" />
-  <text transform="translate(0 -111.87)" x="277.488" y="264.272"
-  font-family="Liberation Sans" font-size="18" font-weight="400"
-  stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan x="277.488" y="264.272" font-size="21.333">nero = solido</tspan>
+<!--- underline symbol text colors -->
+  <path d="m250.0 134.49h242.7" fill="none"
+    stroke="#000" stroke-linecap="square" stroke-width="2.5" />
+  <text x="329.5" y="156.6" font-family="Noto Sans" fill="#0" text-anchor="end">
+    <tspan font-size="20">nero&#160;</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="292.131" y="286.176"
-  fill="#00f" font-family="Liberation Sans" font-size="18"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan x="292.131" y="286.176" font-size="21.333">blu = liquido</tspan>
+  <text x="329.5" y="156.6" font-family="Noto Sans" fill="#0" text-anchor="start">
+    <tspan font-size="20">= solido</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="267.845" y="308.201"
-  fill="red" font-family="Liberation Sans" font-size="18"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan x="267.845" y="308.201" font-size="21.333">rosso = gas</tspan>
+  <text x="329.5" y="179.6" font-family="Noto Sans" fill="blue" text-anchor="end">
+    <tspan font-size="20">blu&#160;</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="549.908" y="134.058"
-  font-family="Liberation Sans" font-size="18"
-  stroke-linecap="square" stroke-width="1.5">
+  <text x="329.5" y="179.6" font-family="Noto Sans" fill="blue" text-anchor="start">
+    <tspan font-size="20">= liquido</tspan>
+  </text>
+  <text x="329.5" y="202.6" font-family="Noto Sans" fill="red" text-anchor="end">
+    <tspan font-size="20">rosso&#160;</tspan>
+  </text>
+  <text x="329.5" y="202.6" font-family="Noto Sans" fill="red" text-anchor="start">
+    <tspan font-size="20">= gassoso</tspan>
+  </text>
+<!--- group text -->
+  <text x="538.928" y="28.1" font-family="Noto Sans" fill="#0">
     <tspan font-size="21.333">Gruppo</tspan>
   </text>
-  <path d="m548.24 31.2h390.44" fill="none"
-  font-family="Liberation Sans" font-size="12" stroke="#000"
-  stroke-linecap="square" stroke-width="2.505" />
-  <path d="m550.98 45.424h20v20h-20z" fill="coral"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m550.98 71.424h20v20h-20z" fill="salmon"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m550.98 97.424h20v20h-20z" fill="#add8e6"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m550.98 123.42h20v20h-20z" fill="#f4a460"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m550.98 149.42h20v20h-20z" fill="#db9356"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m798.98 45.424h20v20h-20z" fill="#c1e3ff"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m798.98 71.424h20v20h-20z" fill="#0ff"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m798.98 97.424h20v20h-20z" fill="#90ee90"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m798.98 123.42h20v20h-20z" fill="#eee8aa"
-  font-family="Liberation Sans" font-size="12" />
-  <path d="m798.98 149.42h20v20h-20z" fill="#e6e6fa"
-  font-family="Liberation Sans" font-size="12" />
-  <text transform="translate(0 -111.87)" x="576.231" y="175.084"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Metalli alcalini</text>
-  <text transform="translate(0 -111.87)" x="576.231" y="200.584"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Metalli alcalino-terrosi</text>
-  <text transform="translate(0 -111.87)" x="576.231" y="228.152"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Metalli di transizione</text>
-  <text transform="translate(0 -111.87)" x="576.231" y="253.084"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Lantanidi</text>
-  <text transform="translate(0 -111.87)" x="577.94" y="279.084"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Attinidi</text>
-  <text transform="translate(0 -111.87)" x="824.231" y="175.084"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Metalli</text>
-  <text transform="translate(0 -111.87)" x="824.231" y="200.584"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Metalloidi</text>
-  <text transform="translate(0 -111.87)" x="824.231" y="228.512"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Non Metalli</text>
-  <text transform="translate(0 -111.87)" x="825.939" y="253.866"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Alogeni</text>
-  <text transform="translate(0 -111.87)" x="824.908" y="278.794"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-  Gas nobili</text>
-  <text transform="translate(0 -111.87)" x="550.939" y="312.292"
-  font-family="Liberation Sans" font-size="18"
-  stroke-linecap="square" stroke-width="1.5">
+<!--- underline group text -->
+  <path d="m531.0 38.143h405.0" fill="none"
+    stroke="#000" stroke-linecap="square" stroke-width="2.5" />
+<!--- group colors left column -->
+  <path d="m537 49.643h20v20h-20z" fill="coral" />
+  <path d="m537 75.643h20v20h-20z" fill="salmon" />
+  <path d="m537 101.64h20v20h-20z" fill="#add8e6" />
+  <path d="m537 127.64h20v20h-20z" fill="#f4a460" />
+  <path  d="m537 153.64h20v20h-20z" fill="#db9356" />
+<!--- group colors right column -->
+  <path d="m788 49.643h20v20h-20z" fill="#c1e3ff" />
+  <path d="m788 75.643h20v20h-20z" fill="#0ff" />
+  <path d="m788 101.64h20v20h-20z" fill="#90ee90" />
+  <path d="m788 127.64h20v20h-20z" fill="#eee8aa" />
+  <path d="m788 153.64h20v20h-20z" fill="#e6e6fa" />
+<!-- group names -->
+  <text x="562.25" y="67.433" font-family="Noto Sans" font-size="20" fill="#0">Metalli alcalini</text>
+  <text x="562.25" y="93.433" font-family="Noto Sans" font-size="20" fill="#0">Metalli alcalino-terrosi</text>
+  <text x="562.25" y="119.433" font-family="Noto Sans" font-size="20" fill="#0">Metalli di transizione</text>
+  <text x="562.25" y="145.433" font-family="Noto Sans" font-size="20" fill="#0">Lanthanidi</text>
+  <text x="562.25" y="171.433" font-family="Noto Sans" font-size="20" fill="#0">Attinidi</text>
+  <text x="812.25" y="67.433" font-family="Noto Sans" font-size="20" fill="#0">Metalli</text>
+  <text x="812.25" y="93.433" font-family="Noto Sans" font-size="20" fill="#0">Metalloidi</text>
+  <text x="812.25" y="119.433" font-family="Noto Sans" font-size="20" fill="#0">Non-Metalli</text>
+  <text x="812.25" y="145.433" font-family="Noto Sans" font-size="20" fill="#0">Alogeni</text>
+  <text x="812.25" y="171.433" font-family="Noto Sans" font-size="20" fill="#0">Gas nobili</text>
+<!--- surface text -->
+  <text x="538.928" y="201.433" font-family="Noto Sans" fill="#0">
     <tspan font-size="21.333">Area</tspan>
   </text>
-  <path d="m548.24 209.17h390.44" fill="none"
-  font-family="Liberation Sans" font-size="12" stroke="#000"
-  stroke-linecap="square" stroke-width="2.505" />
-  <text transform="translate(0 -111.87)" x="592.585" y="343.58"
-  font-family="Liberation Sans" font-size="18" font-weight="400"
-  stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan x="592.585" y="343.58" font-size="21.333">continuato = elemento naturale</tspan>
+<!--- underline surface text -->
+  <path d="m531.0 211.43h405.0" fill="none"
+    stroke="#000" stroke-linecap="square" stroke-width="2.5" />
+  <text x="684.0" y="233.5" font-family="Noto Sans" fill="#0" text-anchor="end">
+    <tspan font-size="20">continuata&#160;</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="584.744" y="365.442"
-  font-family="Liberation Sans" font-size="18" font-weight="400"
-  stroke-linecap="square" stroke-width="1.5"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan x="584.744" y="365.442" font-size="21.333">tratteggiata = elemento artificiale</tspan>
+  <text x="684.0" y="233.5" font-family="Noto Sans" fill="#0" text-anchor="start">
+    <tspan font-size="20">= elemento naturale</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="88.527" y="135.058"
-  font-family="Liberation Sans" font-size="29.333"
-  font-weight="700" stroke-linecap="square" stroke-width="1.5"
-  text-align="center" text-anchor="middle"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    <tspan text-align="center"
-    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    Legenda:</tspan>
+  <text x="684.0" y="256.5" font-family="Noto Sans" fill="#0" text-anchor="end">
+    <tspan font-size="20">tratteggiata&#160;</tspan>
   </text>
-  <path d="m23.554 31.923h128.87" fill="none"
-  font-family="Liberation Sans" font-size="16" font-weight="700"
-  stroke="#000" stroke-linecap="square" stroke-width="3.109" />
-  <text transform="translate(0 -111.87)" x="62.988" y="271.869"
-  font-family="Liberation Sans" font-size="24" font-weight="400"
-  letter-spacing="0" stroke-width="2" word-spacing="0"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" />
-  <text transform="translate(0 -111.87)" x="42.988" y="311.869"
-  font-family="Liberation Sans" font-size="24" font-weight="400"
-  letter-spacing="0" stroke-width="2" word-spacing="0"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" />
-  <path d="m34.988 201.42h96v42h-96z" fill="none" />
-  <text transform="translate(0 -111.87)" x="28.613" y="267.435"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" letter-spacing="0" stroke-width="2"
-  word-spacing="0"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25">
-    <tspan x="28.613" y="267.435"
-    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    peso</tspan>
+  <text x="684.0" y="256.5" font-family="Noto Sans" fill="#0" text-anchor="start">
+    <tspan font-size="20">= elemento artificiale</tspan>
   </text>
-  <text transform="translate(0 -111.87)" x="49.008" y="282.792"
-  font-family="Liberation Sans" font-size="21.333"
-  font-weight="400" letter-spacing="0" stroke-width="2"
-  word-spacing="0"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25">
-    <tspan x="49.008" y="282.792"
-    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-    atomico</tspan>
-  </text>
-  <text transform="translate(0 -111.87)" x="663.981" y="217.293"
-  font-family="Liberation Sans" font-size="16" font-weight="400"
-  letter-spacing="0" stroke-width="2" word-spacing="0"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25">
-    <tspan x="663.981" y="217.293" />
-  </text>
-  <text transform="translate(0 -111.87)" x="394.988" y="281.869"
-  font-family="Liberation Sans" font-size="16" font-weight="400"
-  letter-spacing="0" stroke-width="2" word-spacing="0"
-  style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" />
 </svg>
