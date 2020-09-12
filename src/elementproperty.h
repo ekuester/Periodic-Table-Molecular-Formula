@@ -83,26 +83,23 @@ protected:
     </filter>\
   </defs>\
 ";
-    std::string rect_svg ="\
-  <rect ry=\"32\" rx=\"32\" y=\"7.132\" x=\"8.145\" height=\"240\"\
-  width=\"240\" fill=\"#2394da\" fill-opacity=\".939\" />\
+    std::string rect_svg = "\
+  <rect ry=\"32\" rx=\"32\" y=\"7.132\" x=\"8.145\" height=\"240\" width=\"240\" fill=\"#2394da\" fill-opacity=\".939\" />\
 ";
     std::string transform_svg ="\
   <path transform=\"matrix(2 0 0 2 .145 -.868)\"\
-  d=\"M117.139 6.861A15.94 15.94 0 01120 16v88c0 8.864-7.136 16-16 16H16a15.94 15.94 0 01-9.139-2.861A15.95 15.95 0 0020 124h88c8.864 0 16-7.136 16-16V20a15.95 15.95 0 00-6.861-13.139z\"\
-  opacity=\".36\" filter=\"url(#a)\" />\
-  <text style=\"line-height:1.25;-inkscape-font-specification:'Noto Sans, sans-serif'\"\
+    d=\"M117.139 6.861A15.94 15.94 0 01120 16v88c0 8.864-7.136 16-16 16H16a15.94 15.94 0 01-9.139-2.861A15.95 15.95 0 0020 124h88c8.864 0 16-7.136 16-16V20a15.95 15.95 0 00-6.861-13.139z\"\
+    opacity=\".36\" filter=\"url(#a)\" />\
 ";
-    std::string middle_svg = "\
-  x=\"36.0\" y=\"172.0\" transform=\"scale(.99918 1.00082)\"\
-  font-weight=\"700\" font-size=\"110.204\" font-family=\"Noto Sans\"\
-  letter-spacing=\"0\" word-spacing=\"0\" fill=\"#dccf25\"\
-  stroke-width=\"2.952\">\
-    <tspan x=\"36.0\" y=\"172.0\" font-size=\"125.947\"\
-    fill=\"#ffffac\">\
+    std::string middle_svg ="\
+  <text x=\"128.0\" y=\"172.0\" style=\"line-height:1.25;\"\
+    transform=\"scale(1 1)\" text-anchor=\"middle\"\
+    font-weight=\"700\" font-size=\"110.204\" font-family=\"Noto Sans\"\
+    letter-spacing=\"0\" word-spacing=\"0\" fill=\"#dccf25\"\
+    stroke-width=\"2.952\">\
 ";
-    std::string end_svg = "\
-</tspan>\
+// element symbol must be inserted here, followed by code for end of SVG file
+    std::string end_svg ="\
   </text>\
 </svg>\
 ";

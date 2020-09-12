@@ -84,7 +84,7 @@ msgstr ""
 
 #: elementproperty.h:92
 msgid "Boiling Point [K]"
-msgstr "Kookpunkt [K]"
+msgstr "Kookpunt [K]"
 
 #: molecularformula.h:45
 msgid "Bond sign misplaced here"
@@ -179,8 +179,8 @@ msgid "Darmstadtium"
 msgstr ""
 
 #: elementproperty.h:93
-msgid "Density [g/mL]"
-msgstr "Dichtheid [g/mL]"
+msgid "Density [g/mℓ]"
+msgstr "Dichtheid [g/mℓ]"
 
 #: periodictablewindow.cpp:299
 msgid "Dmitri Ivanovich Mendeleev, Saint Petersburg / Russia, 6 March 1869"

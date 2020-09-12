@@ -84,6 +84,9 @@ ElementProperty::~ElementProperty() {
 #define ELEMENT_NAME_INDEX 3
 #define ELEMENT_NAME_ROW 2
 void ElementProperty::on_element_clicked(int index) {
+    // template string for element symbol
+    std::string element_svg ="<tspan font-size=\"125.947\" fill=\"#ffffac\">PP</tspan>";
+    std::string sNeedle = "PP";
     // place to give more information about the specific element
     if (m_ElementIndex >= 0) {
         remove();
@@ -102,7 +105,9 @@ void ElementProperty::on_element_clicked(int index) {
     stream->add_data(rect_svg);
     stream->add_data(transform_svg);
     stream->add_data(middle_svg);
-    stream->add_data(element[2]);
+    // substitute place holder PP with actual element
+    element_svg.replace(element_svg.find(sNeedle),sNeedle.size(),element[2]);
+    stream->add_data(element_svg);
     stream->add_data(end_svg);
     set_default_icon(Gdk::Pixbuf::create_from_stream(stream));
     stream->close();

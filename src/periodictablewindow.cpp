@@ -263,7 +263,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     //Gtk::Image *image = Gtk::manage(new Gtk::Image(pixbuf));
                     //Gtk::Image *image = Gtk::manage(new Gtk::Image(_("legend-EN-480x140.svg")));
                     //m_Space->pack_start(*image, Gtk::PackOptions::PACK_EXPAND_WIDGET);
-                    m_Grid.attach(*m_Space, g, p-1, 10, 3); // column g, row p
+                    m_Grid.attach(*m_Space, g, p-1, 10, 3); // column g, row p-1
                     g += 10;
                     break;
                 }

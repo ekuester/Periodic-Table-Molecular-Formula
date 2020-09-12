@@ -179,8 +179,8 @@ msgid "Darmstadtium"
 msgstr ""
 
 #: elementproperty.h:93
-msgid "Density [g/mL]"
-msgstr "Dichte [g/mL]"
+msgid "Density [g/mℓ]"
+msgstr "Dichte [g/mℓ]"
 
 #: periodictablewindow.cpp:299
 msgid "Dmitri Ivanovich Mendeleev, Saint Petersburg / Russia, 6 March 1869"
