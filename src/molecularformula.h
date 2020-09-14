@@ -4,7 +4,7 @@
  * Author: kuestere
  *
  * Created on 27. September 2018, 18:36
- * Last changes on November 9, 2019
+ * Last changes on September 13, 2020
  */
 
 #ifndef MOLECULARFORMULA_H

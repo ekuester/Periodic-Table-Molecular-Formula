@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="256" height="256" viewBox="0 0 67.733 67.733"
-xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 67.733 67.733">
   <defs>
     <filter id="a" x="-.072" y="-.072" width="1.144" height="1.144"
     color-interpolation-filters="sRGB">
@@ -16,37 +14,37 @@ xmlns="http://www.w3.org/2000/svg">
   </g>
   <g font-family="Noto Sans" font-weight="700" letter-spacing="0"
   stroke-width=".529" word-spacing="0">
-    <text transform="translate(0 -229.27)" x="35.963" y="283.482"
-    fill="#bbf" font-size="5.644" style="line-height:1.25">
-      <tspan x="35.963" y="283.482">118</tspan>
-    </text>
-    <text transform="translate(0 -229.27)" x="45.875" y="289.624"
-    fill="#bbf" font-size="11.289" style="line-height:1.25">
-      <tspan x="45.875" y="289.624">Og</tspan>
-    </text>
-    <text transform="translate(0 -229.27)" x="3.267" y="283.575"
-    fill="#f88" font-size="5.644" style="line-height:1.25">
-      <tspan x="3.267" y="283.575">87</tspan>
-    </text>
-    <text transform="translate(0 -229.27)" x="9.306" y="289.485"
-    fill="#f88" font-size="11.289" style="line-height:1.25">
-      <tspan x="9.306" y="289.485">Fr</tspan>
-    </text>
-    <text transform="translate(0 -229.27)" x="9.231" y="244.452"
-    fill="#00f200" font-size="11.289" style="line-height:1.25">
-      <tspan x="9.231" y="244.452">H</tspan>
-    </text>
-    <text transform="translate(0 -229.27)" x="6.668" y="238.348"
+    <text x="6.668" y="9.078"
     fill="#00f200" font-size="5.644" style="line-height:1.25">
-      <tspan x="6.668" y="238.348">1</tspan>
+      <tspan x="6.668" y="9.078">1</tspan>
     </text>
-    <text transform="translate(0 -229.27)" x="45.172" y="244.49"
-    fill="#bbf" font-size="11.289" style="line-height:1.25">
-      <tspan x="45.172" y="244.49">He</tspan>
+    <text x="9.231" y="15.182"
+    fill="#00f200" font-size="11.289" style="line-height:1.25">
+      <tspan x="9.231" y="15.182">H</tspan>
     </text>
-    <text transform="translate(0 -229.27)" x="42.119" y="238.348"
+    <text x="42.119" y="9.078"
     fill="#bbf" font-size="5.644" style="line-height:1.25">
-      <tspan x="42.119" y="238.348">2</tspan>
+      <tspan x="42.119" y="9.078">2</tspan>
+    </text>
+    <text x="45.172" y="15.22"
+    fill="#bbf" font-size="11.289" style="line-height:1.25">
+      <tspan x="45.172" y="15.22">He</tspan>
+    </text>
+    <text x="3.267" y="54.305"
+    fill="#f88" font-size="5.644" style="line-height:1.25">
+      <tspan x="3.267" y="54.305">87</tspan>
+    </text>
+    <text x="9.306" y="60.215"
+    fill="#f88" font-size="11.289" style="line-height:1.25">
+      <tspan x="9.306" y="60.215">Fr</tspan>
+    </text>
+    <text x="35.963" y="54.212"
+    fill="#bbf" font-size="5.644" style="line-height:1.25">
+      <tspan x="35.963" y="54.212">118</tspan>
+    </text>
+    <text x="45.875" y="60.354"
+    fill="#bbf" font-size="11.289" style="line-height:1.25">
+      <tspan x="45.875" y="60.354">Og</tspan>
     </text>
   </g>
   <text x="3.682" y="43.391" fill="#ffffac" font-family="Noto Sans"

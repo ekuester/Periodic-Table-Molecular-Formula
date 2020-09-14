@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Periodic-Table-Molecular-Formula 1.6.4\n"
+"Project-Id-Version: Periodic-Table-Molecular-Formula 1.6.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 18:53+0200\n"
 "PO-Revision-Date: 2019-04-21 17:41+0100\n"
@@ -691,8 +691,8 @@ msgid "Vanadium"
 msgstr ""
 
 #: periodictablewindow.cpp:283
-msgid "Version 1.6.4"
-msgstr "Version 1.6.4"
+msgid "Version 1.6.5"
+msgstr "Version 1.6.5"
 
 #: elementschema.h:92
 msgid "Xenon"

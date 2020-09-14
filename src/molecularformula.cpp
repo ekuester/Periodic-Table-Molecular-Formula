@@ -52,7 +52,7 @@
 //  renewed on September 27, 2018 at 18:36
 //  Copyright © 2014 - 2019 Erich Kuester.
 //      All rights reserved.
-//  Last changes on January 5th, 2020 for version 1.6.4
+//  Last changes on September 13th, 2020 for version 1.6.5
  */
 
 #include "molecularformula.h"

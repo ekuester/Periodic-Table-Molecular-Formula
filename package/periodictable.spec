@@ -1,7 +1,7 @@
 %define        name periodic-table-molecular-formula
 %define        alias periodictable
-%define        version 1.6.4
-%define        release 1%{?dist}
+%define        version 1.6.5
+%define        release 1
 Summary:    Periodic Table of the Elements for Chemists
 Name:       %{name}
 Version:    %{version}
@@ -77,11 +77,11 @@ Comment[de]=Periodensystem mit Rechner für Summenformeln
 Comment[fr]=Tableau périodique avec un calculateur de poids moléculaire
 Comment[it]=Tavola periodica con un calcolatore per peso moleculare
 Comment[nl]=Periodiek Systeem met een calculator van somformules
-Exec=periodictable.sh
+Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=/usr/share/gtkperiodictable --command=./GTKPeriodicTable
 Icon=periodictable
 Categories=Education;Science;Chemistry;Math
 StartupNotify=true
-Terminal=false" > %{alias}.desktop
+Terminal=true" > %{alias}.desktop
                                                                                
 desktop-file-install --vendor "" --delete-original \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications \
@@ -107,6 +107,8 @@ rm -rfv $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/*.svg
 
 %changelog
+* Sun Sep 13 2020 Erich Küster <erich.kuester@arcor.de> - 1.6.5-1
+- enhanced version, rebuild for Fedora 32
 * Sun Jan  5 2020 Erich Küster <erich.kuester@arcor.de> - 1.6.4
 - new version
 * Mon Dec 23 2019 Erich Küster <erich.kuester@arcor.de> - 1.6.3

@@ -689,7 +689,7 @@ msgid "Vanadium"
 msgstr ""
 
 #: periodictablewindow.cpp:283
-msgid "Version 1.6.4"
+msgid "Version 1.6.5"
 msgstr ""
 
 #: elementschema.h:92

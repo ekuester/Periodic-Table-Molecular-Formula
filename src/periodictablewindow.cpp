@@ -18,9 +18,9 @@
 //  File:   periodictablewindow.cpp
 //
 //  Created by Erich Kuester, Krefeld, Germany
-//    Copyright © 2014 - 2019 Erich Kuester.
+//    Copyright © 2014 - 2020 Erich Kuester.
 //          All rights reserved.
-//  Last changes on January 5th, 2020 for version 1.6.4
+//  Last changes on September 13th, 2020 for version 1.6.5
  */
 
 #include "periodictablewindow.h"
@@ -315,7 +315,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     m_Dialog.set_transient_for(*this);
     m_Dialog.set_logo(Gdk::Pixbuf::create_from_xpm_data(about));
     m_Dialog.set_program_name(_(app_title));
-    m_Dialog.set_version(_("Version 1.6.4"));
+    m_Dialog.set_version(_("Version 1.6.5"));
     m_Dialog.set_copyright(_("Copyright © 2020 Erich Küster. All rights reserved."));
     m_Dialog.set_comments(_("Periodic Table and Molecular Formula for Chemists"));
     std::ifstream licenseFile("LICENSE");
