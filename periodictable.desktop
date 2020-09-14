@@ -1,4 +1,4 @@
-#!/usr/bin/env xdg-open
+﻿#!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
 Version=1.1
@@ -12,7 +12,7 @@ Comment[de]=Periodensystem mit Rechner für Summenformeln
 Comment[fr]=Tableau périodique avec un calculateur de poids moléculaire
 Comment[it]=Tavola periodica con un calcolatore per peso moleculare
 Comment[nl]=Periodiek Systeem met een calculator van somformules
-Exec=periodictable.sh
+Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=/usr/share/gtkperiodictable --command=./GTKPeriodicTable
 Icon=periodictable
 Categories=Education;Science;Chemistry;Math
 StartupNotify=true

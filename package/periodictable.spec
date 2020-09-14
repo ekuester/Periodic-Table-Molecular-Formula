@@ -1,4 +1,4 @@
-%define        name periodic-table-molecular-formula
+%define        name Periodic-Table-Molecular-Formula
 %define        alias periodictable
 %define        version 1.6.5
 %define        release 1
@@ -11,37 +11,12 @@ Group:      Applications/Science
 URL:        https://github.com/ekuester/periodic-table-molecular-formula
 Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{alias}-%{version}-%{release}-root-%(%{__id_u} -n)
-Requires:    atk
 Requires:    cairo
 Requires:    cairo-gobject
-Requires:    dcraw
-Requires:    fontconfig
-Requires:    freetype
-Requires:    gdk-pixbuf2
-Requires:    glib2
-Requires:    glibc
-Requires:    gtk3
-Requires:    lcms2
-Requires:    libgcc
-Requires:    libpng
-Requires:    libstdc++
-Requires:    libtiff
 Requires:    pango
-Requires:    perl-Image-ExifTool
-Buildrequires:    atk-devel
 Buildrequires:    cairo-devel
-Buildrequires:    freeimage-devel
-Buildrequires:    gcc-c++
-Buildrequires:    glib2-devel
-Buildrequires:    glibc-devel
-Buildrequires:    gtk3-devel
-Buildrequires:    lcms2-devel
-Buildrequires:    libpng-devel
-Buildrequires:    libstdc++-devel
-Buildrequires:    libpng-devel
-Buildrequires:    libtiff-devel
+Buildrequires:    gtkmm30-devel
 Buildrequires:    pango-devel
-Buildrequires:    perl-Image-ExifTool
 
 %description
 PeriodicTable is a free open source Linux program for browsing the
@@ -77,12 +52,12 @@ Comment[de]=Periodensystem mit Rechner für Summenformeln
 Comment[fr]=Tableau périodique avec un calculateur de poids moléculaire
 Comment[it]=Tavola periodica con un calcolatore per peso moleculare
 Comment[nl]=Periodiek Systeem met een calculator van somformules
-Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=/usr/share/gtkperiodictable --command=./GTKPeriodicTable
+Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=%{_datadir}/gtkperiodictable --command=./GTKPeriodicTable
 Icon=periodictable
 Categories=Education;Science;Chemistry;Math
 StartupNotify=true
 Terminal=true" > %{alias}.desktop
-                                                                               
+
 desktop-file-install --vendor "" --delete-original \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications \
   --add-category Education \

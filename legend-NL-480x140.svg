@@ -52,17 +52,17 @@
   <path d="m250.0 38.143h242.7" fill="none"
     stroke="#000" stroke-linecap="square" stroke-width="2.5" />
   <text x="329.5" y="60.8" font-family="Noto Sans" fill="#0" text-anchor="end">
-    <tspan font-size="20">zwart&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">zwart </tspan>
   </text>
   <text x="329.5" y="60.8" font-family="Noto Sans" fill="#0" text-anchor="start">
     <tspan font-size="20">= niet radioactief</tspan>
   </text>
   <text x="329.5" y="83.8" font-family="Noto Sans" fill="green" text-anchor="end">
-    <tspan font-size="20">groen&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">groen </tspan>
   </text>
   <text x="329.5" y="83.8" font-family="Noto Sans" fill="green" text-anchor="start">
     <tspan font-size="20">= radioactief</tspan>
-  </text>&#160;
+  </text> 
 <!--- symbol text -->
   <text x="258.66" y="124.5" font-family="Noto Sans" fill="#0">
     <tspan font-size="21.333">Symbool</tspan>
@@ -71,19 +71,19 @@
   <path d="m250.0 134.49h242.7" fill="none"
     stroke="#000" stroke-linecap="square" stroke-width="2.5" />
   <text x="329.5" y="156.6" font-family="Noto Sans" fill="#0" text-anchor="end">
-    <tspan font-size="20">zwart&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">zwart </tspan>
   </text>
   <text x="329.5" y="156.6" font-family="Noto Sans" fill="#0" text-anchor="start">
     <tspan font-size="20">= vaste Stof</tspan>
   </text>
   <text x="329.5" y="179.6" font-family="Noto Sans" fill="blue" text-anchor="end">
-    <tspan font-size="20">blauw&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">blauw </tspan>
   </text>
   <text x="329.5" y="179.6" font-family="Noto Sans" fill="blue" text-anchor="start">
     <tspan font-size="20">= Vloeistof</tspan>
   </text>
   <text x="329.5" y="202.6" font-family="Noto Sans" fill="red" text-anchor="end">
-    <tspan font-size="20">rood&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">rood </tspan>
   </text>
   <text x="329.5" y="202.6" font-family="Noto Sans" fill="red" text-anchor="start">
     <tspan font-size="20">= Gas</tspan>
@@ -126,13 +126,13 @@
   <path d="m531.0 211.43h405.0" fill="none"
     stroke="#000" stroke-linecap="square" stroke-width="2.5" />
   <text x="684.0" y="233.5" font-family="Noto Sans" fill="#0" text-anchor="end">
-    <tspan font-size="20">doorgaand&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">doorgaand </tspan>
   </text>
   <text x="684.0" y="233.5" font-family="Noto Sans" fill="#0" text-anchor="start">
     <tspan font-size="20">= natuurlijk element</tspan>
   </text>
   <text x="684.0" y="256.5" font-family="Noto Sans" fill="#0" text-anchor="end">
-    <tspan font-size="20">gearceerd&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">gearceerd </tspan>
   </text>
   <text x="684.0" y="256.5" font-family="Noto Sans" fill="#0" text-anchor="start">
     <tspan font-size="20">= gesynthetiseerd element</tspan>

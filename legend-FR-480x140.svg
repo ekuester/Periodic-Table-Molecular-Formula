@@ -52,17 +52,17 @@
   <path d="m250.0 38.143h242.7" fill="none"
     stroke="#000" stroke-linecap="square" stroke-width="2.5" />
   <text x="329.5" y="60.8" font-family="Noto Sans" fill="#0" text-anchor="end">
-    <tspan font-size="20">noir&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">noir </tspan>
   </text>
   <text x="329.5" y="60.8" font-family="Noto Sans" fill="#0" text-anchor="start">
     <tspan font-size="20">= non radioactif</tspan>
   </text>
   <text x="329.5" y="83.8" font-family="Noto Sans" fill="green" text-anchor="end">
-    <tspan font-size="20">vert&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">vert </tspan>
   </text>
   <text x="329.5" y="83.8" font-family="Noto Sans" fill="green" text-anchor="start">
     <tspan font-size="20">= radioactif</tspan>
-  </text>&#160;
+  </text> 
 <!--- symbol text -->
   <text x="258.66" y="124.5" font-family="Noto Sans" fill="#0">
     <tspan font-size="21.333">Symbol</tspan>
@@ -71,19 +71,19 @@
   <path d="m250.0 134.49h242.7" fill="none"
     stroke="#000" stroke-linecap="square" stroke-width="2.5" />
   <text x="329.5" y="156.6" font-family="Noto Sans" fill="#0" text-anchor="end">
-    <tspan font-size="20">noir&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">noir </tspan>
   </text>
   <text x="329.5" y="156.6" font-family="Noto Sans" fill="#0" text-anchor="start">
     <tspan font-size="20">= solide</tspan>
   </text>
   <text x="329.5" y="179.6" font-family="Noto Sans" fill="blue" text-anchor="end">
-    <tspan font-size="20">bleu&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">bleu </tspan>
   </text>
   <text x="329.5" y="179.6" font-family="Noto Sans" fill="blue" text-anchor="start">
     <tspan font-size="20">= liquide</tspan>
   </text>
   <text x="329.5" y="202.6" font-family="Noto Sans" fill="red" text-anchor="end">
-    <tspan font-size="20">rouge&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">rouge </tspan>
   </text>
   <text x="329.5" y="202.6" font-family="Noto Sans" fill="red" text-anchor="start">
     <tspan font-size="20">= gazeux</tspan>
@@ -126,13 +126,13 @@
   <path d="m531.0 211.43h405.0" fill="none"
     stroke="#000" stroke-linecap="square" stroke-width="2.5" />
   <text x="684.0" y="233.5" font-family="Noto Sans" fill="#0" text-anchor="end">
-    <tspan font-size="20">continue&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">continue </tspan>
   </text>
   <text x="684.0" y="233.5" font-family="Noto Sans" fill="#0" text-anchor="start">
     <tspan font-size="20">= élément naturale</tspan>
   </text>
   <text x="684.0" y="256.5" font-family="Noto Sans" fill="#0" text-anchor="end">
-    <tspan font-size="20">hachurée&#160;</tspan>
+    <tspan font-size="20" xml:space="preserve">hachurée </tspan>
   </text>
   <text x="684.0" y="256.5" font-family="Noto Sans" fill="#0" text-anchor="start">
     <tspan font-size="20">= élément artificiel</tspan>
