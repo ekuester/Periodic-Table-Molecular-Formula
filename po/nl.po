@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Periodic-Table-Molecular-Formula 1.6.5\n"
+"Project-Id-Version: Periodic-Table-Molecular-Formula 1.7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 18:53+0200\n"
-"PO-Revision-Date: 2019-04-21 17:41+0100\n"
+"PO-Revision-Date: 2020-09-24 22:39+0200\n"
 "Last-Translator: Erich Küster <erich.kuester@arcor.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nl\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid " Elementary Analysis: "
 msgstr " Elementar-analyse: "
 
-#: elementproperty.cpp:103
+#: elementproperty.cpp:158
 msgid "\">Wikipedia</a> article"
 msgstr "\">Wikipedia</a> artikel"
 
-#: periodictablewindow.cpp:96
+#: periodictablewindow.cpp:106
 msgid "About"
 msgstr "Erover"
 
@@ -46,6 +46,10 @@ msgstr ""
 msgid "Antimony"
 msgstr "Antimonium"
 
+#: periodictablewindow.h:349
+msgid "Area"
+msgstr "Oppervlak"
+
 #: elementschema.h:56
 msgid "Argon"
 msgstr ""
@@ -58,7 +62,7 @@ msgstr "Arseen"
 msgid "Astatine"
 msgstr ""
 
-#: elementproperty.h:83
+#: elementproperty.h:117
 msgid "Atomic Radius [pm]"
 msgstr "Atoomstraal [pm]"
 
@@ -82,15 +86,15 @@ msgstr "Bismut"
 msgid "Bohrium"
 msgstr ""
 
-#: elementproperty.h:92
+#: elementproperty.h:126
 msgid "Boiling Point [K]"
 msgstr "Kookpunt [K]"
 
-#: molecularformula.h:45
+#: molecularformula.h:47
 msgid "Bond sign misplaced here"
 msgstr "Bindingsteken verkeert geplaatst"
 
-#: elementproperty.h:90
+#: elementproperty.h:124
 msgid "Bonding Type"
 msgstr "Bindingstype"
 
@@ -102,7 +106,7 @@ msgstr "Boor_(element)"
 msgid "Bromine"
 msgstr "Broom_(element)"
 
-#: periodictablewindow.cpp:290
+#: periodictablewindow.cpp:332
 msgid "COMMENTS"
 msgstr "COMMENTAREN"
 
@@ -110,7 +114,7 @@ msgstr "COMMENTAREN"
 msgid "Cadmium"
 msgstr ""
 
-#: periodictablewindow.cpp:83
+#: periodictablewindow.cpp:93
 msgid "Calc"
 msgstr "Rekener"
 
@@ -142,15 +146,15 @@ msgstr "Chloor_(element)"
 msgid "Chromium"
 msgstr "Chroom_(element)"
 
-#: periodictablewindow.cpp:88
+#: periodictablewindow.cpp:98
 msgid "Close"
 msgstr "Sluiten"
 
-#: molecularformula.h:46
+#: molecularformula.h:48
 msgid "Closing ) missing"
 msgstr "Sluitend ) misst"
 
-#: molecularformula.h:47
+#: molecularformula.h:49
 msgid "Closing ] missing"
 msgstr "Sluitend ] misst"
 
@@ -166,7 +170,7 @@ msgstr ""
 msgid "Copper"
 msgstr "Koper_(element)"
 
-#: periodictablewindow.cpp:284
+#: periodictablewindow.cpp:326
 msgid "Copyright © 2020 Erich Küster. All rights reserved."
 msgstr "Copyright © 2020 Erich Küster. Alle rechten voorbehouden."
 
@@ -178,11 +182,11 @@ msgstr ""
 msgid "Darmstadtium"
 msgstr ""
 
-#: elementproperty.h:93
+#: elementproperty.h:127
 msgid "Density [g/mℓ]"
 msgstr "Dichtheid [g/mℓ]"
 
-#: periodictablewindow.cpp:299
+#: periodictablewindow.cpp:341
 msgid "Dmitri Ivanovich Mendeleev, Saint Petersburg / Russia, 6 March 1869"
 msgstr "Dmitri Ivanovitsj Mendelejev, Sint-Petersburg / Rusland, 6 maart 1869"
 
@@ -198,19 +202,19 @@ msgstr ""
 msgid "Einsteinium"
 msgstr ""
 
-#: elementproperty.h:87
+#: elementproperty.h:121
 msgid "Electronaffinity"
 msgstr "Elektro-affiniteit"
 
-#: elementproperty.h:82
+#: elementproperty.h:116
 msgid "Electronegativity"
 msgstr "Elektronegativiteit"
 
-#: elementproperty.h:81
+#: elementproperty.h:115
 msgid "Electronic Configuration"
 msgstr "Elektronenconfiguratie"
 
-#: molecularformula.h:42
+#: molecularformula.h:44
 msgid "Element symbol expected"
 msgstr "Element-symbool verwacht"
 
@@ -218,11 +222,11 @@ msgstr "Element-symbool verwacht"
 msgid "Erbium"
 msgstr ""
 
-#: periodictablewindow.cpp:301
+#: periodictablewindow.cpp:343
 msgid "Erich Küster, Krefeld / Germany"
 msgstr "Erich Küster, Krefeld / Duitsland"
 
-#: molecularformula.cpp:143
+#: molecularformula.cpp:159
 msgid "Error: Check input"
 msgstr "Fout: controleer invoer"
 
@@ -230,7 +234,7 @@ msgstr "Fout: controleer invoer"
 msgid "Europium"
 msgstr ""
 
-#: periodictablewindow.cpp:72
+#: periodictablewindow.cpp:82
 msgid "Exit"
 msgstr "Afsluiten"
 
@@ -254,7 +258,7 @@ msgstr "Formule:"
 msgid "Francium"
 msgstr ""
 
-#: elementproperty.h:96
+#: elementproperty.h:130
 msgid "Further Information"
 msgstr "Verdere informatie"
 
@@ -274,7 +278,11 @@ msgstr ""
 msgid "Gold"
 msgstr "Goud"
 
-#: elementproperty.h:94
+#: periodictablewindow.h:338
+msgid "Group"
+msgstr "Groep"
+
+#: elementproperty.h:128
 msgid "Group, Block"
 msgstr "Groep, blok"
 
@@ -282,17 +290,13 @@ msgstr "Groep, blok"
 msgid "Gtk+: Application - Element Properties"
 msgstr "Gtk+: Applicatie - Elementeigenschapen"
 
-#: molecularformula.cpp:76
+#: molecularformula.cpp:81
 msgid "Gtk+: Calculator - Molecular Formula"
 msgstr "Gtk+: Calculator - Somformule"
 
-#: periodictablewindow.cpp:30
-msgid ""
-"Gtk+: Chemistry Application - Periodic Table · Element Properties · "
-"Molecular Weight"
-msgstr ""
-"Gtk+: Applicatie voor Scheikundige - Periodiek Systeem · Elementeigenschapen "
-"· Moleculairgewicht"
+#: periodictablewindow.cpp:31
+msgid "Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight"
+msgstr "Gtk+: Applicatie voor Scheikundige - Periodiek Systeem · Elementeigenschapen · Moleculairgewicht"
 
 #: elementschema.h:110
 msgid "Hafnium"
@@ -306,7 +310,7 @@ msgstr ""
 msgid "Helium"
 msgstr ""
 
-#: periodictablewindow.cpp:95
+#: periodictablewindow.cpp:105
 msgid "Help"
 msgstr "Hulp"
 
@@ -318,11 +322,11 @@ msgstr ""
 msgid "Hydrogen"
 msgstr "Waterstof_(element)"
 
-#: periodictablewindow.cpp:300
+#: periodictablewindow.cpp:342
 msgid "IUPAC, International Union of Pure and Applied Chemistry"
 msgstr "IUPAC, Internationale Unie voor Zuivere en Toegepaste Scheikunde"
 
-#: molecularformula.h:48
+#: molecularformula.h:50
 msgid "Index 0 not allowed"
 msgstr "Index 0 niet veroorlofd"
 
@@ -334,11 +338,11 @@ msgstr ""
 msgid "Iodine"
 msgstr "Jood_(element)"
 
-#: elementproperty.h:84
+#: elementproperty.h:118
 msgid "Ion Radius [pm]"
 msgstr "Ion-straal [pm]"
 
-#: elementproperty.h:86
+#: elementproperty.h:120
 msgid "Ionization Energy"
 msgstr "Ionisatiepotentiaal"
 
@@ -366,6 +370,10 @@ msgstr ""
 msgid "Lead"
 msgstr "Lood_(element)"
 
+#: periodictablewindow.h:320
+msgid "Legend"
+msgstr "Verklaring"
+
 #: elementschema.h:41
 msgid "Lithium"
 msgstr "Lithium_(element)"
@@ -386,7 +394,7 @@ msgstr ""
 msgid "Manganese"
 msgstr "Mangaan"
 
-#: elementproperty.h:79
+#: elementproperty.h:113
 msgid "Mass"
 msgstr "Massa"
 
@@ -394,7 +402,7 @@ msgstr "Massa"
 msgid "Meitnerium"
 msgstr ""
 
-#: elementproperty.h:91
+#: elementproperty.h:125
 msgid "Melting Point [K]"
 msgstr "Smeltpunt [K]"
 
@@ -410,7 +418,7 @@ msgstr "Kwik"
 msgid "Molar mass:"
 msgstr "Moleculairgewicht:"
 
-#: molecularformula.h:49
+#: molecularformula.h:51
 msgid "Molecular weight is too big"
 msgstr "Moleculairgewicht te groot"
 
@@ -422,7 +430,7 @@ msgstr "Molybdeen"
 msgid "Moscovium"
 msgstr ""
 
-#: elementproperty.h:78
+#: elementproperty.h:112
 msgid "Name"
 msgstr "Naam"
 
@@ -454,11 +462,11 @@ msgstr ""
 msgid "Nitrogen"
 msgstr "Stikstof_(element)"
 
-#: molecularformula.h:41
+#: molecularformula.h:43
 msgid "No formula entered"
 msgstr "Geen formule ingegeven"
 
-#: molecularformula.h:43
+#: molecularformula.h:45
 msgid "No valid element symbol (actual not in table)"
 msgstr "Geen geldig element-symbool (niet voorhanden)"
 
@@ -470,13 +478,13 @@ msgstr ""
 msgid "Oganesson"
 msgstr ""
 
-#: periodictablewindow.cpp:85
+#: periodictablewindow.cpp:95
 msgid "Open"
 msgstr "Openen"
 
-#: elementproperty.h:76
+#: elementproperty.h:110 periodictablewindow.h:326
 msgid "Ordinal"
-msgstr ""
+msgstr "Volgnummer"
 
 #: elementschema.h:114
 msgid "Osmium"
@@ -486,7 +494,7 @@ msgstr ""
 msgid "Overall formula:"
 msgstr "Somformule:"
 
-#: elementproperty.h:88
+#: elementproperty.h:122
 msgid "Oxidation States"
 msgstr "Oxidatietoestanden"
 
@@ -494,7 +502,7 @@ msgstr "Oxidatietoestanden"
 msgid "Oxygen"
 msgstr "Zuurstof_(element)"
 
-#: periodictablewindow.cpp:63
+#: periodictablewindow.cpp:73
 msgid "Page Setup"
 msgstr "Pagina-instellingen"
 
@@ -502,7 +510,7 @@ msgstr "Pagina-instellingen"
 msgid "Palladium"
 msgstr "Palladium_(element)"
 
-#: periodictablewindow.cpp:285
+#: periodictablewindow.cpp:327
 msgid "Periodic Table and Molecular Formula for Chemists"
 msgstr "Periodiek Systeem en Molecuulformule voor Scheikundige"
 
@@ -510,7 +518,7 @@ msgstr "Periodiek Systeem en Molecuulformule voor Scheikundige"
 msgid "Phosphorus"
 msgstr "Fosfor"
 
-#: molecularformula.h:40
+#: molecularformula.h:42
 msgid "Place holder, no error"
 msgstr "Plaatshouder, geen fout"
 
@@ -534,11 +542,11 @@ msgstr "Kalium"
 msgid "Praseodymium"
 msgstr ""
 
-#: periodictablewindow.cpp:66
+#: periodictablewindow.cpp:76
 msgid "Print Preview"
 msgstr "Afdrukvoorbeeld"
 
-#: periodictablewindow.cpp:69
+#: periodictablewindow.cpp:79
 msgid "Print..."
 msgstr "Afdrukken..."
 
@@ -610,7 +618,7 @@ msgstr "Zilver"
 msgid "Sodium"
 msgstr "Natrium"
 
-#: elementproperty.h:89
+#: elementproperty.h:123
 msgid "State @RT"
 msgstr "Toestand @RT"
 
@@ -622,11 +630,11 @@ msgstr ""
 msgid "Sulfur"
 msgstr "Zwavel"
 
-#: elementproperty.h:77
+#: elementproperty.h:111 periodictablewindow.h:331
 msgid "Symbol"
 msgstr "Symbool"
 
-#: periodictablewindow.cpp:62
+#: periodictablewindow.cpp:72
 msgid "Table"
 msgstr "Tabel"
 
@@ -670,7 +678,7 @@ msgstr "Tin_(element)"
 msgid "Titanium"
 msgstr "Titaan"
 
-#: molecularformula.h:44
+#: molecularformula.h:46
 msgid "Too many bond signs"
 msgstr "Te veel bindingstekens"
 
@@ -678,7 +686,7 @@ msgstr "Te veel bindingstekens"
 msgid "Tungsten"
 msgstr "Wolfraam"
 
-#: periodictablewindow.cpp:368
+#: periodictablewindow.cpp:412
 msgid "Unexpected response!"
 msgstr "Antwoord niet so verwacht"
 
@@ -690,15 +698,15 @@ msgstr "Uraan"
 msgid "Vanadium"
 msgstr ""
 
-#: periodictablewindow.cpp:283
-msgid "Version 1.6.5"
-msgstr "Version 1.6.5"
+#: periodictablewindow.cpp:325
+msgid "Version 1.7.0"
+msgstr "Version 1.7.0"
 
 #: elementschema.h:92
 msgid "Xenon"
 msgstr ""
 
-#: elementproperty.h:95
+#: elementproperty.h:129
 msgid "Year of Discovery"
 msgstr "Jaar van ontdekking"
 
@@ -718,6 +726,10 @@ msgstr "Zink_(element)"
 msgid "Zirconium"
 msgstr ""
 
+#: periodictablewindow.h:343
+msgid "actinides"
+msgstr "Actiniden"
+
 #: elementschema.h:127 elementschema.h:128 elementschema.h:129
 #: elementschema.h:130 elementschema.h:131 elementschema.h:132
 #: elementschema.h:133 elementschema.h:134 elementschema.h:135
@@ -736,6 +748,14 @@ msgstr "Alkalimetaal"
 msgid "alkaline earth metal"
 msgstr "Aardalkalimetaal"
 
+#: periodictablewindow.h:339
+msgid "alkaline metals"
+msgstr "Alkalimetalen"
+
+#: periodictablewindow.h:340
+msgid "alkaline-earth metals"
+msgstr "Aardalkalimetalen"
+
 #: elementschema.h:44 elementschema.h:51 elementschema.h:54 elementschema.h:58
 #: elementschema.h:62 elementschema.h:64 elementschema.h:65 elementschema.h:67
 #: elementschema.h:71 elementschema.h:85 elementschema.h:88 elementschema.h:89
@@ -744,17 +764,34 @@ msgstr "Aardalkalimetaal"
 msgid "ancient"
 msgstr "prehistorisch"
 
+#: periodictablewindow.h:353
+msgid "artificial element"
+msgstr "kunstmatig element"
+
 #: elementschema.h:40 elementschema.h:47 elementschema.h:48 elementschema.h:56
 #: elementschema.h:74 elementschema.h:92 elementschema.h:124
+#: periodictablewindow.h:324
 msgid "atomic"
-msgstr "monatomisch"
+msgstr "Atoom-"
+
+#: periodictablewindow.h:327 periodictablewindow.h:332
+msgid "black"
+msgstr "zwart"
+
+#: periodictablewindow.h:334
+msgid "blue"
+msgstr "blauw"
+
+#: periodictablewindow.h:350
+msgid "continuous"
+msgstr "doorgaand"
 
 #: elementschema.h:43 elementschema.h:44 elementschema.h:53 elementschema.h:54
 #: elementschema.h:55 elementschema.h:73 elementschema.h:91 elementschema.h:123
 msgid "covalent network"
 msgstr "Covalent netwerk"
 
-#: elementproperty.h:80
+#: elementproperty.h:114
 msgid "cpkHexColor"
 msgstr "cpkHexKleur"
 
@@ -762,7 +799,7 @@ msgstr "cpkHexKleur"
 msgid "diatomic"
 msgstr "diatomisch"
 
-#: elementproperty.cpp:100
+#: elementproperty.cpp:155
 msgid "en"
 msgstr "nl"
 
@@ -772,7 +809,19 @@ msgstr "nl"
 msgid "gas"
 msgstr "Gas"
 
-#: periodictablewindow.cpp:296
+#: periodictablewindow.h:337
+msgid "gaseous"
+msgstr "Gas"
+
+#: periodictablewindow.h:329
+msgid "green"
+msgstr "groen"
+
+#: periodictablewindow.h:322
+msgid "group"
+msgstr "Groep"
+
+#: periodictablewindow.cpp:338
 msgid "gtkmm Website - C++ Interfaces for GTK+ and GNOME"
 msgstr "gtkmm Website - C++ Interfaces for GTK+ and GNOME"
 
@@ -780,6 +829,18 @@ msgstr "gtkmm Website - C++ Interfaces for GTK+ and GNOME"
 #: elementschema.h:123
 msgid "halogen"
 msgstr "Halogeen"
+
+#: periodictablewindow.h:347
+msgid "halogenes"
+msgstr "Halogenen"
+
+#: periodictablewindow.h:352
+msgid "hatched"
+msgstr "gearceerd"
+
+#: periodictablewindow.h:342
+msgid "lanthanides"
+msgstr "Lanthaniden"
 
 #: elementschema.h:95 elementschema.h:96 elementschema.h:97 elementschema.h:98
 #: elementschema.h:99 elementschema.h:100 elementschema.h:101
@@ -789,11 +850,11 @@ msgstr "Halogeen"
 msgid "lanthanoid"
 msgstr "Lanthanide"
 
-#: periodictablewindow.cpp:232
+#: periodictablewindow.cpp:260
 msgid "legend-EN-480x140.svg"
 msgstr "legend-NL-480x140.svg"
 
-#: elementschema.h:73 elementschema.h:118
+#: elementschema.h:73 elementschema.h:118 periodictablewindow.h:335
 msgid "liquid"
 msgstr "Vloeistof"
 
@@ -833,22 +894,63 @@ msgstr "metalen"
 msgid "metalloid"
 msgstr "metalloïd"
 
+#: periodictablewindow.h:345
+msgid "metaloides"
+msgstr "Metalloïden"
+
+#: periodictablewindow.h:344
+msgid "metals"
+msgstr "Metalen"
+
+#: elementschema.h:40 elementschema.h:47 elementschema.h:48 elementschema.h:56
+#: elementschema.h:74 elementschema.h:92 elementschema.h:124
+msgid "monatomic"
+msgstr "monatomisch"
+
+#: periodictablewindow.h:351
+msgid "natural element"
+msgstr "natuurlijk element"
+
 #: elementschema.h:40 elementschema.h:48 elementschema.h:56 elementschema.h:74
 #: elementschema.h:92 elementschema.h:124 elementschema.h:156
 msgid "noble gas"
 msgstr "Edelgas"
+
+#: periodictablewindow.h:348
+msgid "noble gases"
+msgstr "Edelgassen"
+
+#: periodictablewindow.h:346
+msgid "non-metals"
+msgstr "Niet-Metalen"
 
 #: elementschema.h:39 elementschema.h:44 elementschema.h:45 elementschema.h:46
 #: elementschema.h:53 elementschema.h:54 elementschema.h:72
 msgid "nonmetal"
 msgstr "niet-metalen"
 
+#: periodictablewindow.h:328
+msgid "nonradioactive"
+msgstr "niet radioactief"
+
+#: periodictablewindow.h:321
+msgid "ordinal"
+msgstr "Volgnummer"
+
 #: elementschema.h:151 elementschema.h:152 elementschema.h:153
 #: elementschema.h:154 elementschema.h:155
 msgid "post-transition metal"
 msgstr "Na-Overgangsmetaal"
 
-#: elementproperty.cpp:102
+#: periodictablewindow.h:330
+msgid "radioactive"
+msgstr "radioactief"
+
+#: periodictablewindow.h:336
+msgid "red"
+msgstr "rood"
+
+#: elementproperty.cpp:157
 msgid "see <a href=\""
 msgstr "zie <a href=\""
 
@@ -876,9 +978,13 @@ msgstr "zie <a href=\""
 #: elementschema.h:127 elementschema.h:128 elementschema.h:129
 #: elementschema.h:130 elementschema.h:131 elementschema.h:132
 #: elementschema.h:133 elementschema.h:134 elementschema.h:135
-#: elementschema.h:136 elementschema.h:137
+#: elementschema.h:136 elementschema.h:137 periodictablewindow.h:333
 msgid "solid"
-msgstr "Vastestof"
+msgstr "vaste Stof"
+
+#: periodictablewindow.h:323
+msgid "symbol"
+msgstr "Symbool"
 
 #: elementschema.h:59 elementschema.h:60 elementschema.h:61 elementschema.h:62
 #: elementschema.h:63 elementschema.h:64 elementschema.h:65 elementschema.h:66
@@ -895,10 +1001,18 @@ msgstr "Vastestof"
 msgid "transition metal"
 msgstr "Overgangsmetaal"
 
-#: elementproperty.h:85
+#: periodictablewindow.h:341
+msgid "transition metals"
+msgstr "Overgangsmetalen"
+
+#: elementproperty.h:119
 msgid "van der Waals Radius [pm]"
 msgstr "van der Waals straal [pm]"
 
-#: periodictablewindow.cpp:212
+#: periodictablewindow.h:325
+msgid "weight"
+msgstr "massa"
+
+#: periodictablewindow.cpp:232
 msgid "—  Periodic Table of the Elements  —"
 msgstr "—  Periodiek Systeem der Elementen  —"

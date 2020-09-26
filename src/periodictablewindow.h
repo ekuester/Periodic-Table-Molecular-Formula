@@ -316,6 +316,42 @@ label {\
 
 private:
     bool is_first_pass = false;
+    std::vector<const char*> legend_strings = {
+      N_("Legend"),
+      N_("ordinal"),
+      N_("group"),
+      N_("symbol"),
+      N_("atomic"),
+      N_("weight"),
+      N_("Ordinal"),
+      N_("black"),
+      N_("nonradioactive"),
+      N_("green"),
+      N_("radioactive"),
+      N_("Symbol"),
+      N_("black"),
+      N_("solid"),
+      N_("blue"),
+      N_("liquid"),
+      N_("red"),
+      N_("gaseous"),
+      N_("Group"),
+      N_("alkaline metals"),
+      N_("alkaline-earth metals"),
+      N_("transition metals"),
+      N_("lanthanides"),
+      N_("actinides"),
+      N_("metals"),
+      N_("metaloides"),
+      N_("non-metals"),
+      N_("halogenes"),
+      N_("noble gases"),
+      N_("Area"),
+      N_("continuous"),
+      N_("natural element"),
+      N_("hatched"),
+      N_("artificial element")
+    };
     std::set< int > elements_radioactive = {
         43, 61,
         83, 84, 85, 86, 87, 88,

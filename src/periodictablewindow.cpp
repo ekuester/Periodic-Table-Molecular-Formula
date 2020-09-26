@@ -20,11 +20,12 @@
 //  Created by Erich Kuester, Krefeld, Germany
 //    Copyright © 2014 - 2020 Erich Kuester.
 //          All rights reserved.
-//  Last changes on September 13th, 2020 for version 1.6.5
+//  Last changes on September 26th, 2020 for version 1.7.0
  */
 
 #include "periodictablewindow.h"
 #include "about.xpm"
+#include "legend_svg.template"
 
 const char* app_title \
 = N_("Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight");
@@ -118,6 +119,8 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     m_LabelCssProvider->load_from_data(label_css);
     int i = 0;
     int p = 0;
+    // Get the name of the current locale
+    std::locale current("");
     for (auto period : table_blueprint) {
         int g = 0;
         for (auto group : period) {
@@ -127,7 +130,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     auto element = elements[i];
                     std::stringstream text;
                     // use momentan valid locale
-                    text.imbue(std::locale(""));
+                    text.imbue(current);
                     int element_ordinal = i + 1;
                     double mass;
                     stringstream massStream(element[4]);
@@ -248,9 +251,29 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     m_Space = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL));
                     m_Space->set_size_request(480, 144);
                     //m_Space->set_border_width(4);
+                    // inject correct decimal separator
+                    char decimal = use_facet<numpunct<char> > (current).decimal_point(); 
+                    auto pos = legend_svg.find('%');
+                    if (pos != std::string::npos) {
+                        legend_svg[pos] = decimal;
+                    }
+                    std::string sNeedle = "$";
+                    for (auto legend_string : legend_strings) {
+                    // substitute place holder $ with actual text
+                      legend_svg.replace(legend_svg.find(sNeedle),sNeedle.size(),_(legend_string));
+                    }
                     m_Space->set_name("legend");
+                    char tempFilename[20];
+                    strcpy(tempFilename, "/tmp/svgFile-XXXXXX");
+                    mkstemp(tempFilename);
+                    ofstream svgFile;
+                    svgFile.open(tempFilename);
+                    svgFile << legend_svg;
+                    svgFile.close();
+                    
                     Glib::RefPtr<Gtk::CssProvider> legendCssProvider = Gtk::CssProvider::create();
-                    std::string image_url = _("legend-EN-480x140.svg");
+                    //std::string image_url = _("legend-EN-480x140.svg");
+                    std::string image_url = tempFilename;
                     stringstream legend;
                     legend << "#legend {background-image: url(\"" << image_url \
                         << "\"); background-size: cover; }";
@@ -258,11 +281,6 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
                     legendCssProvider->load_from_data(legend_css);
                     m_Space->get_style_context()->add_provider(\
                         legendCssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
-                    //Glib::RefPtr<Gdk::Pixbuf> pixbuf = \
-                        Gdk::Pixbuf::create_from_file(_("legend-EN-480x140.svg"));
-                    //Gtk::Image *image = Gtk::manage(new Gtk::Image(pixbuf));
-                    //Gtk::Image *image = Gtk::manage(new Gtk::Image(_("legend-EN-480x140.svg")));
-                    //m_Space->pack_start(*image, Gtk::PackOptions::PACK_EXPAND_WIDGET);
                     m_Grid.attach(*m_Space, g, p-1, 10, 3); // column g, row p-1
                     g += 10;
                     break;
@@ -315,7 +333,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     m_Dialog.set_transient_for(*this);
     m_Dialog.set_logo(Gdk::Pixbuf::create_from_xpm_data(about));
     m_Dialog.set_program_name(_(app_title));
-    m_Dialog.set_version(_("Version 1.6.5"));
+    m_Dialog.set_version(_("Version 1.7.0"));
     m_Dialog.set_copyright(_("Copyright © 2020 Erich Küster. All rights reserved."));
     m_Dialog.set_comments(_("Periodic Table and Molecular Formula for Chemists"));
     std::ifstream licenseFile("LICENSE");

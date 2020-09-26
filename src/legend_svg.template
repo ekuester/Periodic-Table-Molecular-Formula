@@ -1,0 +1,141 @@
+    std::string legend_svg = "\
+<?xml version=\"1.0\" encoding=\"utf-8\"?>\
+<svg width=\"960\" height=\"288\" xmlns=\"http://www.w3.org/2000/svg\">\
+!--- legend text -->\
+  <text x=\"102.0\" y=\"28.1\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"middle\">\
+    <tspan font-size=\"28\" font-weight=\"700\">$:</tspan>\
+  </text>\
+<!--- underline legend text -->\
+  <path d=\"m23.5 38.143h160\" fill=\"none\"\
+    stroke=\"#000\" stroke-linecap=\"square\" stroke-width=\"3.0\" />\
+!--- ordinal text -->\
+  <text x=\"178.55\" y=\"80.1\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"middle\">\
+    <tspan font-size=\"18\">$</tspan>\
+  </text>\
+<!--- yellow square with black edging -->\
+  <path d=\"m131.55 87.191h92.903v92.903h-92.903z\" fill=\"#eee8aa\"\
+  stroke=\"#000\" stroke-linecap=\"square\" stroke-width=\"3.097\" />\
+<!--- groupe text -->\
+  <text x=\"73.53\" y=\"76.453\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"middle\">\
+    <tspan font-size=\"18\">$</tspan>\
+  </text>\
+<!--- black line into color of square -->\
+  <path d=\"m146 117.64-72-38.304\" stroke=\"#000\" stroke-width=\"2\" />\
+<!--- ordinal number -->\
+  <text x=\"155.968\" y=\"113.407\" font-family=\"Noto Sans\"\
+    fill=\"#0\" text-anchor=\"begin\">\
+    <tspan font-size=\"16\" font-weight=\"700\">17</tspan>\
+  </text>\
+<!--- symbol text -->\
+  <text x=\"110.55\" y=\"134.356\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"end\">\
+    <tspan font-size=\"18\">$</tspan>\
+  </text>38.143\
+<!--- black line to red Cl symbol -->\
+  <path d=\"m170 129.64h-56\" stroke=\"#000\" stroke-width=\"2\" />\
+<!--- red Chlor symbol -->\
+  <text x=\"196.774\" y=\"136.356\" font-family=\"Noto Sans\" fill=\"red\" text-anchor=\"end\">\
+    <tspan font-size=\"21.333\" font-weight=\"700\">Cl</tspan>\
+  </text>\
+<!--- atomic weight text -->\
+  <text x=\"36.84\" y=\"160.654\" font-family=\"Noto Sans\" fill=\"#0\">\
+      <tspan font-size=\"18\">$</tspan>\
+      <tspan dx=\"-44\" dy=\"15\" font-size=\"18\">$</tspan>\
+   </text>\
+<!--- atomic weight number -->\
+  <text x=\"178.55\" y=\"166.121\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"middle\">\
+    <tspan font-size=\"16\">35%453</tspan>\
+  </text>\
+<!--- ordinal text -->\
+  <text x=\"258.66\" y=\"28.1\" font-family=\"Noto Sans\" fill=\"#0\">\
+    <tspan font-size=\"21.333\">$</tspan>\
+  </text>\
+<!--- underline ordinal text -->\
+  <path d=\"m250.0 38.143h242.7\" fill=\"none\"\
+    stroke=\"#000\" stroke-linecap=\"square\" stroke-width=\"2.5\" />\
+  <text x=\"329.5\" y=\"60.8\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"end\">\
+    <tspan font-size=\"20\" xml:space=\"preserve\">$ </tspan>\
+  </text>\
+  <text x=\"329.5\" y=\"60.8\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"start\">\
+    <tspan font-size=\"20\">= $</tspan>\
+  </text>\
+  <text x=\"329.5\" y=\"83.8\" font-family=\"Noto Sans\" fill=\"green\" text-anchor=\"end\">\
+    <tspan font-size=\"20\" xml:space=\"preserve\">$ </tspan>\
+  </text>\
+  <text x=\"329.5\" y=\"83.8\" font-family=\"Noto Sans\" fill=\"green\" text-anchor=\"start\">\
+    <tspan font-size=\"20\">= $</tspan>\
+  </text>\
+<!--- symbol text -->\
+  <text x=\"258.66\" y=\"124.5\" font-family=\"Noto Sans\" fill=\"#0\">\
+    <tspan font-size=\"21.333\">$</tspan>\
+  </text>\
+<!--- underline symbol text colors -->\
+  <path d=\"m250.0 134.49h242.7\" fill=\"none\"\
+    stroke=\"#000\" stroke-linecap=\"square\" stroke-width=\"2.5\" />\
+  <text x=\"329.5\" y=\"156.6\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"end\">\
+    <tspan font-size=\"20\" xml:space=\"preserve\">$ </tspan>\
+  </text>\
+  <text x=\"329.5\" y=\"156.6\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"start\">\
+    <tspan font-size=\"20\">= $</tspan>\
+  </text>\
+  <text x=\"329.5\" y=\"179.6\" font-family=\"Noto Sans\" fill=\"blue\" text-anchor=\"end\">\
+    <tspan font-size=\"20\" xml:space=\"preserve\">$ </tspan>\
+  </text>\
+  <text x=\"329.5\" y=\"179.6\" font-family=\"Noto Sans\" fill=\"blue\" text-anchor=\"start\">\
+    <tspan font-size=\"20\">= $</tspan>\
+  </text>\
+  <text x=\"329.5\" y=\"202.6\" font-family=\"Noto Sans\" fill=\"red\" text-anchor=\"end\">\
+    <tspan font-size=\"20\" xml:space=\"preserve\">$ </tspan>\
+  </text>\
+  <text x=\"329.5\" y=\"202.6\" font-family=\"Noto Sans\" fill=\"red\" text-anchor=\"start\">\
+    <tspan font-size=\"20\">= $</tspan>\
+  </text>\
+<!--- group text -->\
+  <text x=\"538.928\" y=\"28.1\" font-family=\"Noto Sans\" fill=\"#0\">\
+    <tspan font-size=\"21.333\">$</tspan>\
+  </text>\
+<!--- underline group text -->\
+  <path d=\"m531.0 38.143h405.0\" fill=\"none\"\
+    stroke=\"#000\" stroke-linecap=\"square\" stroke-width=\"2.5\" />\
+<!--- group colors left column -->\
+  <path d=\"m537 49.643h20v20h-20z\" fill=\"coral\" />\
+  <path d=\"m537 75.643h20v20h-20z\" fill=\"salmon\" />\
+  <path d=\"m537 101.64h20v20h-20z\" fill=\"#add8e6\" />\
+  <path d=\"m537 127.64h20v20h-20z\" fill=\"#f4a460\" />\
+  <path  d=\"m537 153.64h20v20h-20z\" fill=\"#db9356\" />\
+<!--- group colors right column -->\
+  <path d=\"m788 49.643h20v20h-20z\" fill=\"#c1e3ff\" />\
+  <path d=\"m788 75.643h20v20h-20z\" fill=\"#0ff\" />\
+  <path d=\"m788 101.64h20v20h-20z\" fill=\"#90ee90\" />\
+  <path d=\"m788 127.64h20v20h-20z\" fill=\"#eee8aa\" />\
+  <path d=\"m788 153.64h20v20h-20z\" fill=\"#e6e6fa\" />\
+<!-- group names -->\
+  <text x=\"562.25\" y=\"67.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"562.25\" y=\"93.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"562.25\" y=\"119.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"562.25\" y=\"145.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"562.25\" y=\"171.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"812.25\" y=\"67.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"812.25\" y=\"93.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"812.25\" y=\"119.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"812.25\" y=\"145.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+  <text x=\"812.25\" y=\"171.433\" font-family=\"Noto Sans\" font-size=\"20\" fill=\"#0\">$</text>\
+<!--- surface text -->\
+  <text x=\"538.928\" y=\"201.433\" font-family=\"Noto Sans\" fill=\"#0\">\
+    <tspan font-size=\"21.333\">$</tspan>\
+  </text>\
+<!--- underline surface text -->\
+  <path d=\"m531.0 211.43h405.0\" fill=\"none\"\
+    stroke=\"#000\" stroke-linecap=\"square\" stroke-width=\"2.5\" />\
+  <text x=\"684.0\" y=\"233.5\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"end\">\
+    <tspan font-size=\"20\" xml:space=\"preserve\">$ </tspan>\
+  </text>\
+  <text x=\"684.0\" y=\"233.5\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"start\">\
+    <tspan font-size=\"20\">= $</tspan>\
+  </text>\
+  <text x=\"684.0\" y=\"256.5\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"end\">\
+    <tspan font-size=\"20\" xml:space=\"preserve\">$ </tspan>\
+  </text>\
+  <text x=\"684.0\" y=\"256.5\" font-family=\"Noto Sans\" fill=\"#0\" text-anchor=\"start\">\
+    <tspan font-size=\"20\">= $</tspan>\
+  </text>\
+</svg>";

@@ -1,6 +1,6 @@
-%define        name Periodic-Table-Molecular-Formula
+﻿%define        name Periodic-Table-Molecular-Formula
 %define        alias periodictable
-%define        version 1.6.5
+%define        version 1.7.0
 %define        release 1
 Summary:    Periodic Table of the Elements for Chemists
 Name:       %{name}
@@ -8,11 +8,12 @@ Version:    %{version}
 Release:    %{release}
 License:    GPLv3+
 Group:      Applications/Science
-URL:        https://github.com/ekuester/periodic-table-molecular-formula
+URL:        https://github.com/ekuester/Periodic-Table-Molecular-Formula
 Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{alias}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:    cairo
 Requires:    cairo-gobject
+Requires:    gtk3
 Requires:    pango
 Buildrequires:    cairo-devel
 Buildrequires:    gtkmm30-devel
@@ -37,8 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 make install DESTDIR=$RPM_BUILD_ROOT PREFIX=%{_prefix}
 
-# Kornelix has some Unity-specific stuff in his desktop entry.
-# Let's build our own, on-the-fly:
+# let's build our own desktop entry, on-the-fly:
 echo -e "[Desktop Entry]
 Type=Application
 Version=1.1
@@ -52,12 +52,12 @@ Comment[de]=Periodensystem mit Rechner für Summenformeln
 Comment[fr]=Tableau périodique avec un calculateur de poids moléculaire
 Comment[it]=Tavola periodica con un calcolatore per peso moleculare
 Comment[nl]=Periodiek Systeem met een calculator van somformules
-Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=%{_datadir}/gtkperiodictable --command=./GTKPeriodicTable
+Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=/usr/share/gtkperiodictable --command=./GTKPeriodicTable
 Icon=periodictable
 Categories=Education;Science;Chemistry;Math
 StartupNotify=true
 Terminal=true" > %{alias}.desktop
-
+                                                                               
 desktop-file-install --vendor "" --delete-original \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications \
   --add-category Education \
@@ -82,6 +82,8 @@ rm -rfv $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/*.svg
 
 %changelog
+* Sat Sep 26 2020 Erich Küster <erich.kuester@arcor.de> - 1.7.0-1
+- introducing svg template
 * Sun Sep 13 2020 Erich Küster <erich.kuester@arcor.de> - 1.6.5-1
 - enhanced version, rebuild for Fedora 32
 * Sun Jan  5 2020 Erich Küster <erich.kuester@arcor.de> - 1.6.4
