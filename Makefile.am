@@ -11,11 +11,10 @@ LEGEND_FILES = legend-DE-480x140.svg\
  legend-IT-480x140.svg\
  legend-NL-480x140.svg
 lateraldir = $(pkgdatadir)
-lateral_DATA = $(LATERAL_FILES) $(LEGEND_FILES)
+lateral_DATA = $(LATERAL_FILES)
 
-EXTRA_DIST = 16x16 package autogen.sh GTKPeriodicTable.sh\
+EXTRA_DIST = 16x16 package autogen.sh GTKPeriodicTable.sh periodictable.pdf\
  $(LATERAL_FILES)\
- $(LEGEND_FILES)
 
 CLEANFILES =
 
@@ -43,7 +42,7 @@ periodictable.sh: periodictable.sh.in
 CLEANFILES += periodictable.sh
 EXTRA_DIST += periodictable.sh.in
 
-# application icon 128x128
+# application icon 256x256
 appicondir=$(datadir)/pixmaps
 appicon_DATA=periodictable.svg
 

@@ -7,7 +7,7 @@ GTKPeriodicTable_SOURCES = about.xpm \
 elementproperty.h elementproperty.cpp \
 elementschema.h elementschema.cpp \
 formulaparser.h formulaparser.cpp \
-main.cpp \
+legend_css.template main.cpp \
 molecularformula.h molecularformula.cpp \
 periodictablewindow.h periodictablewindow.cpp \
 printformoperation.h printformoperation.cpp

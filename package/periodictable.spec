@@ -1,7 +1,7 @@
-%define        name Periodic-Table-Molecular-Formula
-%define        alias periodictable
-%define        version 1.7.0
-%define        release 1
+%define     name Periodic-Table-Molecular-Formula
+%define     alias periodictable
+%define     version 1.7.0
+%define     release 1
 Summary:    Periodic Table of the Elements for Chemists
 Name:       %{name}
 Version:    %{version}
@@ -11,13 +11,13 @@ Group:      Applications/Science
 URL:        https://github.com/ekuester/Periodic-Table-Molecular-Formula
 Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{alias}-%{version}-%{release}-root-%(%{__id_u} -n)
-Requires:    cairo
-Requires:    cairo-gobject
-Requires:    gtk3
-Requires:    pango
-Buildrequires:    cairo-devel
-Buildrequires:    gtkmm30-devel
-Buildrequires:    pango-devel
+Requires:   cairo
+Requires:   cairo-gobject
+Requires:   gtk3
+Requires:   pango
+Buildrequires: cairo-devel
+Buildrequires: gtkmm30-devel
+Buildrequires: pango-devel
 
 %description
 PeriodicTable is a free open source Linux program for browsing the
