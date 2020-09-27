@@ -26,6 +26,7 @@
 #include "periodictablewindow.h"
 #include "about.xpm"
 #include "legend_svg.template"
+#include "gtkmm-2.4/gtkmm/enums.h"
 
 const char* app_title \
 = N_("Gtk+: Chemistry Application - Periodic Table · Element Properties · Molecular Weight");
@@ -325,9 +326,9 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     m_Grid.set_column_homogeneous(false);
     m_Grid.set_row_homogeneous(false);
     m_TableWindow.set_min_content_width(1024);
-    m_TableWindow.set_min_content_height(768);
+    m_TableWindow.set_min_content_height(576);
     m_TableWindow.add(m_Grid);
-    m_TableWindow.set_policy(Gtk::POLICY_AUTOMATIC, Gtk::POLICY_AUTOMATIC);
+    m_TableWindow.set_policy(Gtk::POLICY_ALWAYS, Gtk::POLICY_ALWAYS);
     m_VBox.pack_start(m_TableWindow);
 
     m_Dialog.set_transient_for(*this);
@@ -365,7 +366,7 @@ PeriodicTableWindow::PeriodicTableWindow(const Glib::RefPtr<Gtk::Application>& a
     add(m_VBox);
     show_all_children();
     present();
-    move(64,96);
+    move(64,48);
 }
 
 PeriodicTableWindow::~PeriodicTableWindow() {

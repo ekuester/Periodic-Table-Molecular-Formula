@@ -1,4 +1,4 @@
-﻿%define        name Periodic-Table-Molecular-Formula
+%define        name Periodic-Table-Molecular-Formula
 %define        alias periodictable
 %define        version 1.7.0
 %define        release 1
@@ -35,10 +35,9 @@ make %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 make install DESTDIR=$RPM_BUILD_ROOT PREFIX=%{_prefix}
 
-# let's build our own desktop entry, on-the-fly:
+# Let's build our own desktop entry, on-the-fly
 echo -e "[Desktop Entry]
 Type=Application
 Version=1.1
@@ -52,12 +51,12 @@ Comment[de]=Periodensystem mit Rechner für Summenformeln
 Comment[fr]=Tableau périodique avec un calculateur de poids moléculaire
 Comment[it]=Tavola periodica con un calcolatore per peso moleculare
 Comment[nl]=Periodiek Systeem met een calculator van somformules
-Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=/usr/share/gtkperiodictable --command=./GTKPeriodicTable
+Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=%{_datadir}/gtkperiodictable --command=./GTKPeriodicTable
 Icon=periodictable
 Categories=Education;Science;Chemistry;Math
 StartupNotify=true
 Terminal=true" > %{alias}.desktop
-                                                                               
+
 desktop-file-install --vendor "" --delete-original \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications \
   --add-category Education \
@@ -71,7 +70,7 @@ install -m 644 periodictable.svg $RPM_BUILD_ROOT%{_datadir}/pixmaps/
 desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/%{alias}.desktop
 
 %clean
-rm -rfv $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
