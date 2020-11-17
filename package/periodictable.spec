@@ -51,7 +51,7 @@ Comment[de]=Periodensystem mit Rechner für Summenformeln
 Comment[fr]=Tableau périodique avec un calculateur de poids moléculaire
 Comment[it]=Tavola periodica con un calcolatore per peso moleculare
 Comment[nl]=Periodiek Systeem met een calculator van somformules
-Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=%{_datadir}/gtkperiodictable --command=./GTKPeriodicTable
+Exec=gnome-terminal --geometry=16x5 --hide-menubar --working-directory=%{_datadir}/gtkperiodictable -- ./GTKPeriodicTable
 Icon=periodictable
 Categories=Education;Science;Chemistry;Math
 StartupNotify=true
