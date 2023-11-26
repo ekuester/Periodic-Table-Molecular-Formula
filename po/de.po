@@ -903,7 +903,7 @@ msgstr "Metalle"
 #: elementschema.h:40 elementschema.h:47 elementschema.h:48 elementschema.h:56
 #: elementschema.h:74 elementschema.h:92 elementschema.h:124
 msgid "monatomic"
-msgstr ""
+msgstr "einatomig"
 
 #: periodictablewindow.h:351
 msgid "natural element"
